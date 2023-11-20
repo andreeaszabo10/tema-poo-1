@@ -13,31 +13,23 @@ public class PlayerStatus {
     public PlayerStatus() {
     }
 
-    public PlayerStatus(String currentTrack, int remainedTime, String repeatMode, boolean shuffleMode, boolean paused) {
-        this.currentTrack = currentTrack;
-        this.remainedTime = remainedTime;
-        this.repeatMode = repeatMode;
-        this.shuffleMode = shuffleMode;
-        this.paused = paused;
-    }
-
-    public void setCurrentTrack(String currentTrack) {
+    public final void setCurrentTrack(final String currentTrack) {
         this.currentTrack = currentTrack;
     }
 
-    public void setRemainedTime(int remainedTime) {
+    public final void setRemainedTime(final int remainedTime) {
         this.remainedTime = remainedTime;
     }
 
-    public void setRepeatMode(String repeatMode) {
+    public final void setRepeatMode(final String repeatMode) {
         this.repeatMode = repeatMode;
     }
 
-    public void setShuffleMode(boolean shuffleMode) {
+    public void setShuffleMode(final boolean shuffleMode) {
         this.shuffleMode = shuffleMode;
     }
 
-    public void setPaused(boolean paused) {
+    public void setPaused(final boolean paused) {
         this.paused = paused;
     }
 }

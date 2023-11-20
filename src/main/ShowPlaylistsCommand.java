@@ -8,12 +8,18 @@ import java.util.List;
 
 public class ShowPlaylistsCommand extends Command {
 
-    public static ObjectNode createShowPlaylistsOutput(ShowPlaylistsCommand showPlaylistsCommand, List<Playlist> playlists) {
+    /**
+     *
+     * @param show is the command
+     * @param playlists is the list of playlists
+     */
+    public static ObjectNode createShowPlaylistsOutput(final ShowPlaylistsCommand show,
+                                                       final List<Playlist> playlists) {
         ObjectNode output = JsonNodeFactory.instance.objectNode();
         ArrayNode resultArray = JsonNodeFactory.instance.arrayNode();
 
         for (Playlist playlist : playlists) {
-            if (showPlaylistsCommand.username.equals(playlist.getOwner())) {
+            if (show.getUsername().equals(playlist.getOwner())) {
                 ObjectNode playlistNode = JsonNodeFactory.instance.objectNode();
                 playlistNode.put("name", playlist.getPlaylistName());
                 ArrayNode songsArray = JsonNodeFactory.instance.arrayNode();
@@ -29,8 +35,8 @@ public class ShowPlaylistsCommand extends Command {
         }
 
         output.put("command", "showPlaylists");
-        output.put("user", showPlaylistsCommand.username);
-        output.put("timestamp", showPlaylistsCommand.timestamp);
+        output.put("user", show.getUsername());
+        output.put("timestamp", show.getTimestamp());
         output.putArray("result").addAll(resultArray);
 
         return output;

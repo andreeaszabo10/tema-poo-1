@@ -3,10 +3,8 @@ package main;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-import java.util.List;
-
-public class CreatePlaylistCommand extends Command{
-    public String playlistName;
+public class CreatePlaylistCommand extends Command {
+    private String playlistName;
 
     public CreatePlaylistCommand() {
     }
@@ -17,19 +15,26 @@ public class CreatePlaylistCommand extends Command{
     }
 
     @Override
-    public void setPlaylistName(String playlistName) {
+    public final void setPlaylistName(final String playlistName) {
         this.playlistName = playlistName;
     }
 
-    public static ObjectNode createPlaylistOutput(CreatePlaylistCommand createPlaylistCommand, int var) {
+    /**
+     *
+     * @param create is the command
+     * @param var is a variable that indicates the message that should be printed
+     */
+    public static ObjectNode createPlaylistOutput(final CreatePlaylistCommand create,
+                                                  final int var) {
         ObjectNode createPlaylistOutput = JsonNodeFactory.instance.objectNode();
         createPlaylistOutput.put("command", "createPlaylist");
-        createPlaylistOutput.put("user", createPlaylistCommand.getUsername());
-        createPlaylistOutput.put("timestamp", createPlaylistCommand.getTimestamp());
-        if (var == 0)
+        createPlaylistOutput.put("user", create.getUsername());
+        createPlaylistOutput.put("timestamp", create.getTimestamp());
+        if (var == 0) {
             createPlaylistOutput.put("message", "Playlist created successfully.");
-        else
+        } else {
             createPlaylistOutput.put("message", "A playlist with the same name already exists.");
+        }
         return createPlaylistOutput;
     }
 }

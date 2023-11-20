@@ -4,6 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class Playlist {
+    @Getter
     private String owner;
     private String playlistName;
     @Getter
@@ -13,25 +14,29 @@ public class Playlist {
         this.songs = new String[0];
     }
 
-    public void setPlaylistName(String playlistName) {
+    public final void setPlaylistName(final String playlistName) {
         this.playlistName = playlistName;
     }
 
-    public void setUsername(String owner) {
+    public final void setUsername(final String owner) {
         this.owner = owner;
     }
 
-    public void setSongs(String[] songs) {
+    public final void setOwner(final String owner) {
+        this.owner = owner;
+    }
+
+    public final void setSongs(final String[] songs) {
         this.songs = songs;
     }
-    public void addSong(String song) {
+    public final void addSong(final String song) {
         String[] newSongs = new String[songs.length + 1];
         System.arraycopy(songs, 0, newSongs, 0, songs.length);
         newSongs[songs.length] = song;
         songs = newSongs;
     }
 
-    public void removeSong(String song) {
+    public final void removeSong(final String song) {
         String[] newSongs = new String[songs.length - 1];
         int index = 0;
         for (String s : songs) {
@@ -41,10 +46,10 @@ public class Playlist {
         }
         songs = newSongs;
     }
-    public static Playlist performCreatePlaylist(CreatePlaylistCommand createPlaylistCommand) {
+    public static Playlist performCreatePlaylist(final CreatePlaylistCommand createPlaylist) {
         Playlist newPlaylist = new Playlist();
-        newPlaylist.setPlaylistName(createPlaylistCommand.getPlaylistName());
-        newPlaylist.setUsername(createPlaylistCommand.getUsername());
+        newPlaylist.setPlaylistName(createPlaylist.getPlaylistName());
+        newPlaylist.setUsername(createPlaylist.getUsername());
         return newPlaylist;
     }
 }

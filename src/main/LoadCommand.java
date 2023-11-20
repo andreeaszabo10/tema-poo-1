@@ -6,33 +6,39 @@ import lombok.Getter;
 
 @Getter
 public class LoadCommand extends Command {
-    public String username;
-    public int timestamp;
+    private String username;
+    private int timestamp;
 
     public LoadCommand() {
     }
 
-    public LoadCommand(String username, int timestamp) {
+    public LoadCommand(final String username, final int timestamp) {
         this.username = username;
         this.timestamp = timestamp;
     }
 
-    public void setUsername(String username) {
+    public final void setUsername(final String username) {
         this.username = username;
     }
 
-    public void setTimestamp(int timestamp) {
+    public final void setTimestamp(final int timestamp) {
         this.timestamp = timestamp;
     }
-    public static String performLoad(String selectedTrack, LoadCommand loadCommand) {
 
-        if (selectedTrack == null)
+    public static String performLoad(final String selectedTrack) {
+
+        if (selectedTrack == null) {
             return "Please select a source before attempting to load.";
-
+        }
         return "Playback loaded successfully.";
     }
 
-    public static ObjectNode createLoadOutput(LoadCommand loadCommand, String message) {
+    /**
+     *
+     * @param loadCommand is the command
+     * @param message is the message that should be printed
+     */
+    public static ObjectNode createLoadOutput(final LoadCommand loadCommand, final String message) {
         ObjectNode loadOutput = JsonNodeFactory.instance.objectNode();
         loadOutput.put("command", "load");
         loadOutput.put("user", loadCommand.getUsername());

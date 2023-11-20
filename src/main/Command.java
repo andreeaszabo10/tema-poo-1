@@ -5,56 +5,56 @@ import lombok.Getter;
 
 @Getter
 public class Command {
-    public String command;
-    public int timestamp;
-    public String username;
+    private String command;
+    private int timestamp;
+    private String username;
     private String type;
     private JsonNode filters;
     private int itemNumber;
-    public int seed;
-    public int playlistId;
-    public String playlistName;
+    private int seed;
+    private int playlistId;
+    private String playlistName;
 
     public Command() {
     }
 
-    public Command(int timestamp) {
+    public Command(final int timestamp) {
         this.timestamp = timestamp;
     }
 
-    public void setUsername(String username) {
+    public void setUsername(final String username) {
         this.username = username;
     }
 
-    public void setCommand(String command) {
+    public void setCommand(final String command) {
         this.command = command;
     }
 
-    public void setType(String type) {
+    public void setType(final String type) {
         this.type = type;
     }
 
-    public void setFilters(JsonNode filters) {
+    public void setFilters(final JsonNode filters) {
         this.filters = filters;
     }
 
-    public void setItemNumber(int itemNumber) {
+    public void setItemNumber(final int itemNumber) {
         this.itemNumber = itemNumber;
     }
 
-    public void setTimestamp(int timestamp) {
+    public void setTimestamp(final int timestamp) {
         this.timestamp = timestamp;
     }
 
-    public void setSeed(int seed) {
+    public void setSeed(final int seed) {
         this.seed = seed;
     }
 
-    public void setPlaylistId(int playlistId) {
+    public void setPlaylistId(final int playlistId) {
         this.playlistId = playlistId;
     }
 
-    public void setPlaylistName(String playlistName) {
+    public void setPlaylistName(final String playlistName) {
         this.playlistName = playlistName;
     }
 }

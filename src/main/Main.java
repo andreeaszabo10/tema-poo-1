@@ -80,12 +80,12 @@ public final class Main {
         List<String> searchResults = new ArrayList<>();
         String selectedTrack = null;
         PlayerStatus playerStatus = new PlayerStatus();
-        int lasttimestamp = 0;
+        int lasttime = 0;
         List<Playlist> playlists = new ArrayList<>();
         boolean ok = false;
         List<String> liked = new ArrayList<>();
         boolean loaded = false;
-        String load = null;
+        //String load = null;
 
         for (Command command : commands) {
             if (command instanceof SearchCommand searchCommand) {
@@ -98,8 +98,8 @@ public final class Main {
                 outputs.add(SelectCommand.createSelectOutput(selectCommand, selectedTrack));
             }
             if (command instanceof LoadCommand loadCommand) {
-                String message = LoadCommand.performLoad(selectedTrack, loadCommand);
-                lasttimestamp = loadCommand.timestamp;
+                String message = LoadCommand.performLoad(selectedTrack);
+                lasttime = loadCommand.getTimestamp();
                 SongInput song;
                 PodcastInput podcast;
                 ok = false;
@@ -128,27 +128,28 @@ public final class Main {
             }
             if (command instanceof StatusCommand statusCommand) {
                 if (!playerStatus.isPaused()) {
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - statusCommand.timestamp + lasttimestamp);
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime()
+                            - statusCommand.getTimestamp() + lasttime);
                 }
-                lasttimestamp = statusCommand.timestamp;
-                if (statusCommand.timestamp > lasttimestamp + playerStatus.getRemainedTime()) {
+                lasttime = statusCommand.getTimestamp();
+                if (statusCommand.getTimestamp() > lasttime + playerStatus.getRemainedTime()) {
                     playerStatus.setRemainedTime(0);
                     playerStatus.setCurrentTrack("");
                     playerStatus.setPaused(true);
                     playerStatus.setRepeatMode("No Repeat");
                     playerStatus.setShuffleMode(false);
                 }
-                outputs.add(StatusCommand.createStatusOutput(statusCommand, playerStatus));
+                outputs.add(StatusCommand.createStatus(statusCommand, playerStatus));
             }
             if (command instanceof PlayPauseCommand playPauseCommand) {
                 if (playerStatus.isPaused()) {
-                    playPauseCommand.paused = 0;
-                    lasttimestamp = playPauseCommand.timestamp;
+                    playPauseCommand.setPaused(0);
+                    lasttime = playPauseCommand.getTimestamp();
                     playerStatus.setPaused(false);
                 } else {
-                    playPauseCommand.paused = 1;
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - playPauseCommand.timestamp + lasttimestamp);
-                    lasttimestamp = playPauseCommand.timestamp;
+                    playPauseCommand.setPaused(1);
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - playPauseCommand.getTimestamp() + lasttime);
+                    lasttime = playPauseCommand.getTimestamp();
                     playerStatus.setPaused(true);
                 }
                 PlayPauseCommand.performPlayPause(playPauseCommand);
@@ -163,42 +164,46 @@ public final class Main {
                         break;
                     }
                 }
-                if (var == 0)
+                if (var == 0) {
                     playlists.add(playlist);
+                }
 
                 outputs.add(CreatePlaylistCommand.createPlaylistOutput(createPlaylistCommand, var));
             }
             if (command instanceof AddRemoveCommand addRemoveCommand) {
                 int x;
-                if (loaded)
+                if (loaded) {
                     x = performAddRemove(addRemoveCommand, playlists, selectedTrack, library);
-                else
-                    x = 3;
-                outputs.add(AddRemoveCommand.createAddRemoveInPlaylistOutput(addRemoveCommand, x));
+                } else {
+                    x = -4;
+                }
+                outputs.add(AddRemoveCommand.createAddRemoveOutput(addRemoveCommand, x));
             }
             if (command instanceof LikeCommand likeCommand) {
                 String a = LikeCommand.performLike(ok, selectedTrack);
                 int var = 0;
                 if (a != null) {
                     for (String x : liked) {
-                        if ( a.equals(x)) {
+                        if (a.equals(x)) {
                             var = 1;
                             break;
                         }
                     }
-                    if (var == 0)
+                    if (var == 0) {
                         liked.add(a);
-                    else
+                    } else {
                         liked.remove(a);
+                    }
                 }
                 outputs.add(LikeCommand.createLikeOutput(likeCommand, ok, loaded));
                 ok = !ok;
             }
             if (command instanceof ShowPlaylistsCommand showPlaylistsCommand) {
-                outputs.add(ShowPlaylistsCommand.createShowPlaylistsOutput(showPlaylistsCommand, playlists));
+                outputs.add(ShowPlaylistsCommand.createShowPlaylistsOutput(showPlaylistsCommand,
+                        playlists));
             }
             if (command instanceof ShowSongsCommand showSongsCommand) {
-                outputs.add(ShowSongsCommand.createShowSongsOutput(showSongsCommand, liked));
+                outputs.add(ShowSongsCommand.createOutput(showSongsCommand, liked));
             }
         }
 
@@ -207,26 +212,29 @@ public final class Main {
 
     }
 
-    private static SongInput getSongDetails(LibraryInput library, String trackName) {
+    private static SongInput getSongDetails(final LibraryInput library, final String name) {
         for (SongInput song : library.getSongs()) {
-            if (song.getName().equals(trackName)) {
+            if (song.getName().equals(name)) {
                 return song;
             }
         }
         return null;
     }
-    private static PodcastInput getPodcastDetails(LibraryInput library, String trackName) {
+    private static PodcastInput getPodcastDetails(final LibraryInput library, final String name) {
         for (PodcastInput podcast : library.getPodcasts()) {
-            if (podcast.getName().equals(trackName)) {
+            if (podcast.getName().equals(name)) {
                 return podcast;
             }
         }
         return null;
     }
-    private static int performAddRemove(AddRemoveCommand addRemoveCommand, List<Playlist> playlists, String song, LibraryInput library) {
-        if (addRemoveCommand.playlistId > playlists.size())
-            return 100;
-        Playlist bun = playlists.get(addRemoveCommand.playlistId - 1);
+    private static int performAddRemove(final AddRemoveCommand addRemoveCommand,
+                                        final List<Playlist> playlists,
+                                        final String song, final LibraryInput library) {
+        if (addRemoveCommand.getPlaylistId() > playlists.size()) {
+            return -1;
+        }
+        Playlist bun = playlists.get(addRemoveCommand.getPlaylistId() - 1);
         int ok = 1;
         if (bun.getSongs() != null) {
             for (String song1 : bun.getSongs()) {
@@ -244,8 +252,9 @@ public final class Main {
                 break;
             }
         }
-        if (ok1 == 0)
+        if (ok1 == 0) {
             return 2;
+        }
         if (ok == 1) {
             bun.addSong(song);
             return 1;
@@ -253,7 +262,14 @@ public final class Main {
         bun.removeSong(song);
         return 0;
     }
-    private static List<Command> readCommandsFromFile(String filePathInput) throws IOException {
+
+    /**
+     * @param filePathInput for input file
+     *
+     * @throws IOException in case of exceptions to reading / writing
+     */
+    private static List<Command> readCommandsFromFile(final String filePathInput)
+            throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         List<Command> commands = new ArrayList<>();
 

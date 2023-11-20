@@ -7,11 +7,13 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.LibraryInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
+import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SearchCommand extends Command{
+@Getter
+public class SearchCommand extends Command {
     private String username;
     private String type;
     private JsonNode filters;
@@ -19,68 +21,51 @@ public class SearchCommand extends Command{
     public SearchCommand() {
     }
 
-    public SearchCommand(int timestamp, String username, String type, JsonNode filters) {
-        super(timestamp);
-        this.username = username;
-        this.type = type;
-        this.filters = filters;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
+    public final void setUsername(final String username) {
         this.username = username;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
+    public final void setType(final String type) {
         this.type = type;
     }
 
-    public JsonNode getFilters() {
-        return filters;
-    }
-
-    public void setFilters(JsonNode filters) {
+    public final void setFilters(final JsonNode filters) {
         this.filters = filters;
     }
 
-    public static List<String> performSearch(LibraryInput library, SearchCommand searchCommand, List<Playlist> playlists) {
+    public static List<String> performSearch(final LibraryInput library,
+                                             final SearchCommand searchCommand,
+                                             final List<Playlist> playlists) {
         List<String> searchResults = new ArrayList<>();
         String type = searchCommand.getType();
 
         if ("song".equals(type)) {
-            JsonNode nameFilterNode = searchCommand.getFilters().get("name");
-            JsonNode albumFilterNode = searchCommand.getFilters().get("album");
-            JsonNode tagsFilterNode = searchCommand.getFilters().get("tags");
-            JsonNode lyricsFilterNode = searchCommand.getFilters().get("lyrics");
-            JsonNode genreFilterNode = searchCommand.getFilters().get("genre");
-            JsonNode releaseYearFilterNode = searchCommand.getFilters().get("releaseYear");
-            JsonNode artistFilterNode = searchCommand.getFilters().get("artist");
+            JsonNode name = searchCommand.getFilters().get("name");
+            JsonNode album = searchCommand.getFilters().get("album");
+            JsonNode tags = searchCommand.getFilters().get("tags");
+            JsonNode lyrics = searchCommand.getFilters().get("lyrics");
+            JsonNode genre = searchCommand.getFilters().get("genre");
+            JsonNode release = searchCommand.getFilters().get("releaseYear");
+            JsonNode artist = searchCommand.getFilters().get("artist");
             int count = 1;
             for (SongInput song : library.getSongs()) {
                 boolean match = true;
 
-                if (nameFilterNode != null) {
-                    String nameFilter = nameFilterNode.asText().toLowerCase();
+                if (name != null) {
+                    String nameFilter = name.asText().toLowerCase();
                     String songName = song.getName().toLowerCase();
                     if (!songName.startsWith(nameFilter)) {
                         match = false;
                     }
                 }
 
-                if (albumFilterNode != null && !song.getAlbum().equals(albumFilterNode.asText())) {
+                if (album != null && !song.getAlbum().equals(album.asText())) {
                     match = false;
                 }
 
-                if (tagsFilterNode != null) {
+                if (tags != null) {
                     boolean tagsMatch = false;
-                    for (JsonNode tag : tagsFilterNode) {
+                    for (JsonNode tag : tags) {
                         if (song.getTags().contains(tag.asText())) {
                             tagsMatch = true;
                         } else {
@@ -93,20 +78,21 @@ public class SearchCommand extends Command{
                     }
                 }
 
-                if (lyricsFilterNode != null && !song.getLyrics().contains(lyricsFilterNode.asText())) {
+                if (lyrics != null && !song.getLyrics().contains(lyrics.asText())) {
                     match = false;
                 }
 
-                if (genreFilterNode != null && !song.getGenre().equalsIgnoreCase(genreFilterNode.asText())) {
+                if (genre != null && !song.getGenre().equalsIgnoreCase(genre.asText())) {
                     match = false;
                 }
 
-                if (releaseYearFilterNode != null) {
+                if (release != null) {
                     int releaseYear = song.getReleaseYear();
-                    char first = releaseYearFilterNode.asText().charAt(0);
-                    String numericPart = releaseYearFilterNode.asText().replaceAll("[^\\d]", "");
+                    char first = release.asText().charAt(0);
+                    String num;
+                    num = release.asText().replaceAll("[^\\d]", "");
 
-                    int year = Integer.parseInt(numericPart);
+                    int year = Integer.parseInt(num);
                     if ((first == '>') && (releaseYear <= year)) {
                         match = false;
                     } else if ((first == '<') && (releaseYear >= year)) {
@@ -114,7 +100,7 @@ public class SearchCommand extends Command{
                     }
                 }
 
-                if (artistFilterNode != null && !song.getArtist().equals(artistFilterNode.asText())) {
+                if (artist != null && !song.getArtist().equals(artist.asText())) {
                     match = false;
                 }
 
@@ -129,9 +115,11 @@ public class SearchCommand extends Command{
             JsonNode ownerFilterNode = searchCommand.getFilters().get("owner");
             int count = 1;
             for (PodcastInput podcast : library.getPodcasts()) {
-                boolean match = nameFilterNode == null || podcast.getName().contains(nameFilterNode.asText());
+                boolean match = nameFilterNode == null
+                        || podcast.getName().contains(nameFilterNode.asText());
 
-                if (ownerFilterNode != null && !podcast.getOwner().equals(ownerFilterNode.asText())) {
+                if (ownerFilterNode != null
+                        && !podcast.getOwner().equals(ownerFilterNode.asText())) {
                     match = false;
                 }
 
@@ -140,7 +128,7 @@ public class SearchCommand extends Command{
                     count++;
                 }
             }
-        } else if ("playlist".equals(type)){
+        } else if ("playlist".equals(type)) {
             JsonNode ownerFilterNode = searchCommand.getFilters().get("owner");
             if (ownerFilterNode != null) {
                 for (Playlist playlist : playlists) {
@@ -154,14 +142,21 @@ public class SearchCommand extends Command{
 
         return searchResults;
     }
-    public static ObjectNode createSearchOutput(SearchCommand searchCommand, List<String> searchResults) {
-        ObjectNode searchOutput = JsonNodeFactory.instance.objectNode();
-        searchOutput.put("command", "search");
-        searchOutput.put("user", searchCommand.getUsername());
-        searchOutput.put("timestamp", searchCommand.getTimestamp());
-        searchOutput.put("message", "Search returned " + searchResults.size() + " results");
-        ArrayNode resultsArray = searchOutput.putArray("results");
+
+    /**
+     *
+     * @param searchCommand is the command
+     * @param searchResults is the list of resulted songs
+     */
+    public static ObjectNode createSearchOutput(final SearchCommand searchCommand,
+                                                final List<String> searchResults) {
+        ObjectNode out = JsonNodeFactory.instance.objectNode();
+        out.put("command", "search");
+        out.put("user", searchCommand.getUsername());
+        out.put("timestamp", searchCommand.getTimestamp());
+        out.put("message", "Search returned " + searchResults.size() + " results");
+        ArrayNode resultsArray = out.putArray("results");
         searchResults.forEach(resultsArray::add);
-        return searchOutput;
+        return out;
     }
 }

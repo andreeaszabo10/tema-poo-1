@@ -3,21 +3,21 @@ package main;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-public class StatusCommand extends Command{
-    public String username;
+public class StatusCommand extends Command {
     public StatusCommand() {
     }
 
-    public StatusCommand(int timestamp, String username) {
-        super(timestamp);
-        setCommand("status");
-        setUsername(username);
-    }
-    public static ObjectNode createStatusOutput(StatusCommand statusCommand, PlayerStatus player) {
+
+    /**
+     *
+     * @param status is the command
+     * @param player is the current state of the player
+     */
+    public static ObjectNode createStatus(final StatusCommand status, final PlayerStatus player) {
         ObjectNode statusOutput = JsonNodeFactory.instance.objectNode();
         statusOutput.put("command", "status");
-        statusOutput.put("user", statusCommand.getUsername());
-        statusOutput.put("timestamp", statusCommand.getTimestamp());
+        statusOutput.put("user", status.getUsername());
+        statusOutput.put("timestamp", status.getTimestamp());
 
         statusOutput.putObject("stats")
                 .put("name", player.getCurrentTrack())
