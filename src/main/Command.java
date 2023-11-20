@@ -18,14 +18,26 @@ public class Command {
     public Command() {
     }
 
+    /**
+     * Sets the timestamp of the command.
+     * @param timestamp is the time of the execution of the command
+     */
     public Command(final int timestamp) {
         this.timestamp = timestamp;
     }
 
+    /**
+     * Sets the username of the command.
+     * @param username is the user that wants to execute the command
+     */
     public void setUsername(final String username) {
         this.username = username;
     }
 
+    /**
+     * Sets the name of the command.
+     * @param command is the name of the command
+     */
     public void setCommand(final String command) {
         this.command = command;
     }

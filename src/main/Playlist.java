@@ -50,6 +50,7 @@ public class Playlist {
         Playlist newPlaylist = new Playlist();
         newPlaylist.setPlaylistName(createPlaylist.getPlaylistName());
         newPlaylist.setUsername(createPlaylist.getUsername());
+        newPlaylist.setOwner(createPlaylist.getUsername());
         return newPlaylist;
     }
 }

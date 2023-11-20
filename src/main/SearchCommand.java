@@ -78,7 +78,7 @@ public class SearchCommand extends Command {
                     }
                 }
 
-                if (lyrics != null && !song.getLyrics().contains(lyrics.asText())) {
+                if (lyrics != null && !song.getLyrics().toLowerCase().contains(lyrics.asText().toLowerCase())) {
                     match = false;
                 }
 
@@ -130,9 +130,17 @@ public class SearchCommand extends Command {
             }
         } else if ("playlist".equals(type)) {
             JsonNode ownerFilterNode = searchCommand.getFilters().get("owner");
+            JsonNode nameFilterNode = searchCommand.getFilters().get("name");
             if (ownerFilterNode != null) {
                 for (Playlist playlist : playlists) {
                     if (playlist.getOwner().equals(ownerFilterNode.asText())) {
+                        searchResults.add(playlist.getPlaylistName());
+                    }
+                }
+            }
+            if (nameFilterNode != null) {
+                for (Playlist playlist : playlists) {
+                    if (playlist.getPlaylistName().equals(nameFilterNode.asText())) {
                         searchResults.add(playlist.getPlaylistName());
                     }
                 }

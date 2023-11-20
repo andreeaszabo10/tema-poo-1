@@ -9,6 +9,24 @@ public class PlayerStatus {
     private String repeatMode;
     private boolean shuffleMode;
     private boolean paused;
+    @Getter
+    private String type;
+    @Getter
+    private int index;
+    @Getter
+    private Playlist playlist;
+
+    public final void setPlaylist(final Playlist playlist) {
+        this.playlist = playlist;
+    }
+
+    public final void setIndex(final int index) {
+        this.index = index;
+    }
+
+    public final void setType(final String type) {
+        this.type = type;
+    }
 
     public PlayerStatus() {
     }

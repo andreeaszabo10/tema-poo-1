@@ -38,12 +38,16 @@ public class LoadCommand extends Command {
      * @param loadCommand is the command
      * @param message is the message that should be printed
      */
-    public static ObjectNode createLoadOutput(final LoadCommand loadCommand, final String message) {
+    public static ObjectNode createLoadOutput(final LoadCommand loadCommand, final String message,
+                                              final boolean select) {
         ObjectNode loadOutput = JsonNodeFactory.instance.objectNode();
         loadOutput.put("command", "load");
         loadOutput.put("user", loadCommand.getUsername());
         loadOutput.put("timestamp", loadCommand.getTimestamp());
-        loadOutput.put("message", message);
+        if (select)
+            loadOutput.put("message", message);
+        else
+            loadOutput.put("message", "Please select a source before attempting to load.");
         return loadOutput;
     }
 }
