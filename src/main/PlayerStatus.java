@@ -6,7 +6,7 @@ import lombok.Getter;
 public class PlayerStatus {
     private String currentTrack;
     private int remainedTime;
-    private String repeatMode;
+    private int repeatMode;
     private boolean shuffleMode;
     private boolean paused;
     @Getter
@@ -39,7 +39,7 @@ public class PlayerStatus {
         this.remainedTime = remainedTime;
     }
 
-    public final void setRepeatMode(final String repeatMode) {
+    public final void setRepeatMode(final int repeatMode) {
         this.repeatMode = repeatMode;
     }
 
