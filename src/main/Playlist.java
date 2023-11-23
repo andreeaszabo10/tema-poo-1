@@ -9,9 +9,15 @@ public class Playlist {
     private String playlistName;
     @Getter
     private String[] songs;
+    @Getter
+    private String[] songsNoShuffle;
 
     public Playlist() {
         this.songs = new String[0];
+    }
+
+    public final void setSongsNoShuffle(final String[] songsNoShuffle) {
+        this.songsNoShuffle = songsNoShuffle;
     }
 
     public final void setPlaylistName(final String playlistName) {

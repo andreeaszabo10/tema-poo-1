@@ -80,7 +80,7 @@ public final class Main {
         List<String> searchResults = new ArrayList<>();
         String selectedTrack = null;
         PlayerStatus playerStatus = new PlayerStatus();
-        int lasttime = 0;
+        int lastTime = 0;
         List<Playlist> playlists = new ArrayList<>();
         boolean ok = false;
         List<String> liked = new ArrayList<>();
@@ -90,7 +90,9 @@ public final class Main {
         List<PodcastInput> loadedPodcasts = new ArrayList<>();
         boolean noSelect = false;
         int repeat = 0;
-        int seed = 0;
+        int seed;
+        String[] songsNoShuffle = null;
+        String[] songsShuffled = null;
 
 
         for (Command command : commands) {
@@ -99,7 +101,7 @@ public final class Main {
                 searchResults = SearchCommand.performSearch(library, searchCommand, playlists);
                 if (!playerStatus.isPaused() && playerStatus.getType() != null) {
                     playerStatus.setRemainedTime(playerStatus.getRemainedTime()
-                            - searchCommand.getTimestamp() + lasttime);
+                            - searchCommand.getTimestamp() + lastTime);
                     if (playerStatus.getType().equals("podcast")) {
                         back.setRemainedTime(playerStatus.getRemainedTime());
                     }
@@ -114,7 +116,7 @@ public final class Main {
             if (command instanceof LoadCommand loadCommand) {
                 String message = LoadCommand.performLoad(selectedTrack);
                 if (noSelect) {
-                    lasttime = loadCommand.getTimestamp();
+                    lastTime = loadCommand.getTimestamp();
                 }
                 SongInput song;
                 PodcastInput podcast;
@@ -146,7 +148,6 @@ public final class Main {
                             }
                         }
                         if (alreadyLoaded == 1) {
-                            //System.out.println(back.getRemainedTime());
                             playerStatus.setRemainedTime(back.getRemainedTime());
                             playerStatus.setCurrentTrack(first.getName());
                             playerStatus.setPaused(false);
@@ -170,10 +171,9 @@ public final class Main {
                     if (playlist != null) {
                         playerStatus.setType("playlist");
                         String[] songs = playlist.getSongs();
-                        //System.out.println(Arrays.toString(songs));
                         if (songs.length != 0) {
                             song = getSongDetails(library, songs[0]);
-                            //System.out.println(song.getName());
+                            assert song != null;
                             playerStatus.setRemainedTime(song.getDuration());
                             playerStatus.setCurrentTrack(song.getName());
                             playerStatus.setPaused(false);
@@ -187,8 +187,9 @@ public final class Main {
                 noSelect = false;
             }
             if (command instanceof StatusCommand statusCommand) {
+                assert playerStatus.getType() != null;
                 if (playerStatus.getType().equals("podcast")) {
-                    if (playerStatus.getRemainedTime() - statusCommand.getTimestamp() + lasttime < 0) {
+                    if (playerStatus.getRemainedTime() - statusCommand.getTimestamp() + lastTime < 0) {
                         PodcastInput podcast = getPodcastDetails(library, selectedTrack);
                         if (podcast != null) {
                             ArrayList<EpisodeInput> list = podcast.getEpisodes();
@@ -203,7 +204,7 @@ public final class Main {
                 }
                 if (!playerStatus.isPaused()) {
                     playerStatus.setRemainedTime(playerStatus.getRemainedTime()
-                            - statusCommand.getTimestamp() + lasttime);
+                            - statusCommand.getTimestamp() + lastTime);
                     if (playerStatus.getType().equals("podcast")) {
                         back.setRemainedTime(playerStatus.getRemainedTime());
                     }
@@ -213,42 +214,15 @@ public final class Main {
                     if (playerStatus.getRemainedTime() < 0) {
                         Playlist playlist = getPlaylistDetails(playlists, selectedTrack);
                         if (playlist != null) {
-                            String[] songsBefore = playlist.getSongs();
-                            String[] songs = new String[songsBefore.length];
-                            if (playerStatus.isShuffleMode()) {
-                                List<Integer> idx = new java.util.ArrayList<>(songsBefore.length);
-                                List<Integer> shuffled = new java.util.ArrayList<>(songsBefore.length);
-                                for (int i = 0; i < songsBefore.length; i++) {
-                                    idx.add(i);
-                                    shuffled.add(i);
-                                }
-                                Collections.shuffle(shuffled, new Random(seed));
-                                System.out.println(idx + "\n" + shuffled);
-                                for (int i = 0; i < songsBefore.length; i++) {
-                                    for (int j = 0; j < songsBefore.length; j++) {
-                                        if (Objects.equals(idx.get(i), shuffled.get(j))) {
-                                            songs[j] = songsBefore[i];
-                                            //System.out.println(songs[i]);
-                                        }
-                                    }
-                                }
-                                for (int j = 0; j < songsBefore.length; j++) {
-                                    System.out.println(songs[j]);
-                                }
-                            } else {
-                                songs = songsBefore;
-                            }
-                            for (int j = 0; j < songsBefore.length; j++) {
-                                System.out.println(songs[j]);
-                            }
+                            String[] songs = playlist.getSongs();
                             if (playerStatus.getRepeatMode() == 0) {
-                                System.out.println(playerStatus.getRemainedTime());
                                 int var = 0;
                                 int flag = 0;
                                 SongInput[] alreadyPlayed = new SongInput[songs.length];
                                 int count = 0;
                                 for (String i : songs) {
                                     SongInput song = getSongDetails(library, i);
+                                    assert song != null;
                                     if (song.getName().equals(playerStatus.getCurrentTrack())) {
                                         flag = 1;
                                         var = 0;
@@ -266,12 +240,10 @@ public final class Main {
                                 }
                                 if (right != 0) {
                                     for (int i = 0; i < count; i++) {
-                                        System.out.println(alreadyPlayed[i].getDuration() + " " + playerStatus.getRemainedTime());
                                         playerStatus.setRemainedTime(playerStatus.getRemainedTime()+alreadyPlayed[i].getDuration());
                                     }
                                     playerStatus.setRemainedTime(right - (-playerStatus.getRemainedTime()));
                                 }
-                                System.out.println(right + " " + playerStatus.getRemainedTime());
                             } else if (playerStatus.getRepeatMode() == 2) {
                                 SongInput song = getSongDetails(library, playerStatus.getCurrentTrack());
                                 if (song != null) {
@@ -285,6 +257,7 @@ public final class Main {
                                     for (String i : songs) {
                                         SongInput song = getSongDetails(library, i);
                                         if (var != 0) {
+                                            assert song != null;
                                             if (song.getDuration() + playerStatus.getRemainedTime() > 0) {
                                                 right = song.getDuration();
                                                 playerStatus.setCurrentTrack(song.getName());
@@ -304,21 +277,23 @@ public final class Main {
                     if (playerStatus.getRemainedTime() < 0) {
                         SongInput song = getSongDetails(library, playerStatus.getCurrentTrack());
                         if (playerStatus.getRepeatMode() == 1) {
+                            assert song != null;
                             playerStatus.setRemainedTime(playerStatus.getRemainedTime() + song.getDuration());
                             playerStatus.setRepeatMode(0);
                             repeat = 0;
                         }
                         if (playerStatus.getRepeatMode() == 2) {
                             while (playerStatus.getRemainedTime() <= 0) {
+                                assert song != null;
                                 playerStatus.setRemainedTime(playerStatus.getRemainedTime() + song.getDuration());
                             }
                         }
                     }
                 }
-                lasttime = statusCommand.getTimestamp();
+                lastTime = statusCommand.getTimestamp();
                 if (playerStatus.getType().equals("podcast")
                         || playerStatus.getRemainedTime() < 0) {
-                    if (statusCommand.getTimestamp() > lasttime + playerStatus.getRemainedTime()) {
+                    if (statusCommand.getTimestamp() > lastTime + playerStatus.getRemainedTime()) {
                         playerStatus.setRemainedTime(0);
                         playerStatus.setCurrentTrack("");
                         playerStatus.setPaused(true);
@@ -338,12 +313,12 @@ public final class Main {
             if (command instanceof PlayPauseCommand playPauseCommand) {
                 if (playerStatus.isPaused()) {
                     playPauseCommand.setPaused(0);
-                    lasttime = playPauseCommand.getTimestamp();
+                    lastTime = playPauseCommand.getTimestamp();
                     playerStatus.setPaused(false);
                 } else {
                     playPauseCommand.setPaused(1);
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - playPauseCommand.getTimestamp() + lasttime);
-                    lasttime = playPauseCommand.getTimestamp();
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - playPauseCommand.getTimestamp() + lastTime);
+                    lastTime = playPauseCommand.getTimestamp();
                     playerStatus.setPaused(true);
                 }
                 PlayPauseCommand.performPlayPause(playPauseCommand);
@@ -399,9 +374,10 @@ public final class Main {
             if (command instanceof RepeatCommand repeatCommand) {
                 if (repeat == 2 && playerStatus.getType().equals("song")) {
                     SongInput song = getSongDetails(library, playerStatus.getCurrentTrack());
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - repeatCommand.getTimestamp() + lasttime);
-                    lasttime = repeatCommand.getTimestamp();
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - repeatCommand.getTimestamp() + lastTime);
+                    lastTime = repeatCommand.getTimestamp();
                     while (playerStatus.getRemainedTime() <= 0) {
+                        assert song != null;
                         playerStatus.setRemainedTime(playerStatus.getRemainedTime() + song.getDuration());
                     }
                 }
@@ -422,10 +398,158 @@ public final class Main {
             }
             if (command instanceof ShuffleCommand shuffleCommand) {
                 seed = shuffleCommand.getSeed();
+                String lastSong = null;
+                if (songsShuffled != null && songsShuffled.length != 0) {
+                    lastSong = songsShuffled[songsShuffled.length - 1];
+                }
                 if (loaded && playerStatus.getType().equals("playlist")) {
                     playerStatus.setShuffleMode(!playerStatus.isShuffleMode());
                 }
+                if (lastSong != null && lastSong.equals(playerStatus.getCurrentTrack())
+                        && (playerStatus.getRemainedTime() - shuffleCommand.getTimestamp() + lastTime) < 0) {
+                    playerStatus.setShuffleMode(!playerStatus.isShuffleMode());
+                    loaded = false;
+                    playerStatus.setRemainedTime(0);
+                    playerStatus.setCurrentTrack("");
+                    playerStatus.setPaused(true);
+                    playerStatus.setRepeatMode(0);
+                    playerStatus.setShuffleMode(false);
+                }
+                assert playerStatus.getType() != null;
+                if (playerStatus.getType().equals("playlist") && playerStatus.isShuffleMode()) {
+                    Playlist playlist = getPlaylistDetails(playlists, selectedTrack);
+                    if (playlist != null) {
+                        songsNoShuffle = playlist.getSongs();
+                    }
+                }
+                if (playerStatus.getType().equals("playlist")) {
+                    Playlist playlist = getPlaylistDetails(playlists, selectedTrack);
+                    if (playlist != null) {
+                        String[] songsBefore = playlist.getSongs();
+                        String[] songs = new String[songsBefore.length];
+                        if (playerStatus.isShuffleMode()) {
+                            List<Integer> idx = new java.util.ArrayList<>(songsBefore.length);
+                            List<Integer> shuffled = new java.util.ArrayList<>(songsBefore.length);
+                            for (int i = 0; i < songsBefore.length; i++) {
+                                idx.add(i);
+                                shuffled.add(i);
+                            }
+                            Collections.shuffle(shuffled, new Random(seed));
+                            for (int i = 0; i < songsBefore.length; i++) {
+                                for (int j = 0; j < songsBefore.length; j++) {
+                                    if (Objects.equals(idx.get(i), shuffled.get(j))) {
+                                        songs[j] = songsBefore[i];
+                                    }
+                                }
+                            }
+                            songsShuffled = songs;
+                        } else {
+                            songs = songsNoShuffle;
+                            songsShuffled = null;
+                        }
+                        playlist.setSongs(songs);
+                    }
+                }
                 outputs.add(ShuffleCommand.createShuffleOutput(shuffleCommand, playerStatus, loaded));
+            }
+            if (command instanceof NextCommand nextCommand) {
+                assert playerStatus.getType() != null;
+                if (playerStatus.getType().equals("playlist")) {
+                    Playlist playlist = getPlaylistDetails(playlists, selectedTrack);
+                    if (playlist != null) {
+                        String[] songs = playlist.getSongs();
+                        int flag = 0;
+                        for (String song : songs) {
+                            SongInput currentSong = getSongDetails(library, song);
+                            if (flag == 1) {
+                                assert currentSong != null;
+                                playerStatus.setRemainedTime(currentSong.getDuration());
+                                playerStatus.setCurrentTrack(currentSong.getName());
+                                lastTime = nextCommand.getTimestamp();
+                                break;
+                            }
+                            if (song.equals(playerStatus.getCurrentTrack())) {
+                                flag = 1;
+                            }
+                        }
+                    }
+                }
+                if (playerStatus.getType().equals("podcast")) {
+                    PodcastInput podcast = getPodcastDetails(library, selectedTrack);
+                    if (podcast != null) {
+                        ArrayList<EpisodeInput> episodes = podcast.getEpisodes();
+                        int flag = 0;
+                        for (EpisodeInput episode : episodes) {
+                            if (flag == 1) {
+                                assert episode != null;
+                                playerStatus.setRemainedTime(episode.getDuration());
+                                playerStatus.setCurrentTrack(episode.getName());
+                                lastTime = nextCommand.getTimestamp();
+                                break;
+                            }
+                            if (episode.getName().equals(playerStatus.getCurrentTrack())) {
+                                flag = 1;
+                            }
+                        }
+                    }
+                }
+                outputs.add(NextCommand.createNextOutput(nextCommand, playerStatus, loaded));
+            }
+            if (command instanceof PrevCommand prevCommand) {
+                assert playerStatus.getType() != null;
+                if (playerStatus.getType().equals("playlist")) {
+                    Playlist playlist = getPlaylistDetails(playlists, selectedTrack);
+                    if (playlist != null) {
+                        String[] songs = playlist.getSongs();
+                        int flag = 0;
+                        for (int i = 0; i < songs.length; i++) {
+                            String song = songs[i];
+                            SongInput currentSong = getSongDetails(library, song);
+                            if (song.equals(playerStatus.getCurrentTrack())) {
+                                flag = 1;
+                            }
+                            if (flag == 1 && i != 0) {
+                                assert currentSong != null;
+                                if (playerStatus.getRemainedTime() != currentSong.getDuration()) {
+                                    playerStatus.setRemainedTime(currentSong.getDuration());
+                                    playerStatus.setCurrentTrack(currentSong.getName());
+                                    lastTime = prevCommand.getTimestamp();
+                                    break;
+                                } else {
+                                    song = songs[i - 1];
+                                    SongInput prevSong = getSongDetails(library, song);
+                                    assert prevSong != null;
+                                    playerStatus.setRemainedTime(prevSong.getDuration());
+                                    playerStatus.setCurrentTrack(prevSong.getName());
+                                    lastTime = prevCommand.getTimestamp();
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                outputs.add(PrevCommand.createPrevOutput(prevCommand, playerStatus, loaded));
+            }
+            if (command instanceof ForwardCommand forwardCommand) {
+                assert playerStatus.getType() != null;
+                if (playerStatus.getType().equals("podcast")) {
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - 90);
+                }
+                if (!loaded) {
+                    playerStatus.setRemainedTime(0);
+                    playerStatus.setCurrentTrack("");
+                    playerStatus.setPaused(true);
+                    playerStatus.setRepeatMode(0);
+                    playerStatus.setShuffleMode(false);
+                }
+                outputs.add(ForwardCommand.createForwardOutput(forwardCommand, playerStatus, loaded));
+            }
+            if (command instanceof BackwardCommand backwardCommand) {
+                assert playerStatus.getType() != null;
+                if (playerStatus.getType().equals("podcast")) {
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() + 90);
+                }
+                outputs.add(BackwardCommand.createBackwardOutput(backwardCommand, playerStatus, loaded));
             }
         }
 
@@ -459,9 +583,18 @@ public final class Main {
         return null;
     }
 
+    private static EpisodeInput getEpisodeDetails(final ArrayList<EpisodeInput> episodes, final String name) {
+        for (EpisodeInput episodeInput : episodes) {
+            if (episodeInput.getName().equals(name)) {
+                return episodeInput;
+            }
+        }
+        return null;
+    }
+
     /**
      * @param filePathInput for input file
-     *
+     * reading of the commands
      * @throws IOException in case of exceptions to reading / writing
      */
     private static List<Command> readCommandsFromFile(final String filePathInput)
@@ -538,6 +671,26 @@ public final class Main {
                 shuffleCommand.setUsername(command.getUsername());
                 shuffleCommand.setSeed(command.getSeed());
                 commands.add(shuffleCommand);
+            } else if ("next".equals(command.getCommand())) {
+                NextCommand nextCommand = new NextCommand();
+                nextCommand.setTimestamp(command.getTimestamp());
+                nextCommand.setUsername(command.getUsername());
+                commands.add(nextCommand);
+            } else if ("prev".equals(command.getCommand())) {
+                PrevCommand prevCommand = new PrevCommand();
+                prevCommand.setTimestamp(command.getTimestamp());
+                prevCommand.setUsername(command.getUsername());
+                commands.add(prevCommand);
+            } else if ("forward".equals(command.getCommand())) {
+                ForwardCommand forwardCommand = new ForwardCommand();
+                forwardCommand.setTimestamp(command.getTimestamp());
+                forwardCommand.setUsername(command.getUsername());
+                commands.add(forwardCommand);
+            } else if ("backward".equals(command.getCommand())) {
+                BackwardCommand backwardCommand = new BackwardCommand();
+                backwardCommand.setTimestamp(command.getTimestamp());
+                backwardCommand.setUsername(command.getUsername());
+                commands.add(backwardCommand);
             }
         }
         return commands;

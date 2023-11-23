@@ -133,13 +133,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 700,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My playlist" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 710,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My playlist."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -150,21 +150,26 @@
   "user" : "bob35",
   "timestamp" : 800,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 178,
+    "name" : "Nothing Else Matters",
+    "remainedTime" : 329,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
 }, {
+  "command" : "shuffle",
+  "user" : "bob35",
+  "timestamp" : 850,
+  "message" : "Shuffle function activated successfully."
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 900,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 78,
+    "name" : "Nothing Else Matters",
+    "remainedTime" : 229,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -172,44 +177,49 @@
   "user" : "bob35",
   "timestamp" : 1250,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Hustle Hard",
+    "remainedTime" : 111,
     "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
+    "shuffle" : true,
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 1600,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "I Don't Wanna Live Forever",
+    "remainedTime" : 231,
     "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
+    "shuffle" : true,
+    "paused" : false
   }
+}, {
+  "command" : "shuffle",
+  "user" : "bob35",
+  "timestamp" : 1610,
+  "message" : "Shuffle function deactivated successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 1660,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "I Don't Wanna Live Forever",
+    "remainedTime" : 171,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 2000,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Hustle Hard",
+    "remainedTime" : 63,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
@@ -226,49 +236,54 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 2351,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My playlist" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 2352,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My playlist."
 }, {
   "command" : "load",
   "user" : "bob35",
   "timestamp" : 2353,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "shuffle",
+  "user" : "bob35",
+  "timestamp" : 2360,
+  "message" : "Shuffle function activated successfully."
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 2410,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Nothing Else Matters",
+    "remainedTime" : 332,
     "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
+    "shuffle" : true,
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 2750,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Elevate",
+    "remainedTime" : 217,
     "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
+    "shuffle" : true,
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3100,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Begin Again",
+    "remainedTime" : 105,
     "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
+    "shuffle" : true,
+    "paused" : false
   }
 } ]

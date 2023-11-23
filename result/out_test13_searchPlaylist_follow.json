@@ -137,13 +137,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1000,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My first playlist" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1010,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My first playlist."
 }, {
   "command" : "showPlaylists",
   "user" : "bob35",
@@ -188,24 +188,24 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 1200,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The best" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1210,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected The best."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 1300,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "The best" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1310,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected The best."
 }, {
   "command" : "showPlaylists",
   "user" : "carol19",

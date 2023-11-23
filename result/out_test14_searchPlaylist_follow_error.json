@@ -81,7 +81,7 @@
   "user" : "carol19",
   "timestamp" : 870,
   "message" : "Search returned 5 results",
-  "results" : [ "Shape of You", "Don't", "Money Trees", "Dream On", "The Unforgiven" ]
+  "results" : [ "Shape of You", "Don't", "Stairway to Heaven", "Money Trees", "Under Pressure" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -123,13 +123,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1400,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My second playlist" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1410,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My second playlist."
 }, {
   "command" : "showPlaylists",
   "user" : "bob35",
@@ -174,35 +174,35 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 1680,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My second playlist" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1710,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My second playlist."
 }, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 1800,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My second playlist" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1810,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My second playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 1865,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My second playlist" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1870,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My second playlist."
 }, {
   "command" : "showPlaylists",
   "user" : "bob35",

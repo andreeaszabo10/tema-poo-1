@@ -204,13 +204,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 2460,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My first playlist" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2490,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My first playlist."
 }, {
   "command" : "search",
   "user" : "bob35",

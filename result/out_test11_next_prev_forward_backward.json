@@ -102,13 +102,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 500,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 510,
-  "message" : "Successfully selected 2."
+  "message" : "Successfully selected My favourite songs."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -119,41 +119,61 @@
   "user" : "bob35",
   "timestamp" : 655,
   "stats" : {
-    "name" : "Under Pressure",
-    "remainedTime" : 205,
+    "name" : "Start Me Up",
+    "remainedTime" : 207,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "bob35",
+  "timestamp" : 670,
+  "message" : "Skipped to next track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 690,
   "stats" : {
-    "name" : "Under Pressure",
-    "remainedTime" : 170,
+    "name" : "Shape of You",
+    "remainedTime" : 213,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 710,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 711,
   "stats" : {
-    "name" : "Under Pressure",
-    "remainedTime" : 149,
+    "name" : "Shape of You",
+    "remainedTime" : 232,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
 }, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 712,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
+}, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 712,
+  "message" : "Returned to previous track successfully. The current track is Start Me Up."
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 713,
   "stats" : {
-    "name" : "Under Pressure",
-    "remainedTime" : 147,
+    "name" : "Start Me Up",
+    "remainedTime" : 211,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -186,12 +206,17 @@
     "paused" : false
   }
 }, {
+  "command" : "forward",
+  "user" : "bob35",
+  "timestamp" : 1050,
+  "message" : "Skipped forward successfully."
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 1051,
   "stats" : {
     "name" : "Airbnb: Joe Gebbia",
-    "remainedTime" : 2815,
+    "remainedTime" : 2725,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -218,18 +243,23 @@
   "timestamp" : 1389,
   "stats" : {
     "name" : "Airbnb: Joe Gebbia",
-    "remainedTime" : 2777,
+    "remainedTime" : 2389,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "backward",
+  "user" : "bob35",
+  "timestamp" : 1390,
+  "message" : "Rewound successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 1391,
   "stats" : {
     "name" : "Airbnb: Joe Gebbia",
-    "remainedTime" : 2775,
+    "remainedTime" : 2477,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
