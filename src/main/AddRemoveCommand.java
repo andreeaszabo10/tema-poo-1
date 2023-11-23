@@ -29,10 +29,10 @@ public class AddRemoveCommand extends Command {
         if (addRemoveCommand.getPlaylistId() > playlists.size()) {
             return -1;
         }
-        Playlist bun = playlists.get(addRemoveCommand.getPlaylistId() - 1);
+        Playlist playlist = Main.findPlaylist(playlists, addRemoveCommand.getUsername(), addRemoveCommand.getPlaylistId());
         int ok = 1;
-        if (bun.getSongs() != null) {
-            for (String song1 : bun.getSongs()) {
+        if (playlist.getSongs() != null) {
+            for (String song1 : playlist.getSongs()) {
 
                 if (song1.equals(song)) {
                     ok = 0;
@@ -51,10 +51,10 @@ public class AddRemoveCommand extends Command {
             return 2;
         }
         if (ok == 1) {
-            bun.addSong(song);
+            playlist.addSong(song);
             return 1;
         }
-        bun.removeSong(song);
+        playlist.removeSong(song);
         return 0;
     }
 

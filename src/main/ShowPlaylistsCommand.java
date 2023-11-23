@@ -27,8 +27,8 @@ public class ShowPlaylistsCommand extends Command {
                     songsArray.add(song);
                 }
                 playlistNode.putArray("songs").addAll(songsArray);
-                playlistNode.put("visibility", "public");
-                playlistNode.put("followers", 0);
+                playlistNode.put("visibility", playlist.getVisibility());
+                playlistNode.put("followers", playlist.getFollowersNumber());
 
                 resultArray.add(playlistNode);
             }

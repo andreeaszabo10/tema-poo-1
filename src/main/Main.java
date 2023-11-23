@@ -109,9 +109,11 @@ public final class Main {
                 outputs.add(SearchCommand.createSearchOutput(searchCommand, searchResults));
             }
             if (command instanceof SelectCommand selectCommand) {
-                selectedTrack = SelectCommand.performSelect(searchResults, selectCommand);
-                outputs.add(SelectCommand.createSelectOutput(selectCommand, selectedTrack));
-                noSelect = true;
+                if (searchResults != null){
+                    selectedTrack = SelectCommand.performSelect(searchResults, selectCommand);
+                    noSelect = true;
+                }
+                outputs.add(SelectCommand.createSelectOutput(selectCommand, selectedTrack, searchResults));
             }
             if (command instanceof LoadCommand loadCommand) {
                 String message = LoadCommand.performLoad(selectedTrack);
@@ -125,6 +127,7 @@ public final class Main {
                 ok = false;
                 loaded = true;
                 if (selectedTrack != null && noSelect) {
+                    searchResults = null;
                     song = getSongDetails(library, selectedTrack);
                     podcast = getPodcastDetails(library, selectedTrack);
                     playlist = getPlaylistDetails(playlists, selectedTrack);
@@ -513,17 +516,15 @@ public final class Main {
                                 if (playerStatus.getRemainedTime() != currentSong.getDuration()) {
                                     playerStatus.setRemainedTime(currentSong.getDuration());
                                     playerStatus.setCurrentTrack(currentSong.getName());
-                                    lastTime = prevCommand.getTimestamp();
-                                    break;
                                 } else {
                                     song = songs[i - 1];
                                     SongInput prevSong = getSongDetails(library, song);
                                     assert prevSong != null;
                                     playerStatus.setRemainedTime(prevSong.getDuration());
                                     playerStatus.setCurrentTrack(prevSong.getName());
-                                    lastTime = prevCommand.getTimestamp();
-                                    break;
                                 }
+                                lastTime = prevCommand.getTimestamp();
+                                break;
                             }
                         }
                     }
@@ -551,11 +552,53 @@ public final class Main {
                 }
                 outputs.add(BackwardCommand.createBackwardOutput(backwardCommand, playerStatus, loaded));
             }
+            if (command instanceof SwitchVisibility switchVisibility) {
+                Playlist playlist = findPlaylist(playlists, switchVisibility.getUsername(), switchVisibility.getPlaylistId());
+                if (playlist.getVisibility().equals("public")) {
+                    playlist.setVisibility("private");
+                } else {
+                    playlist.setVisibility("public");
+                }
+                outputs.add(SwitchVisibility.createSwitchOutput(switchVisibility, playlist));
+            }
+            if (command instanceof FollowCommand followCommand) {
+                Playlist playlist = getPlaylistDetails(playlists, selectedTrack);
+                int flag = 0;
+                if (playlist != null) {
+                    if (playlist.getFollowers() != null) {
+                        for (String user : playlist.getFollowers()) {
+                            if (user.equals(followCommand.getUsername())) {
+                                flag = 1;
+                                break;
+                            }
+                        }
+                    }
+                    if (flag == 0) {
+                        playlist.addFollower(followCommand.getUsername());
+                    } else {
+                        playlist.removeFollower(followCommand.getUsername());
+                    }
+                }
+                outputs.add(FollowCommand.createFollowOutput(followCommand));
+            }
         }
-
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePathOutput), outputs);
 
+    }
+
+    public static Playlist findPlaylist(List<Playlist> playlists, String username, int playlistId) {
+        Playlist playlist = new Playlist();
+        int count = 0;
+        for (Playlist p : playlists) {
+            if (p.getOwner().equals(username)) {
+                count++;
+                if (count == playlistId) {
+                    playlist = p;
+                }
+            }
+        }
+        return playlist;
     }
 
     private static SongInput getSongDetails(final LibraryInput library, final String name) {
@@ -578,15 +621,6 @@ public final class Main {
         for (Playlist playlist : playlists) {
             if (playlist.getPlaylistName().equals(name)) {
                 return playlist;
-            }
-        }
-        return null;
-    }
-
-    private static EpisodeInput getEpisodeDetails(final ArrayList<EpisodeInput> episodes, final String name) {
-        for (EpisodeInput episodeInput : episodes) {
-            if (episodeInput.getName().equals(name)) {
-                return episodeInput;
             }
         }
         return null;
@@ -691,6 +725,18 @@ public final class Main {
                 backwardCommand.setTimestamp(command.getTimestamp());
                 backwardCommand.setUsername(command.getUsername());
                 commands.add(backwardCommand);
+            } else if ("switchVisibility".equals(command.getCommand())) {
+                SwitchVisibility switchVisibility = new SwitchVisibility();
+                switchVisibility.setTimestamp(command.getTimestamp());
+                switchVisibility.setUsername(command.getUsername());
+                switchVisibility.setPlaylistId(command.getPlaylistId());
+                commands.add(switchVisibility);
+            } else if ("follow".equals(command.getCommand())) {
+                FollowCommand followCommand = new FollowCommand();
+                followCommand.setTimestamp(command.getTimestamp());
+                followCommand.setUsername(command.getUsername());
+                followCommand.setPlaylistId(command.getPlaylistId());
+                commands.add(followCommand);
             }
         }
         return commands;

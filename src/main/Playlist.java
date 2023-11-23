@@ -2,6 +2,9 @@ package main;
 
 import lombok.Getter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 public class Playlist {
     @Getter
@@ -11,9 +14,22 @@ public class Playlist {
     private String[] songs;
     @Getter
     private String[] songsNoShuffle;
+    @Getter
+    private String visibility = "public";
+    @Getter
+    private List<String> followers;
+
+    public void setVisibility(String visibility) {
+        this.visibility = visibility;
+    }
+
+    public void setFollowers(List<String> followers) {
+        this.followers = followers;
+    }
 
     public Playlist() {
         this.songs = new String[0];
+        this.followers = new ArrayList<>();
     }
 
     public final void setSongsNoShuffle(final String[] songsNoShuffle) {
@@ -51,6 +67,21 @@ public class Playlist {
             }
         }
         songs = newSongs;
+    }
+
+    public void addFollower(String follower) {
+        followers.add(follower);
+    }
+
+    public void removeFollower(String follower) {
+        followers.remove(follower);
+    }
+
+    public int getFollowersNumber() {
+        if (followers == null) {
+            return 0;
+        }
+        return followers.size();
     }
     public static Playlist performCreatePlaylist(final CreatePlaylistCommand createPlaylist) {
         Playlist newPlaylist = new Playlist();

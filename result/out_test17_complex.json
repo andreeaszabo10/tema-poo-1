@@ -1,4 +1,9 @@
 [ {
+  "command" : "switchVisibility",
+  "user" : "alice22",
+  "timestamp" : 100,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "createPlaylist",
   "user" : "alice22",
   "timestamp" : 100,
@@ -33,6 +38,11 @@
   "user" : "grace25",
   "timestamp" : 160,
   "message" : "Playlist created successfully."
+}, {
+  "command" : "switchVisibility",
+  "user" : "henry26",
+  "timestamp" : 170,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "createPlaylist",
   "user" : "henry26",
@@ -79,15 +89,30 @@
   "timestamp" : 250,
   "message" : "Playlist created successfully."
 }, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 260,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "createPlaylist",
   "user" : "grace25",
   "timestamp" : 260,
   "message" : "Playlist created successfully."
 }, {
+  "command" : "switchVisibility",
+  "user" : "henry26",
+  "timestamp" : 270,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "createPlaylist",
   "user" : "henry26",
   "timestamp" : 270,
   "message" : "Playlist created successfully."
+}, {
+  "command" : "switchVisibility",
+  "user" : "irene33",
+  "timestamp" : 280,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "createPlaylist",
   "user" : "irene33",
@@ -559,7 +584,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
   "timestamp" : 840,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -748,7 +773,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
   "timestamp" : 1065,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -769,7 +794,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
   "timestamp" : 1090,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -853,7 +878,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
   "timestamp" : 1190,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -874,7 +899,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
   "timestamp" : 1215,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -895,7 +920,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
   "timestamp" : 1240,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -958,7 +983,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
   "timestamp" : 1315,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -979,7 +1004,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
   "timestamp" : 1340,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1126,7 +1151,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
   "timestamp" : 1515,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1336,7 +1361,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
   "timestamp" : 1765,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1420,7 +1445,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
   "timestamp" : 1865,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1441,7 +1466,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
   "timestamp" : 1890,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1798,7 +1823,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 2315,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1840,7 +1865,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 2365,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1861,7 +1886,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 2390,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1882,7 +1907,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 2415,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1966,7 +1991,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 2515,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2029,7 +2054,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 2590,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2071,7 +2096,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 2640,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2176,7 +2201,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 2765,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2218,7 +2243,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 2815,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2239,7 +2264,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 2840,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2260,7 +2285,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 2865,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2302,7 +2327,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 2915,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2323,7 +2348,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 2940,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2365,7 +2390,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 2990,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2386,7 +2411,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 3015,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2428,7 +2453,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 3065,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2491,7 +2516,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 3140,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2533,7 +2558,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 3190,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2575,7 +2600,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 3240,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2596,7 +2621,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 3265,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2617,7 +2642,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
   "timestamp" : 3290,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2722,7 +2747,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
   "timestamp" : 3415,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2743,7 +2768,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
   "timestamp" : 3440,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2764,7 +2789,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
   "timestamp" : 3465,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2806,7 +2831,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
   "timestamp" : 3515,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2953,7 +2978,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
   "timestamp" : 3690,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2995,7 +3020,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
   "timestamp" : 3740,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -3016,7 +3041,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
   "timestamp" : 3765,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -3079,7 +3104,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
   "timestamp" : 3840,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3163,7 +3188,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
   "timestamp" : 3940,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3205,7 +3230,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
   "timestamp" : 3990,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3247,7 +3272,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
   "timestamp" : 4040,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3268,7 +3293,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
   "timestamp" : 4065,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3331,7 +3356,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
   "timestamp" : 4140,
-  "message" : "Successfully added to playlist."
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3352,7 +3377,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
   "timestamp" : 4165,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3457,7 +3482,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
   "timestamp" : 4290,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3478,7 +3503,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
   "timestamp" : 4315,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3562,7 +3587,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
   "timestamp" : 4415,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3583,7 +3608,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
   "timestamp" : 4440,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3688,7 +3713,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
   "timestamp" : 4565,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3709,7 +3734,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
   "timestamp" : 4590,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3751,7 +3776,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
   "timestamp" : 4640,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3772,7 +3797,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
   "timestamp" : 4665,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -4108,7 +4133,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
   "timestamp" : 5065,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -4129,7 +4154,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
   "timestamp" : 5090,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -4150,7 +4175,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
   "timestamp" : 5115,
-  "message" : "Successfully removed from playlist."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -4304,12 +4329,12 @@
   "timestamp" : 5300,
   "result" : [ {
     "name" : "Classic Harmonies Dream #1",
-    "songs" : [ "Angie", "Big Pimpin'", "Delicate", "Under Pressure", "Shape of You", "Money Trees", "Begin Again", "Don't", "Start Me Up", "Stairway to Heaven", "Black Dog", "The Man" ],
+    "songs" : [ "Stairway to Heaven", "Start Me Up", "Gimme Shelter" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Classic Sounds Expedition #2",
-    "songs" : [ ],
+    "songs" : [ "Angie", "Shape of You", "Sad But True", "Love Story", "Bohemian Rhapsody", "The Man", "Money Trees", "Thinking Out Loud" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4319,12 +4344,12 @@
   "timestamp" : 5310,
   "result" : [ {
     "name" : "Breezy Rhythms Trek #1",
-    "songs" : [ "Big Pimpin'", "Maps", "Stairway to Heaven", "Bohemian Rhapsody", "Love Story", "Gimme Shelter", "The Man", "Don't", "Thinking Out Loud", "Black Dog", "Shape of You", "Money Trees", "Delicate", "Begin Again", "Sad But True" ],
+    "songs" : [ "Stairway to Heaven", "Angie", "Whatever You Need", "Gimme Shelter", "Money Trees", "Sad But True" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Electric Harmonies Odyssey #2",
-    "songs" : [ ],
+    "songs" : [ "Dream On", "Big Pimpin'", "Sad But True", "Shape of You", "Don't" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4334,12 +4359,12 @@
   "timestamp" : 5320,
   "result" : [ {
     "name" : "Groovy Grooves Dream #1",
-    "songs" : [ ],
+    "songs" : [ "Maps", "Under Pressure", "Stairway to Heaven", "Start Me Up", "Shape of You" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Groovy Grooves Expedition #2",
-    "songs" : [ ],
+    "songs" : [ "Love Story", "Don't", "Money Trees", "Maps" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4349,12 +4374,12 @@
   "timestamp" : 5330,
   "result" : [ {
     "name" : "Breezy Bangers Quest #1",
-    "songs" : [ ],
+    "songs" : [ "Blank Space", "Big Pimpin'", "Begin Again", "Paint It Black", "Love Story" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Stellar Tunes Quest #2",
-    "songs" : [ ],
+    "songs" : [ "Start Me Up", "Dream On", "Angie", "Gimme Shelter", "Begin Again", "Black Dog", "Stairway to Heaven" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4364,12 +4389,12 @@
   "timestamp" : 5340,
   "result" : [ {
     "name" : "Chill Sounds Journey #1",
-    "songs" : [ ],
+    "songs" : [ "Start Me Up", "Shape of You", "Black Dog", "Begin Again", "Don't", "Delicate", "Happier" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Chill Sounds Adventure #2",
-    "songs" : [ ],
+    "songs" : [ "Start Me Up", "Bohemian Rhapsody", "Blank Space" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4379,12 +4404,12 @@
   "timestamp" : 5350,
   "result" : [ {
     "name" : "Chill Melodies Voyage #1",
-    "songs" : [ ],
+    "songs" : [ "Start Me Up", "Whatever You Need", "Dream On", "Begin Again", "Black Dog", "Shape of You", "Delicate" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Classic Grooves Trek #2",
-    "songs" : [ ],
+    "songs" : [ "Gimme Shelter", "Bohemian Rhapsody", "Love Story", "Black Dog", "Thinking Out Loud" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4394,12 +4419,12 @@
   "timestamp" : 5360,
   "result" : [ {
     "name" : "Groovy Vibes Odyssey #1",
-    "songs" : [ ],
+    "songs" : [ "Delicate", "Under Pressure", "Money Trees", "Love Story", "The Man", "Shape of You" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Dynamic Tracks Adventure #2",
-    "songs" : [ ],
+    "songs" : [ "Begin Again", "Gimme Shelter", "Start Me Up" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4409,12 +4434,12 @@
   "timestamp" : 5370,
   "result" : [ {
     "name" : "Dynamic Grooves Expedition #1",
-    "songs" : [ ],
+    "songs" : [ "Dream On", "Stairway to Heaven", "Begin Again", "Under Pressure", "Thinking Out Loud", "Maps" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Breezy Tunes Odyssey #2",
-    "songs" : [ ],
+    "songs" : [ "Dream On" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4424,12 +4449,12 @@
   "timestamp" : 5380,
   "result" : [ {
     "name" : "Chill Sounds Voyage #1",
-    "songs" : [ ],
+    "songs" : [ "The Man", "Blank Space", "Shape of You", "Sad But True", "Don't", "Money Trees", "Happier", "Paint It Black", "Begin Again" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Electric Melodies Escape #2",
-    "songs" : [ ],
+    "songs" : [ "Dream On", "Don't", "Thinking Out Loud", "Black Dog" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4439,12 +4464,12 @@
   "timestamp" : 5390,
   "result" : [ {
     "name" : "Vibey Bangers Safari #1",
-    "songs" : [ ],
+    "songs" : [ "Don't", "Start Me Up", "Stairway to Heaven", "Thinking Out Loud", "Black Dog", "The Man" ],
     "visibility" : "public",
     "followers" : 0
   }, {
     "name" : "Groovy Rhythms Dream #2",
-    "songs" : [ ],
+    "songs" : [ "Shape of You", "Money Trees", "Delicate", "Start Me Up", "Blank Space", "Begin Again", "Sad But True" ],
     "visibility" : "public",
     "followers" : 0
   } ]
@@ -4618,8 +4643,8 @@
   "user" : "alice22",
   "timestamp" : 5500,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 212,
+    "name" : "Shape of You",
+    "remainedTime" : 225,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : false
@@ -4634,550 +4659,580 @@
   "user" : "bob35",
   "timestamp" : 5510,
   "stats" : {
-    "name" : "Big Pimpin'",
+    "name" : "Shape of You",
+    "remainedTime" : 215,
+    "repeat" : "Repeat All",
+    "shuffle" : true,
+    "paused" : false
+  }
+}, {
+  "command" : "playPause",
+  "user" : "carol19",
+  "timestamp" : 5520,
+  "message" : "Playback paused successfully."
+}, {
+  "command" : "status",
+  "user" : "carol19",
+  "timestamp" : 5520,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 205,
+    "repeat" : "Repeat All",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "david27",
+  "timestamp" : 5530,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 205,
+    "repeat" : "Repeat All",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "david27",
+  "timestamp" : 5530,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 205,
+    "repeat" : "Repeat All",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "emily30",
+  "timestamp" : 5540,
+  "message" : "Visibility status updated successfully to private."
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 5540,
+  "message" : "Repeat mode changed to repeat current song."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 5540,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 205,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "frank21",
+  "timestamp" : 5550,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 205,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "frank21",
+  "timestamp" : 5550,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 205,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "like",
+  "user" : "grace25",
+  "timestamp" : 5560,
+  "message" : "Like registered successfully."
+}, {
+  "command" : "status",
+  "user" : "grace25",
+  "timestamp" : 5560,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 205,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "next",
+  "user" : "henry26",
+  "timestamp" : 5570,
+  "message" : "Skipped to next track successfully. The current track is Begin Again."
+}, {
+  "command" : "status",
+  "user" : "henry26",
+  "timestamp" : 5570,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "irene33",
+  "timestamp" : 5580,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "irene33",
+  "timestamp" : 5580,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "jack29",
+  "timestamp" : 5590,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "jack29",
+  "timestamp" : 5590,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "next",
+  "user" : "alice22",
+  "timestamp" : 5600,
+  "message" : "Skipped to next track successfully. The current track is Sad But True."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 5600,
+  "stats" : {
+    "name" : "Sad But True",
+    "remainedTime" : 324,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 5610,
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
+}, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 5610,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 5610,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 233,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "like",
+  "user" : "carol19",
+  "timestamp" : 5620,
+  "message" : "Unlike registered successfully."
+}, {
+  "command" : "status",
+  "user" : "carol19",
+  "timestamp" : 5620,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 233,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "david27",
+  "timestamp" : 5630,
+  "message" : "Visibility status updated successfully to private."
+}, {
+  "command" : "prev",
+  "user" : "david27",
+  "timestamp" : 5630,
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
+}, {
+  "command" : "status",
+  "user" : "david27",
+  "timestamp" : 5630,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 5640,
+  "message" : "Skipped to next track successfully. The current track is Sad But True."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 5640,
+  "stats" : {
+    "name" : "Sad But True",
+    "remainedTime" : 324,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "repeat",
+  "user" : "frank21",
+  "timestamp" : 5650,
+  "message" : "Repeat mode changed to no repeat."
+}, {
+  "command" : "status",
+  "user" : "frank21",
+  "timestamp" : 5650,
+  "stats" : {
+    "name" : "Sad But True",
+    "remainedTime" : 324,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "prev",
+  "user" : "grace25",
+  "timestamp" : 5660,
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
+}, {
+  "command" : "status",
+  "user" : "grace25",
+  "timestamp" : 5660,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "repeat",
+  "user" : "henry26",
+  "timestamp" : 5670,
+  "message" : "Repeat mode changed to repeat all."
+}, {
+  "command" : "status",
+  "user" : "henry26",
+  "timestamp" : 5670,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat All",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "repeat",
+  "user" : "irene33",
+  "timestamp" : 5680,
+  "message" : "Repeat mode changed to repeat current song."
+}, {
+  "command" : "status",
+  "user" : "irene33",
+  "timestamp" : 5680,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "jack29",
+  "timestamp" : 5690,
+  "message" : "Visibility status updated successfully to private."
+}, {
+  "command" : "status",
+  "user" : "jack29",
+  "timestamp" : 5690,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "jack29",
+  "timestamp" : 5690,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "playPause",
+  "user" : "alice22",
+  "timestamp" : 5700,
+  "message" : "Playback resumed successfully."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 5700,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : false
+  }
+}, {
+  "command" : "playPause",
+  "user" : "bob35",
+  "timestamp" : 5710,
+  "message" : "Playback paused successfully."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 5710,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 228,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "carol19",
+  "timestamp" : 5720,
+  "message" : "Visibility status updated successfully to private."
+}, {
+  "command" : "prev",
+  "user" : "carol19",
+  "timestamp" : 5720,
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
+}, {
+  "command" : "status",
+  "user" : "carol19",
+  "timestamp" : 5720,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "david27",
+  "timestamp" : 5730,
+  "message" : "Visibility status updated successfully to private."
+}, {
+  "command" : "like",
+  "user" : "david27",
+  "timestamp" : 5730,
+  "message" : "Like registered successfully."
+}, {
+  "command" : "status",
+  "user" : "david27",
+  "timestamp" : 5730,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 5740,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 5740,
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 5740,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "repeat",
+  "user" : "frank21",
+  "timestamp" : 5750,
+  "message" : "Repeat mode changed to no repeat."
+}, {
+  "command" : "status",
+  "user" : "frank21",
+  "timestamp" : 5750,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 5760,
+  "message" : "Visibility status updated successfully to private."
+}, {
+  "command" : "status",
+  "user" : "grace25",
+  "timestamp" : 5760,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "grace25",
+  "timestamp" : 5760,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 238,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "next",
+  "user" : "henry26",
+  "timestamp" : 5770,
+  "message" : "Skipped to next track successfully. The current track is Sad But True."
+}, {
+  "command" : "status",
+  "user" : "henry26",
+  "timestamp" : 5770,
+  "stats" : {
+    "name" : "Sad But True",
+    "remainedTime" : 324,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "playPause",
+  "user" : "irene33",
+  "timestamp" : 5780,
+  "message" : "Playback resumed successfully."
+}, {
+  "command" : "status",
+  "user" : "irene33",
+  "timestamp" : 5780,
+  "stats" : {
+    "name" : "Sad But True",
+    "remainedTime" : 324,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : false
+  }
+}, {
+  "command" : "repeat",
+  "user" : "jack29",
+  "timestamp" : 5790,
+  "message" : "Repeat mode changed to repeat all."
+}, {
+  "command" : "status",
+  "user" : "jack29",
+  "timestamp" : 5790,
+  "stats" : {
+    "name" : "Sad But True",
+    "remainedTime" : 314,
+    "repeat" : "Repeat All",
+    "shuffle" : true,
+    "paused" : false
+  }
+}, {
+  "command" : "next",
+  "user" : "alice22",
+  "timestamp" : 5800,
+  "message" : "Skipped to next track successfully. The current track is Start Me Up."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 5800,
+  "stats" : {
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
+    "repeat" : "Repeat All",
+    "shuffle" : true,
+    "paused" : false
+  }
+}, {
+  "command" : "like",
+  "user" : "bob35",
+  "timestamp" : 5810,
+  "message" : "Unlike registered successfully."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 5810,
+  "stats" : {
+    "name" : "Start Me Up",
     "remainedTime" : 202,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
   }
 }, {
-  "command" : "playPause",
-  "user" : "carol19",
-  "timestamp" : 5520,
-  "message" : "Playback paused successfully."
-}, {
-  "command" : "status",
-  "user" : "carol19",
-  "timestamp" : 5520,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat All",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "david27",
-  "timestamp" : 5530,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat All",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "david27",
-  "timestamp" : 5530,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat All",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "repeat",
-  "user" : "emily30",
-  "timestamp" : 5540,
-  "message" : "Repeat mode changed to repeat current song."
-}, {
-  "command" : "status",
-  "user" : "emily30",
-  "timestamp" : 5540,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "frank21",
-  "timestamp" : 5550,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "frank21",
-  "timestamp" : 5550,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "like",
-  "user" : "grace25",
-  "timestamp" : 5560,
-  "message" : "Like registered successfully."
-}, {
-  "command" : "status",
-  "user" : "grace25",
-  "timestamp" : 5560,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "next",
-  "user" : "henry26",
-  "timestamp" : 5570,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "henry26",
-  "timestamp" : 5570,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "irene33",
-  "timestamp" : 5580,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "irene33",
-  "timestamp" : 5580,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "jack29",
-  "timestamp" : 5590,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "jack29",
-  "timestamp" : 5590,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "next",
-  "user" : "alice22",
-  "timestamp" : 5600,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "alice22",
-  "timestamp" : 5600,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "prev",
-  "user" : "bob35",
-  "timestamp" : 5610,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "prev",
-  "user" : "bob35",
-  "timestamp" : 5610,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "bob35",
-  "timestamp" : 5610,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "like",
-  "user" : "carol19",
-  "timestamp" : 5620,
-  "message" : "Unlike registered successfully."
-}, {
-  "command" : "status",
-  "user" : "carol19",
-  "timestamp" : 5620,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "prev",
-  "user" : "david27",
-  "timestamp" : 5630,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "david27",
-  "timestamp" : 5630,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "next",
-  "user" : "emily30",
-  "timestamp" : 5640,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "emily30",
-  "timestamp" : 5640,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "repeat",
-  "user" : "frank21",
-  "timestamp" : 5650,
-  "message" : "Repeat mode changed to no repeat."
-}, {
-  "command" : "status",
-  "user" : "frank21",
-  "timestamp" : 5650,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "No Repeat",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "prev",
-  "user" : "grace25",
-  "timestamp" : 5660,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "grace25",
-  "timestamp" : 5660,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "No Repeat",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "repeat",
-  "user" : "henry26",
-  "timestamp" : 5670,
-  "message" : "Repeat mode changed to repeat all."
-}, {
-  "command" : "status",
-  "user" : "henry26",
-  "timestamp" : 5670,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat All",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "repeat",
-  "user" : "irene33",
-  "timestamp" : 5680,
-  "message" : "Repeat mode changed to repeat current song."
-}, {
-  "command" : "status",
-  "user" : "irene33",
-  "timestamp" : 5680,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "jack29",
-  "timestamp" : 5690,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "jack29",
-  "timestamp" : 5690,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "playPause",
-  "user" : "alice22",
-  "timestamp" : 5700,
-  "message" : "Playback resumed successfully."
-}, {
-  "command" : "status",
-  "user" : "alice22",
-  "timestamp" : 5700,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 192,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : false
-  }
-}, {
-  "command" : "playPause",
-  "user" : "bob35",
-  "timestamp" : 5710,
-  "message" : "Playback paused successfully."
-}, {
-  "command" : "status",
-  "user" : "bob35",
-  "timestamp" : 5710,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "prev",
-  "user" : "carol19",
-  "timestamp" : 5720,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "carol19",
-  "timestamp" : 5720,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "like",
-  "user" : "david27",
-  "timestamp" : 5730,
-  "message" : "Like registered successfully."
-}, {
-  "command" : "status",
-  "user" : "david27",
-  "timestamp" : 5730,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "prev",
-  "user" : "emily30",
-  "timestamp" : 5740,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "prev",
-  "user" : "emily30",
-  "timestamp" : 5740,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "emily30",
-  "timestamp" : 5740,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "repeat",
-  "user" : "frank21",
-  "timestamp" : 5750,
-  "message" : "Repeat mode changed to no repeat."
-}, {
-  "command" : "status",
-  "user" : "frank21",
-  "timestamp" : 5750,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "No Repeat",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "grace25",
-  "timestamp" : 5760,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "No Repeat",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "grace25",
-  "timestamp" : 5760,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "No Repeat",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "next",
-  "user" : "henry26",
-  "timestamp" : 5770,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "henry26",
-  "timestamp" : 5770,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "No Repeat",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "playPause",
-  "user" : "irene33",
-  "timestamp" : 5780,
-  "message" : "Playback resumed successfully."
-}, {
-  "command" : "status",
-  "user" : "irene33",
-  "timestamp" : 5780,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 182,
-    "repeat" : "No Repeat",
-    "shuffle" : true,
-    "paused" : false
-  }
-}, {
-  "command" : "repeat",
-  "user" : "jack29",
-  "timestamp" : 5790,
-  "message" : "Repeat mode changed to repeat all."
-}, {
-  "command" : "status",
-  "user" : "jack29",
-  "timestamp" : 5790,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 172,
-    "repeat" : "Repeat All",
-    "shuffle" : true,
-    "paused" : false
-  }
-}, {
-  "command" : "next",
-  "user" : "alice22",
-  "timestamp" : 5800,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
-}, {
-  "command" : "status",
-  "user" : "alice22",
-  "timestamp" : 5800,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 162,
-    "repeat" : "Repeat All",
-    "shuffle" : true,
-    "paused" : false
-  }
-}, {
-  "command" : "like",
-  "user" : "bob35",
-  "timestamp" : 5810,
-  "message" : "Unlike registered successfully."
-}, {
-  "command" : "status",
-  "user" : "bob35",
-  "timestamp" : 5810,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 152,
-    "repeat" : "Repeat All",
-    "shuffle" : true,
-    "paused" : false
-  }
-}, {
   "command" : "next",
   "user" : "carol19",
   "timestamp" : 5820,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 5820,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 142,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -5187,8 +5242,8 @@
   "user" : "david27",
   "timestamp" : 5830,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 132,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -5198,12 +5253,17 @@
   "user" : "david27",
   "timestamp" : 5830,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 132,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "emily30",
+  "timestamp" : 5840,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -5214,8 +5274,8 @@
   "user" : "emily30",
   "timestamp" : 5840,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 122,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5230,8 +5290,8 @@
   "user" : "frank21",
   "timestamp" : 5850,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 112,
+    "name" : "Delicate",
+    "remainedTime" : 202,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5240,14 +5300,14 @@
   "command" : "next",
   "user" : "grace25",
   "timestamp" : 5860,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 5860,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 102,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5262,12 +5322,17 @@
   "user" : "henry26",
   "timestamp" : 5870,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 92,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "irene33",
+  "timestamp" : 5880,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "like",
   "user" : "irene33",
@@ -5278,24 +5343,29 @@
   "user" : "irene33",
   "timestamp" : 5880,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 82,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "jack29",
+  "timestamp" : 5890,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "prev",
   "user" : "jack29",
   "timestamp" : 5890,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 5890,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 72,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -5310,8 +5380,8 @@
   "user" : "alice22",
   "timestamp" : 5900,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 62,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5320,14 +5390,30 @@
   "command" : "prev",
   "user" : "bob35",
   "timestamp" : 5910,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 5910,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 52,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : false
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "carol19",
+  "timestamp" : 5920,
+  "message" : "Visibility status updated successfully to public."
+}, {
+  "command" : "status",
+  "user" : "carol19",
+  "timestamp" : 5920,
+  "stats" : {
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5337,19 +5423,8 @@
   "user" : "carol19",
   "timestamp" : 5920,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 42,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : false
-  }
-}, {
-  "command" : "status",
-  "user" : "carol19",
-  "timestamp" : 5920,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 42,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5358,35 +5433,40 @@
   "command" : "prev",
   "user" : "david27",
   "timestamp" : 5930,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "prev",
   "user" : "david27",
   "timestamp" : 5930,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 5930,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 32,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "emily30",
+  "timestamp" : 5940,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 5940,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 5940,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 22,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5396,8 +5476,8 @@
   "user" : "frank21",
   "timestamp" : 5950,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 12,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5407,12 +5487,17 @@
   "user" : "frank21",
   "timestamp" : 5950,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 12,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 5960,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "like",
   "user" : "grace25",
@@ -5423,8 +5508,8 @@
   "user" : "grace25",
   "timestamp" : 5960,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 2,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5439,8 +5524,8 @@
   "user" : "henry26",
   "timestamp" : 5970,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 276,
+    "name" : "Money Trees",
+    "remainedTime" : 357,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -5455,8 +5540,8 @@
   "user" : "irene33",
   "timestamp" : 5980,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 266,
+    "name" : "Money Trees",
+    "remainedTime" : 347,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5471,8 +5556,8 @@
   "user" : "jack29",
   "timestamp" : 5990,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 256,
+    "name" : "Money Trees",
+    "remainedTime" : 337,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -5487,12 +5572,17 @@
   "user" : "alice22",
   "timestamp" : 6000,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 246,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "bob35",
+  "timestamp" : 6010,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "repeat",
   "user" : "bob35",
@@ -5503,8 +5593,8 @@
   "user" : "bob35",
   "timestamp" : 6010,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 236,
+    "name" : "Money Trees",
+    "remainedTime" : 317,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5519,8 +5609,8 @@
   "user" : "carol19",
   "timestamp" : 6020,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 226,
+    "name" : "Money Trees",
+    "remainedTime" : 307,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5529,14 +5619,14 @@
   "command" : "prev",
   "user" : "david27",
   "timestamp" : 6030,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6030,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 216,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5551,8 +5641,8 @@
   "user" : "emily30",
   "timestamp" : 6040,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 206,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5562,8 +5652,8 @@
   "user" : "frank21",
   "timestamp" : 6050,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 196,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5573,8 +5663,8 @@
   "user" : "frank21",
   "timestamp" : 6050,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 196,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5589,8 +5679,24 @@
   "user" : "grace25",
   "timestamp" : 6060,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 186,
+    "name" : "Money Trees",
+    "remainedTime" : 357,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "henry26",
+  "timestamp" : 6070,
+  "message" : "Visibility status updated successfully to private."
+}, {
+  "command" : "status",
+  "user" : "henry26",
+  "timestamp" : 6070,
+  "stats" : {
+    "name" : "Money Trees",
+    "remainedTime" : 347,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5600,19 +5706,8 @@
   "user" : "henry26",
   "timestamp" : 6070,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 176,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
-}, {
-  "command" : "status",
-  "user" : "henry26",
-  "timestamp" : 6070,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 176,
+    "name" : "Money Trees",
+    "remainedTime" : 347,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5627,8 +5722,8 @@
   "user" : "irene33",
   "timestamp" : 6080,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 166,
+    "name" : "Money Trees",
+    "remainedTime" : 337,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : true
@@ -5643,8 +5738,8 @@
   "user" : "jack29",
   "timestamp" : 6090,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 166,
+    "name" : "Money Trees",
+    "remainedTime" : 337,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5659,8 +5754,8 @@
   "user" : "alice22",
   "timestamp" : 6100,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : true
@@ -5675,12 +5770,17 @@
   "user" : "bob35",
   "timestamp" : 6110,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "carol19",
+  "timestamp" : 6120,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "shuffle",
   "user" : "carol19",
@@ -5691,8 +5791,8 @@
   "user" : "carol19",
   "timestamp" : 6120,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : true
@@ -5707,8 +5807,8 @@
   "user" : "david27",
   "timestamp" : 6130,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -5717,14 +5817,14 @@
   "command" : "prev",
   "user" : "emily30",
   "timestamp" : 6140,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6140,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -5739,8 +5839,8 @@
   "user" : "frank21",
   "timestamp" : 6150,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -5755,8 +5855,8 @@
   "user" : "grace25",
   "timestamp" : 6160,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -5765,14 +5865,14 @@
   "command" : "prev",
   "user" : "henry26",
   "timestamp" : 6170,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 6170,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Shape of You",
+    "remainedTime" : 233,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -5781,14 +5881,14 @@
   "command" : "next",
   "user" : "irene33",
   "timestamp" : 6180,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6180,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -5803,8 +5903,8 @@
   "user" : "jack29",
   "timestamp" : 6190,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 156,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : false
@@ -5813,14 +5913,14 @@
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 6200,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 6200,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 146,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : false
@@ -5835,8 +5935,8 @@
   "user" : "bob35",
   "timestamp" : 6210,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 136,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : false
@@ -5851,8 +5951,8 @@
   "user" : "carol19",
   "timestamp" : 6220,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 126,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -5867,29 +5967,34 @@
   "user" : "david27",
   "timestamp" : 6230,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 116,
+    "name" : "Delicate",
+    "remainedTime" : 202,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
   }
 }, {
-  "command" : "prev",
+  "command" : "switchVisibility",
   "user" : "emily30",
   "timestamp" : 6240,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "prev",
   "user" : "emily30",
   "timestamp" : 6240,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Delicate."
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 6240,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6240,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 106,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -5904,8 +6009,8 @@
   "user" : "frank21",
   "timestamp" : 6250,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 96,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -5920,8 +6025,8 @@
   "user" : "grace25",
   "timestamp" : 6260,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 86,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5930,35 +6035,40 @@
   "command" : "next",
   "user" : "henry26",
   "timestamp" : 6270,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 6270,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 76,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
 }, {
-  "command" : "prev",
+  "command" : "switchVisibility",
   "user" : "irene33",
   "timestamp" : 6280,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "prev",
   "user" : "irene33",
   "timestamp" : 6280,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
+}, {
+  "command" : "prev",
+  "user" : "irene33",
+  "timestamp" : 6280,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6280,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 66,
+    "name" : "Shape of You",
+    "remainedTime" : 233,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5967,18 +6077,23 @@
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 6290,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6290,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 56,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "alice22",
+  "timestamp" : 6300,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -5989,8 +6104,8 @@
   "user" : "alice22",
   "timestamp" : 6300,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 46,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : false
@@ -5999,14 +6114,14 @@
   "command" : "next",
   "user" : "bob35",
   "timestamp" : 6310,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 6310,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 36,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : false
@@ -6021,8 +6136,8 @@
   "user" : "carol19",
   "timestamp" : 6320,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 26,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -6032,8 +6147,8 @@
   "user" : "david27",
   "timestamp" : 6330,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 16,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -6043,8 +6158,8 @@
   "user" : "david27",
   "timestamp" : 6330,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 16,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -6053,14 +6168,14 @@
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 6340,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Sad But True."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6340,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 6,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -6075,8 +6190,8 @@
   "user" : "frank21",
   "timestamp" : 6350,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 280,
+    "name" : "Sad But True",
+    "remainedTime" : 314,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6091,8 +6206,24 @@
   "user" : "grace25",
   "timestamp" : 6360,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 270,
+    "name" : "Sad But True",
+    "remainedTime" : 304,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "henry26",
+  "timestamp" : 6370,
+  "message" : "Visibility status updated successfully to public."
+}, {
+  "command" : "status",
+  "user" : "henry26",
+  "timestamp" : 6370,
+  "stats" : {
+    "name" : "Sad But True",
+    "remainedTime" : 304,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6102,19 +6233,8 @@
   "user" : "henry26",
   "timestamp" : 6370,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 270,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "status",
-  "user" : "henry26",
-  "timestamp" : 6370,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 270,
+    "name" : "Sad But True",
+    "remainedTime" : 304,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6129,8 +6249,8 @@
   "user" : "irene33",
   "timestamp" : 6380,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 270,
+    "name" : "Sad But True",
+    "remainedTime" : 304,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6139,19 +6259,19 @@
   "command" : "prev",
   "user" : "jack29",
   "timestamp" : 6390,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Sad But True."
 }, {
   "command" : "prev",
   "user" : "jack29",
   "timestamp" : 6390,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6390,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 270,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6166,8 +6286,8 @@
   "user" : "alice22",
   "timestamp" : 6400,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 270,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6176,14 +6296,14 @@
   "command" : "prev",
   "user" : "bob35",
   "timestamp" : 6410,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 6410,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 270,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6198,8 +6318,8 @@
   "user" : "carol19",
   "timestamp" : 6420,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 270,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -6214,8 +6334,8 @@
   "user" : "david27",
   "timestamp" : 6430,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6224,14 +6344,14 @@
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 6440,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6440,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6246,24 +6366,29 @@
   "user" : "frank21",
   "timestamp" : 6450,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 6460,
+  "message" : "Visibility status updated successfully to public."
+}, {
   "command" : "prev",
   "user" : "grace25",
   "timestamp" : 6460,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6460,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6278,8 +6403,8 @@
   "user" : "henry26",
   "timestamp" : 6470,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6288,14 +6413,14 @@
   "command" : "next",
   "user" : "irene33",
   "timestamp" : 6480,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6480,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6310,8 +6435,8 @@
   "user" : "jack29",
   "timestamp" : 6490,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6326,8 +6451,8 @@
   "user" : "alice22",
   "timestamp" : 6500,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : true
@@ -6342,8 +6467,8 @@
   "user" : "bob35",
   "timestamp" : 6510,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : true
@@ -6352,19 +6477,19 @@
   "command" : "prev",
   "user" : "carol19",
   "timestamp" : 6520,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "prev",
   "user" : "carol19",
   "timestamp" : 6520,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 6520,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : true
@@ -6379,8 +6504,8 @@
   "user" : "david27",
   "timestamp" : 6530,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -6395,8 +6520,8 @@
   "user" : "emily30",
   "timestamp" : 6540,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6405,14 +6530,14 @@
   "command" : "next",
   "user" : "frank21",
   "timestamp" : 6550,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 6550,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6422,8 +6547,8 @@
   "user" : "grace25",
   "timestamp" : 6560,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6433,8 +6558,8 @@
   "user" : "grace25",
   "timestamp" : 6560,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6449,8 +6574,8 @@
   "user" : "henry26",
   "timestamp" : 6570,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : true
@@ -6465,8 +6590,8 @@
   "user" : "irene33",
   "timestamp" : 6580,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -6475,14 +6600,14 @@
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 6590,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Start Me Up."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6590,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -6497,8 +6622,8 @@
   "user" : "alice22",
   "timestamp" : 6600,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -6513,8 +6638,8 @@
   "user" : "bob35",
   "timestamp" : 6610,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -6524,8 +6649,8 @@
   "user" : "carol19",
   "timestamp" : 6620,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -6535,8 +6660,8 @@
   "user" : "carol19",
   "timestamp" : 6620,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -6551,8 +6676,8 @@
   "user" : "david27",
   "timestamp" : 6630,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6567,8 +6692,8 @@
   "user" : "emily30",
   "timestamp" : 6640,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6583,8 +6708,8 @@
   "user" : "frank21",
   "timestamp" : 6650,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6599,8 +6724,8 @@
   "user" : "grace25",
   "timestamp" : 6660,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 260,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -6615,8 +6740,8 @@
   "user" : "henry26",
   "timestamp" : 6670,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 250,
+    "name" : "Start Me Up",
+    "remainedTime" : 202,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6631,8 +6756,8 @@
   "user" : "irene33",
   "timestamp" : 6680,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 240,
+    "name" : "Start Me Up",
+    "remainedTime" : 192,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -6647,8 +6772,8 @@
   "user" : "jack29",
   "timestamp" : 6690,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 230,
+    "name" : "Start Me Up",
+    "remainedTime" : 182,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -6663,12 +6788,17 @@
   "user" : "alice22",
   "timestamp" : 6700,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 230,
+    "name" : "Start Me Up",
+    "remainedTime" : 182,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "bob35",
+  "timestamp" : 6710,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "playPause",
   "user" : "bob35",
@@ -6679,8 +6809,8 @@
   "user" : "bob35",
   "timestamp" : 6710,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 230,
+    "name" : "Start Me Up",
+    "remainedTime" : 182,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6689,19 +6819,19 @@
   "command" : "prev",
   "user" : "carol19",
   "timestamp" : 6720,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Start Me Up."
 }, {
   "command" : "prev",
   "user" : "carol19",
   "timestamp" : 6720,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 6720,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 220,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6716,8 +6846,8 @@
   "user" : "david27",
   "timestamp" : 6730,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 210,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6726,14 +6856,14 @@
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 6740,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Start Me Up."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6740,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 200,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6742,14 +6872,14 @@
   "command" : "prev",
   "user" : "frank21",
   "timestamp" : 6750,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 6750,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 190,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6758,14 +6888,14 @@
   "command" : "prev",
   "user" : "grace25",
   "timestamp" : 6760,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Sad But True."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6760,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 180,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6774,19 +6904,19 @@
   "command" : "prev",
   "user" : "henry26",
   "timestamp" : 6770,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
 }, {
   "command" : "prev",
   "user" : "henry26",
   "timestamp" : 6770,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 6770,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6795,14 +6925,14 @@
   "command" : "next",
   "user" : "irene33",
   "timestamp" : 6780,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Begin Again."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6780,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 160,
+    "name" : "Begin Again",
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6811,40 +6941,45 @@
   "command" : "prev",
   "user" : "jack29",
   "timestamp" : 6790,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "prev",
   "user" : "jack29",
   "timestamp" : 6790,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6790,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 150,
+    "name" : "Begin Again",
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
 }, {
-  "command" : "prev",
+  "command" : "switchVisibility",
   "user" : "alice22",
   "timestamp" : 6800,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "prev",
   "user" : "alice22",
   "timestamp" : 6800,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Delicate."
+}, {
+  "command" : "prev",
+  "user" : "alice22",
+  "timestamp" : 6800,
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 6800,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 140,
+    "name" : "Begin Again",
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6854,8 +6989,8 @@
   "user" : "bob35",
   "timestamp" : 6810,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 130,
+    "name" : "Begin Again",
+    "remainedTime" : 228,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6865,8 +7000,8 @@
   "user" : "bob35",
   "timestamp" : 6810,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 130,
+    "name" : "Begin Again",
+    "remainedTime" : 228,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6881,8 +7016,8 @@
   "user" : "carol19",
   "timestamp" : 6820,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 120,
+    "name" : "Begin Again",
+    "remainedTime" : 218,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -6891,19 +7026,19 @@
   "command" : "prev",
   "user" : "david27",
   "timestamp" : 6830,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
 }, {
   "command" : "prev",
   "user" : "david27",
   "timestamp" : 6830,
-  "message" : "Returned to previous track successfully. The current track is Big Pimpin'."
+  "message" : "Returned to previous track successfully. The current track is Blank Space."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6830,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 110,
+    "name" : "Blank Space",
+    "remainedTime" : 231,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -6912,14 +7047,14 @@
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 6840,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Begin Again."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6840,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 100,
+    "name" : "Begin Again",
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
@@ -6934,8 +7069,24 @@
   "user" : "frank21",
   "timestamp" : 6850,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 90,
+    "name" : "Begin Again",
+    "remainedTime" : 228,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 6860,
+  "message" : "Visibility status updated successfully to public."
+}, {
+  "command" : "status",
+  "user" : "grace25",
+  "timestamp" : 6860,
+  "stats" : {
+    "name" : "Begin Again",
+    "remainedTime" : 218,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -6945,19 +7096,8 @@
   "user" : "grace25",
   "timestamp" : 6860,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 80,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
-}, {
-  "command" : "status",
-  "user" : "grace25",
-  "timestamp" : 6860,
-  "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 80,
+    "name" : "Begin Again",
+    "remainedTime" : 218,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -6972,12 +7112,17 @@
   "user" : "henry26",
   "timestamp" : 6870,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 70,
+    "name" : "Begin Again",
+    "remainedTime" : 208,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "irene33",
+  "timestamp" : 6880,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "repeat",
   "user" : "irene33",
@@ -6988,8 +7133,8 @@
   "user" : "irene33",
   "timestamp" : 6880,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 60,
+    "name" : "Begin Again",
+    "remainedTime" : 198,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : false
@@ -7004,8 +7149,8 @@
   "user" : "jack29",
   "timestamp" : 6890,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Begin Again",
+    "remainedTime" : 188,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -7014,14 +7159,14 @@
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 6900,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Sad But True."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 6900,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : true
@@ -7036,8 +7181,8 @@
   "user" : "bob35",
   "timestamp" : 6910,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -7047,8 +7192,8 @@
   "user" : "carol19",
   "timestamp" : 6920,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -7058,24 +7203,29 @@
   "user" : "carol19",
   "timestamp" : 6920,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "david27",
+  "timestamp" : 6930,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "next",
   "user" : "david27",
   "timestamp" : 6930,
-  "message" : "Skipped to next track successfully. The current track is Big Pimpin'."
+  "message" : "Skipped to next track successfully. The current track is Sad But True."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6930,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -7090,8 +7240,8 @@
   "user" : "emily30",
   "timestamp" : 6940,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -7101,8 +7251,8 @@
   "user" : "frank21",
   "timestamp" : 6950,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -7112,8 +7262,8 @@
   "user" : "frank21",
   "timestamp" : 6950,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -7128,8 +7278,8 @@
   "user" : "grace25",
   "timestamp" : 6960,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -7144,8 +7294,8 @@
   "user" : "henry26",
   "timestamp" : 6970,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -7160,8 +7310,8 @@
   "user" : "irene33",
   "timestamp" : 6980,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : true
@@ -7176,8 +7326,8 @@
   "user" : "jack29",
   "timestamp" : 6990,
   "stats" : {
-    "name" : "Big Pimpin'",
-    "remainedTime" : 50,
+    "name" : "Sad But True",
+    "remainedTime" : 324,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -7194,6 +7344,11 @@
   "timestamp" : 6990,
   "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 6990,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7000,
@@ -7205,6 +7360,11 @@
   "timestamp" : 7000,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7000,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7010,
@@ -7215,6 +7375,11 @@
   "user" : "carol19",
   "timestamp" : 7010,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7010,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -7227,6 +7392,11 @@
   "timestamp" : 7020,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7020,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7030,
@@ -7238,6 +7408,11 @@
   "timestamp" : 7030,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7030,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7040,
@@ -7248,6 +7423,11 @@
   "user" : "frank21",
   "timestamp" : 7040,
   "message" : "Successfully selected Classic Grooves Trek #2."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7040,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7260,6 +7440,11 @@
   "timestamp" : 7050,
   "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7050,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7060,
@@ -7270,6 +7455,11 @@
   "user" : "henry26",
   "timestamp" : 7060,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7060,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7282,6 +7472,11 @@
   "timestamp" : 7070,
   "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7070,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7080,
@@ -7292,6 +7487,11 @@
   "user" : "jack29",
   "timestamp" : 7080,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7080,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7304,6 +7504,11 @@
   "timestamp" : 7090,
   "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7090,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7100,
@@ -7315,6 +7520,11 @@
   "timestamp" : 7100,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7100,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7110,
@@ -7325,6 +7535,11 @@
   "user" : "carol19",
   "timestamp" : 7110,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7110,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -7337,6 +7552,11 @@
   "timestamp" : 7120,
   "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7120,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7130,
@@ -7347,6 +7567,11 @@
   "user" : "emily30",
   "timestamp" : 7130,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7130,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -7359,6 +7584,11 @@
   "timestamp" : 7140,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7140,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7150,
@@ -7370,6 +7600,11 @@
   "timestamp" : 7150,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7150,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7160,
@@ -7380,6 +7615,11 @@
   "user" : "henry26",
   "timestamp" : 7160,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7160,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7392,6 +7632,11 @@
   "timestamp" : 7170,
   "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7170,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7180,
@@ -7402,6 +7647,11 @@
   "user" : "jack29",
   "timestamp" : 7180,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7180,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7414,6 +7664,11 @@
   "timestamp" : 7190,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7190,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7200,
@@ -7424,6 +7679,11 @@
   "user" : "bob35",
   "timestamp" : 7200,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7200,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7436,6 +7696,11 @@
   "timestamp" : 7210,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7210,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7220,
@@ -7447,6 +7712,11 @@
   "timestamp" : 7220,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7220,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7230,
@@ -7457,6 +7727,11 @@
   "user" : "emily30",
   "timestamp" : 7230,
   "message" : "Successfully selected Electric Melodies Escape #2."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7230,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -7469,6 +7744,11 @@
   "timestamp" : 7240,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7240,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7250,
@@ -7479,6 +7759,11 @@
   "user" : "grace25",
   "timestamp" : 7250,
   "message" : "Successfully selected Electric Melodies Escape #2."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7250,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -7491,6 +7776,11 @@
   "timestamp" : 7260,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7260,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7270,
@@ -7502,6 +7792,11 @@
   "timestamp" : 7270,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7270,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7280,
@@ -7512,6 +7807,11 @@
   "user" : "jack29",
   "timestamp" : 7280,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7280,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7524,6 +7824,11 @@
   "timestamp" : 7290,
   "message" : "Successfully selected Breezy Tunes Odyssey #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7290,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7300,
@@ -7534,6 +7839,11 @@
   "user" : "bob35",
   "timestamp" : 7300,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7300,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7546,6 +7856,11 @@
   "timestamp" : 7310,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7310,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7320,
@@ -7556,6 +7871,11 @@
   "user" : "david27",
   "timestamp" : 7320,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7320,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7568,6 +7888,11 @@
   "timestamp" : 7330,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7330,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7340,
@@ -7578,6 +7903,11 @@
   "user" : "frank21",
   "timestamp" : 7340,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7340,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7590,6 +7920,11 @@
   "timestamp" : 7350,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7350,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7360,
@@ -7600,6 +7935,11 @@
   "user" : "henry26",
   "timestamp" : 7360,
   "message" : "Successfully selected Chill Sounds Journey #1."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7360,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7612,6 +7952,11 @@
   "timestamp" : 7370,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7370,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7380,
@@ -7623,6 +7968,11 @@
   "timestamp" : 7380,
   "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7380,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7390,
@@ -7633,6 +7983,11 @@
   "user" : "alice22",
   "timestamp" : 7390,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7390,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -7645,6 +8000,11 @@
   "timestamp" : 7400,
   "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7400,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7410,
@@ -7655,6 +8015,11 @@
   "user" : "carol19",
   "timestamp" : 7410,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7410,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -7667,6 +8032,11 @@
   "timestamp" : 7420,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7420,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7430,
@@ -7677,6 +8047,11 @@
   "user" : "emily30",
   "timestamp" : 7430,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7430,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -7689,6 +8064,11 @@
   "timestamp" : 7440,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7440,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7450,
@@ -7700,6 +8080,11 @@
   "timestamp" : 7450,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7450,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7460,
@@ -7710,6 +8095,11 @@
   "user" : "henry26",
   "timestamp" : 7460,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7460,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7722,6 +8112,11 @@
   "timestamp" : 7470,
   "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7470,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7480,
@@ -7733,6 +8128,11 @@
   "timestamp" : 7480,
   "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7480,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7490,
@@ -7743,6 +8143,11 @@
   "user" : "alice22",
   "timestamp" : 7490,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7490,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -7755,6 +8160,11 @@
   "timestamp" : 7500,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7500,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7510,
@@ -7765,6 +8175,11 @@
   "user" : "carol19",
   "timestamp" : 7510,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7510,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -7777,6 +8192,11 @@
   "timestamp" : 7520,
   "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7520,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7530,
@@ -7787,6 +8207,11 @@
   "user" : "emily30",
   "timestamp" : 7530,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7530,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -7799,6 +8224,11 @@
   "timestamp" : 7540,
   "message" : "Successfully selected Classic Harmonies Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7540,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7550,
@@ -7809,6 +8239,11 @@
   "user" : "grace25",
   "timestamp" : 7550,
   "message" : "Successfully selected Electric Melodies Escape #2."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7550,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -7821,6 +8256,11 @@
   "timestamp" : 7560,
   "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7560,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7570,
@@ -7832,6 +8272,11 @@
   "timestamp" : 7570,
   "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7570,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7580,
@@ -7842,6 +8287,11 @@
   "user" : "jack29",
   "timestamp" : 7580,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7580,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7854,6 +8304,11 @@
   "timestamp" : 7590,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7590,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7600,
@@ -7864,6 +8319,11 @@
   "user" : "bob35",
   "timestamp" : 7600,
   "message" : "Successfully selected Chill Sounds Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7600,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7876,6 +8336,11 @@
   "timestamp" : 7610,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7610,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7620,
@@ -7886,6 +8351,11 @@
   "user" : "david27",
   "timestamp" : 7620,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7620,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7898,6 +8368,11 @@
   "timestamp" : 7630,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7630,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7640,
@@ -7908,6 +8383,11 @@
   "user" : "frank21",
   "timestamp" : 7640,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7640,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7920,6 +8400,11 @@
   "timestamp" : 7650,
   "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7650,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7660,
@@ -7930,6 +8415,11 @@
   "user" : "henry26",
   "timestamp" : 7660,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7660,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7942,6 +8432,11 @@
   "timestamp" : 7670,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7670,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7680,
@@ -7952,6 +8447,11 @@
   "user" : "jack29",
   "timestamp" : 7680,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7680,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7964,6 +8464,11 @@
   "timestamp" : 7690,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7690,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7700,
@@ -7974,6 +8479,11 @@
   "user" : "bob35",
   "timestamp" : 7700,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7700,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7986,6 +8496,11 @@
   "timestamp" : 7710,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7710,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7720,
@@ -7996,6 +8511,11 @@
   "user" : "david27",
   "timestamp" : 7720,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7720,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -8008,6 +8528,11 @@
   "timestamp" : 7730,
   "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7730,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7740,
@@ -8018,6 +8543,11 @@
   "user" : "frank21",
   "timestamp" : 7740,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7740,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8030,6 +8560,11 @@
   "timestamp" : 7750,
   "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7750,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7760,
@@ -8040,6 +8575,11 @@
   "user" : "henry26",
   "timestamp" : 7760,
   "message" : "Successfully selected Classic Grooves Trek #2."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7760,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -8052,6 +8592,11 @@
   "timestamp" : 7770,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7770,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7780,
@@ -8062,6 +8607,11 @@
   "user" : "jack29",
   "timestamp" : 7780,
   "message" : "Successfully selected Classic Grooves Trek #2."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7780,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -8074,6 +8624,11 @@
   "timestamp" : 7790,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7790,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7800,
@@ -8084,6 +8639,11 @@
   "user" : "bob35",
   "timestamp" : 7800,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7800,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8096,6 +8656,11 @@
   "timestamp" : 7810,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7810,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7820,
@@ -8106,6 +8671,11 @@
   "user" : "david27",
   "timestamp" : 7820,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7820,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -8118,6 +8688,11 @@
   "timestamp" : 7830,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7830,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7840,
@@ -8128,6 +8703,11 @@
   "user" : "frank21",
   "timestamp" : 7840,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7840,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8140,6 +8720,11 @@
   "timestamp" : 7850,
   "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7850,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7860,
@@ -8151,6 +8736,11 @@
   "timestamp" : 7860,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7860,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7870,
@@ -8161,6 +8751,11 @@
   "user" : "irene33",
   "timestamp" : 7870,
   "message" : "Successfully selected Vibey Bangers Safari #1."
+}, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7870,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8173,6 +8768,11 @@
   "timestamp" : 7880,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7880,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7890,
@@ -8184,6 +8784,11 @@
   "timestamp" : 7890,
   "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7890,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7900,
@@ -8194,6 +8799,11 @@
   "user" : "bob35",
   "timestamp" : 7900,
   "message" : "Successfully selected Vibey Bangers Safari #1."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7900,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8206,6 +8816,11 @@
   "timestamp" : 7910,
   "message" : "Successfully selected Groovy Grooves Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7910,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7920,
@@ -8217,6 +8832,11 @@
   "timestamp" : 7920,
   "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7920,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7930,
@@ -8227,6 +8847,11 @@
   "user" : "emily30",
   "timestamp" : 7930,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7930,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8239,6 +8864,11 @@
   "timestamp" : 7940,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7940,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7950,
@@ -8249,6 +8879,11 @@
   "user" : "grace25",
   "timestamp" : 7950,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7950,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8261,6 +8896,11 @@
   "timestamp" : 7960,
   "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7960,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7970,
@@ -8271,6 +8911,11 @@
   "user" : "irene33",
   "timestamp" : 7970,
   "message" : "Successfully selected Groovy Vibes Odyssey #1."
+}, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7970,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8283,6 +8928,11 @@
   "timestamp" : 7980,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7980,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7990,
@@ -8293,6 +8943,11 @@
   "user" : "alice22",
   "timestamp" : 7990,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7990,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8305,6 +8960,11 @@
   "timestamp" : 8000,
   "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8000,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8010,
@@ -8315,6 +8975,11 @@
   "user" : "carol19",
   "timestamp" : 8010,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8010,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8327,6 +8992,11 @@
   "timestamp" : 8020,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8020,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 8030,
@@ -8337,6 +9007,11 @@
   "user" : "emily30",
   "timestamp" : 8030,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8030,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8349,6 +9024,11 @@
   "timestamp" : 8040,
   "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8040,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 8050,
@@ -8359,6 +9039,11 @@
   "user" : "grace25",
   "timestamp" : 8050,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8050,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8371,6 +9056,11 @@
   "timestamp" : 8060,
   "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8060,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 8070,
@@ -8381,6 +9071,11 @@
   "user" : "irene33",
   "timestamp" : 8070,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8070,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8393,6 +9088,11 @@
   "timestamp" : 8080,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8080,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8090,
@@ -8404,6 +9104,11 @@
   "timestamp" : 8090,
   "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 8090,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 8100,
@@ -8414,6 +9119,11 @@
   "user" : "bob35",
   "timestamp" : 8100,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8100,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8426,6 +9136,11 @@
   "timestamp" : 8110,
   "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8110,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8120,
@@ -8437,6 +9152,11 @@
   "timestamp" : 8120,
   "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8120,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 8130,
@@ -8447,6 +9167,11 @@
   "user" : "emily30",
   "timestamp" : 8130,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8130,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8459,6 +9184,11 @@
   "timestamp" : 8140,
   "message" : "Successfully selected Classic Harmonies Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8140,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 8150,
@@ -8469,6 +9199,11 @@
   "user" : "grace25",
   "timestamp" : 8150,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8150,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8481,6 +9216,11 @@
   "timestamp" : 8160,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8160,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 8170,
@@ -8492,6 +9232,11 @@
   "timestamp" : 8170,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8170,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 8180,
@@ -8503,6 +9248,11 @@
   "timestamp" : 8180,
   "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8180,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8190,
@@ -8513,6 +9263,11 @@
   "user" : "alice22",
   "timestamp" : 8190,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 8190,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8525,6 +9280,11 @@
   "timestamp" : 8200,
   "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8200,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8210,
@@ -8535,6 +9295,11 @@
   "user" : "carol19",
   "timestamp" : 8210,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8210,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8547,6 +9312,11 @@
   "timestamp" : 8220,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8220,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 8230,
@@ -8557,6 +9327,11 @@
   "user" : "emily30",
   "timestamp" : 8230,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8230,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8569,6 +9344,11 @@
   "timestamp" : 8240,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8240,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 8250,
@@ -8579,6 +9359,11 @@
   "user" : "grace25",
   "timestamp" : 8250,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8250,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8591,6 +9376,11 @@
   "timestamp" : 8260,
   "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8260,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 8270,
@@ -8601,6 +9391,11 @@
   "user" : "irene33",
   "timestamp" : 8270,
   "message" : "Successfully selected Classic Grooves Trek #2."
+}, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8270,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8613,6 +9408,11 @@
   "timestamp" : 8280,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8280,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8290,
@@ -8623,6 +9423,11 @@
   "user" : "alice22",
   "timestamp" : 8290,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 8290,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8635,6 +9440,11 @@
   "timestamp" : 8300,
   "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8300,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8310,
@@ -8645,6 +9455,11 @@
   "user" : "carol19",
   "timestamp" : 8310,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8310,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8657,6 +9472,11 @@
   "timestamp" : 8320,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8320,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 8330,
@@ -8668,6 +9488,11 @@
   "timestamp" : 8330,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8330,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 8340,
@@ -8678,6 +9503,11 @@
   "user" : "frank21",
   "timestamp" : 8340,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8340,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8690,6 +9520,11 @@
   "timestamp" : 8350,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8350,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8360,
@@ -8701,6 +9536,11 @@
   "timestamp" : 8360,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8360,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 8370,
@@ -8711,6 +9551,11 @@
   "user" : "irene33",
   "timestamp" : 8370,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8370,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8723,6 +9568,11 @@
   "timestamp" : 8380,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8380,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8390,
@@ -8733,6 +9583,11 @@
   "user" : "alice22",
   "timestamp" : 8390,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 8390,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8745,6 +9600,11 @@
   "timestamp" : 8400,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8400,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8410,
@@ -8755,6 +9615,11 @@
   "user" : "carol19",
   "timestamp" : 8410,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8410,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8767,6 +9632,11 @@
   "timestamp" : 8420,
   "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8420,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 8430,
@@ -8778,6 +9648,11 @@
   "timestamp" : 8430,
   "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8430,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 8440,
@@ -8788,6 +9663,11 @@
   "user" : "frank21",
   "timestamp" : 8440,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8440,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8800,6 +9680,11 @@
   "timestamp" : 8450,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8450,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8460,
@@ -8810,6 +9695,11 @@
   "user" : "henry26",
   "timestamp" : 8460,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8460,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -8822,6 +9712,11 @@
   "timestamp" : 8470,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8470,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 8480,
@@ -8833,19 +9728,24 @@
   "timestamp" : 8480,
   "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8480,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "showPlaylists",
   "user" : "alice22",
   "timestamp" : 8490,
   "result" : [ {
     "name" : "Classic Harmonies Dream #1",
-    "songs" : [ "Angie", "Big Pimpin'", "Delicate", "Under Pressure", "Shape of You", "Money Trees", "Begin Again", "Don't", "Start Me Up", "Stairway to Heaven", "Black Dog", "The Man" ],
-    "visibility" : "public",
+    "songs" : [ "Stairway to Heaven", "Start Me Up", "Gimme Shelter" ],
+    "visibility" : "private",
     "followers" : 0
   }, {
     "name" : "Classic Sounds Expedition #2",
-    "songs" : [ ],
+    "songs" : [ "Angie", "Shape of You", "Sad But True", "Love Story", "Bohemian Rhapsody", "The Man", "Money Trees", "Thinking Out Loud" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8858,14 +9758,14 @@
   "timestamp" : 8500,
   "result" : [ {
     "name" : "Breezy Rhythms Trek #1",
-    "songs" : [ "Big Pimpin'", "Maps", "Stairway to Heaven", "Bohemian Rhapsody", "Love Story", "Gimme Shelter", "The Man", "Don't", "Thinking Out Loud", "Black Dog", "Shape of You", "Money Trees", "Delicate", "Begin Again", "Sad But True" ],
+    "songs" : [ "Stairway to Heaven", "Angie", "Whatever You Need", "Gimme Shelter", "Money Trees", "Sad But True" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 4
   }, {
     "name" : "Electric Harmonies Odyssey #2",
-    "songs" : [ ],
+    "songs" : [ "Dream On", "Big Pimpin'", "Sad But True", "Shape of You", "Don't" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 2
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8878,14 +9778,14 @@
   "timestamp" : 8510,
   "result" : [ {
     "name" : "Groovy Grooves Dream #1",
-    "songs" : [ ],
-    "visibility" : "public",
-    "followers" : 0
+    "songs" : [ "Maps", "Under Pressure", "Stairway to Heaven", "Start Me Up", "Shape of You" ],
+    "visibility" : "private",
+    "followers" : 1
   }, {
     "name" : "Groovy Grooves Expedition #2",
-    "songs" : [ ],
+    "songs" : [ "Love Story", "Don't", "Money Trees", "Maps" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 5
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8898,14 +9798,14 @@
   "timestamp" : 8520,
   "result" : [ {
     "name" : "Breezy Bangers Quest #1",
-    "songs" : [ ],
+    "songs" : [ "Blank Space", "Big Pimpin'", "Begin Again", "Paint It Black", "Love Story" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 4
   }, {
     "name" : "Stellar Tunes Quest #2",
-    "songs" : [ ],
+    "songs" : [ "Start Me Up", "Dream On", "Angie", "Gimme Shelter", "Begin Again", "Black Dog", "Stairway to Heaven" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 5
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8918,14 +9818,14 @@
   "timestamp" : 8530,
   "result" : [ {
     "name" : "Chill Sounds Journey #1",
-    "songs" : [ ],
+    "songs" : [ "Start Me Up", "Shape of You", "Black Dog", "Begin Again", "Don't", "Delicate", "Happier" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 4
   }, {
     "name" : "Chill Sounds Adventure #2",
-    "songs" : [ ],
-    "visibility" : "public",
-    "followers" : 0
+    "songs" : [ "Start Me Up", "Bohemian Rhapsody", "Blank Space" ],
+    "visibility" : "private",
+    "followers" : 4
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8938,14 +9838,14 @@
   "timestamp" : 8540,
   "result" : [ {
     "name" : "Chill Melodies Voyage #1",
-    "songs" : [ ],
+    "songs" : [ "Start Me Up", "Whatever You Need", "Dream On", "Begin Again", "Black Dog", "Shape of You", "Delicate" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 6
   }, {
     "name" : "Classic Grooves Trek #2",
-    "songs" : [ ],
+    "songs" : [ "Gimme Shelter", "Bohemian Rhapsody", "Love Story", "Black Dog", "Thinking Out Loud" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 3
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8958,14 +9858,14 @@
   "timestamp" : 8550,
   "result" : [ {
     "name" : "Groovy Vibes Odyssey #1",
-    "songs" : [ ],
+    "songs" : [ "Delicate", "Under Pressure", "Money Trees", "Love Story", "The Man", "Shape of You" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 5
   }, {
     "name" : "Dynamic Tracks Adventure #2",
-    "songs" : [ ],
+    "songs" : [ "Begin Again", "Gimme Shelter", "Start Me Up" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 6
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8978,14 +9878,14 @@
   "timestamp" : 8560,
   "result" : [ {
     "name" : "Dynamic Grooves Expedition #1",
-    "songs" : [ ],
+    "songs" : [ "Dream On", "Stairway to Heaven", "Begin Again", "Under Pressure", "Thinking Out Loud", "Maps" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 4
   }, {
     "name" : "Breezy Tunes Odyssey #2",
-    "songs" : [ ],
+    "songs" : [ "Dream On" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8998,14 +9898,14 @@
   "timestamp" : 8570,
   "result" : [ {
     "name" : "Chill Sounds Voyage #1",
-    "songs" : [ ],
+    "songs" : [ "The Man", "Blank Space", "Shape of You", "Sad But True", "Don't", "Money Trees", "Happier", "Paint It Black", "Begin Again" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 4
   }, {
     "name" : "Electric Melodies Escape #2",
-    "songs" : [ ],
-    "visibility" : "public",
-    "followers" : 0
+    "songs" : [ "Dream On", "Don't", "Thinking Out Loud", "Black Dog" ],
+    "visibility" : "private",
+    "followers" : 3
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -9018,14 +9918,14 @@
   "timestamp" : 8580,
   "result" : [ {
     "name" : "Vibey Bangers Safari #1",
-    "songs" : [ ],
+    "songs" : [ "Don't", "Start Me Up", "Stairway to Heaven", "Thinking Out Loud", "Black Dog", "The Man" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 3
   }, {
     "name" : "Groovy Rhythms Dream #2",
-    "songs" : [ ],
-    "visibility" : "public",
-    "followers" : 0
+    "songs" : [ "Begin Again", "Blank Space", "Start Me Up", "Money Trees", "Sad But True", "Shape of You", "Delicate" ],
+    "visibility" : "private",
+    "followers" : 2
   } ]
 }, {
   "command" : "showPreferredSongs",

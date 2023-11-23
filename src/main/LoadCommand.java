@@ -44,10 +44,11 @@ public class LoadCommand extends Command {
         loadOutput.put("command", "load");
         loadOutput.put("user", loadCommand.getUsername());
         loadOutput.put("timestamp", loadCommand.getTimestamp());
-        if (select)
+        if (select) {
             loadOutput.put("message", message);
-        else
+        } else {
             loadOutput.put("message", "Please select a source before attempting to load.");
+        }
         return loadOutput;
     }
 }
