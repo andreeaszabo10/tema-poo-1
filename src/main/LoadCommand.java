@@ -12,11 +12,6 @@ public class LoadCommand extends Command {
     public LoadCommand() {
     }
 
-    public LoadCommand(final String username, final int timestamp) {
-        this.username = username;
-        this.timestamp = timestamp;
-    }
-
     public final void setUsername(final String username) {
         this.username = username;
     }
@@ -25,6 +20,9 @@ public class LoadCommand extends Command {
         this.timestamp = timestamp;
     }
 
+    /**
+     *
+     */
     public static String performLoad(final String selectedTrack) {
 
         if (selectedTrack == null) {

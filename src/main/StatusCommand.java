@@ -32,7 +32,8 @@ public class StatusCommand extends Command {
         if (player.getRepeatMode() == 2 && player.getType().equals("song")) {
             repeat = "Repeat Infinite";
         }
-        if (player.getRepeatMode() == 2 && (player.getType().equals("podcast") || player.getType().equals("playlist"))) {
+        if (player.getRepeatMode() == 2 && (player.getType().equals("podcast")
+                || player.getType().equals("playlist"))) {
             repeat = "Repeat Current Song";
         }
         statusOutput.putObject("stats")

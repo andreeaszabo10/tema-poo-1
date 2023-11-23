@@ -6,7 +6,13 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 public class BackwardCommand extends Command {
     public BackwardCommand() {
     }
-    public static ObjectNode createBackwardOutput(final BackwardCommand backwardCommand, PlayerStatus player, boolean loaded) {
+
+    /**
+     *
+     */
+    public static ObjectNode createBackwardOutput(final BackwardCommand backwardCommand,
+                                                        final PlayerStatus player,
+                                                  final boolean loaded) {
         ObjectNode output = JsonNodeFactory.instance.objectNode();
         output.put("command", "backward");
         output.put("user", backwardCommand.getUsername());

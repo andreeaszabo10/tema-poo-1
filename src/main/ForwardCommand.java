@@ -6,7 +6,13 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 public class ForwardCommand extends Command {
     public ForwardCommand() {
     }
-    public static ObjectNode createForwardOutput(final ForwardCommand forwardCommand, PlayerStatus player, boolean loaded) {
+
+    /**
+     *
+     */
+    public static ObjectNode createForwardOutput(final ForwardCommand forwardCommand,
+                                                       final PlayerStatus player,
+                                                 final boolean loaded) {
         ObjectNode output = JsonNodeFactory.instance.objectNode();
         output.put("command", "forward");
         output.put("user", forwardCommand.getUsername());

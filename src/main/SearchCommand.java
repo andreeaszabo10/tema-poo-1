@@ -33,6 +33,11 @@ public class SearchCommand extends Command {
         this.filters = filters;
     }
 
+    private static final int MAX = 6;
+
+    /**
+     *
+     */
     public static List<String> performSearch(final LibraryInput library,
                                              final SearchCommand searchCommand,
                                              final List<Playlist> playlists) {
@@ -78,7 +83,8 @@ public class SearchCommand extends Command {
                     }
                 }
 
-                if (lyrics != null && !song.getLyrics().toLowerCase().contains(lyrics.asText().toLowerCase())) {
+                if (lyrics != null && !song.getLyrics()
+                        .toLowerCase().contains(lyrics.asText().toLowerCase())) {
                     match = false;
                 }
 
@@ -104,7 +110,7 @@ public class SearchCommand extends Command {
                     match = false;
                 }
 
-                if (match && count < 6) {
+                if (match && count < MAX) {
                     searchResults.add(song.getName());
                     count++;
                 }
@@ -123,7 +129,7 @@ public class SearchCommand extends Command {
                     match = false;
                 }
 
-                if (match && count < 6) {
+                if (match && count < MAX) {
                     searchResults.add(podcast.getName());
                     count++;
                 }

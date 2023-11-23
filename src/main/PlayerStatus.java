@@ -43,11 +43,11 @@ public class PlayerStatus {
         this.repeatMode = repeatMode;
     }
 
-    public void setShuffleMode(final boolean shuffleMode) {
+    public final void setShuffleMode(final boolean shuffleMode) {
         this.shuffleMode = shuffleMode;
     }
 
-    public void setPaused(final boolean paused) {
+    public final void setPaused(final boolean paused) {
         this.paused = paused;
     }
 }

@@ -23,13 +23,17 @@ public class AddRemoveCommand extends Command {
         this.playlistId = playlistId;
     }
 
+    /**
+     *
+     */
     public static int performAddRemove(final AddRemoveCommand addRemoveCommand,
                                         final List<Playlist> playlists,
                                         final String song, final LibraryInput library) {
         if (addRemoveCommand.getPlaylistId() > playlists.size()) {
             return -1;
         }
-        Playlist playlist = Main.findPlaylist(playlists, addRemoveCommand.getUsername(), addRemoveCommand.getPlaylistId());
+        Playlist playlist = Main.findPlaylist(playlists, addRemoveCommand.getUsername(),
+                addRemoveCommand.getPlaylistId());
         int ok = 1;
         if (playlist.getSongs() != null) {
             for (String song1 : playlist.getSongs()) {

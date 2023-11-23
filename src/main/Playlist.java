@@ -19,11 +19,11 @@ public class Playlist {
     @Getter
     private List<String> followers;
 
-    public void setVisibility(String visibility) {
+    public final void setVisibility(final String visibility) {
         this.visibility = visibility;
     }
 
-    public void setFollowers(List<String> followers) {
+    public final void setFollowers(final List<String> followers) {
         this.followers = followers;
     }
 
@@ -51,6 +51,10 @@ public class Playlist {
     public final void setSongs(final String[] songs) {
         this.songs = songs;
     }
+
+    /**
+     *
+     */
     public final void addSong(final String song) {
         String[] newSongs = new String[songs.length + 1];
         System.arraycopy(songs, 0, newSongs, 0, songs.length);
@@ -58,6 +62,9 @@ public class Playlist {
         songs = newSongs;
     }
 
+    /**
+     *
+     */
     public final void removeSong(final String song) {
         String[] newSongs = new String[songs.length - 1];
         int index = 0;
@@ -69,20 +76,33 @@ public class Playlist {
         songs = newSongs;
     }
 
-    public void addFollower(String follower) {
+    /**
+     *
+     */
+    public final void addFollower(final String follower) {
         followers.add(follower);
     }
 
-    public void removeFollower(String follower) {
+    /**
+     *
+     */
+    public final void removeFollower(final String follower) {
         followers.remove(follower);
     }
 
-    public int getFollowersNumber() {
+    /**
+     *
+     */
+    public final int getFollowersNumber() {
         if (followers == null) {
             return 0;
         }
         return followers.size();
     }
+
+    /**
+     *
+     */
     public static Playlist performCreatePlaylist(final CreatePlaylistCommand createPlaylist) {
         Playlist newPlaylist = new Playlist();
         newPlaylist.setPlaylistName(createPlaylist.getPlaylistName());

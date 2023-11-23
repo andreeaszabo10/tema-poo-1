@@ -62,6 +62,8 @@ public final class Main {
         Checker.calculateScore();
     }
 
+    private static final int SECOND = 90;
+
     /**
      * @param filePathInput for input file
      * @param filePathOutput for output file
@@ -109,13 +111,14 @@ public final class Main {
                 outputs.add(SearchCommand.createSearchOutput(searchCommand, searchResults));
             }
             if (command instanceof SelectCommand selectCommand) {
-                if (searchResults != null){
+                if (searchResults != null) {
                     selectedTrack = SelectCommand.performSelect(searchResults, selectCommand);
                     if (!selectedTrack.equals("1")) {
                         noSelect = true;
                     }
                 }
-                outputs.add(SelectCommand.createSelectOutput(selectCommand, selectedTrack, searchResults));
+                outputs.add(SelectCommand.createSelectOutput(selectCommand,
+                        selectedTrack, searchResults));
             }
             if (command instanceof LoadCommand loadCommand) {
                 String message = LoadCommand.performLoad(selectedTrack);
@@ -194,7 +197,8 @@ public final class Main {
             if (command instanceof StatusCommand statusCommand) {
                 assert playerStatus.getType() != null;
                 if (playerStatus.getType().equals("podcast")) {
-                    if (playerStatus.getRemainedTime() - statusCommand.getTimestamp() + lastTime < 0) {
+                    if (playerStatus.getRemainedTime() - statusCommand.getTimestamp()
+                            + lastTime < 0) {
                         PodcastInput podcast = getPodcastDetails(library, selectedTrack);
                         if (podcast != null) {
                             ArrayList<EpisodeInput> list = podcast.getEpisodes();
@@ -202,7 +206,8 @@ public final class Main {
                             int index = playerStatus.getIndex();
                             EpisodeInput episode = list.get(index);
                             playerStatus.setCurrentTrack(episode.getName());
-                            back.setRemainedTime(episode.getDuration() - (-playerStatus.getRemainedTime()));
+                            back.setRemainedTime(episode.getDuration()
+                                    - (-playerStatus.getRemainedTime()));
                             playerStatus.setRemainedTime(back.getRemainedTime());
                         }
                     }
@@ -234,7 +239,8 @@ public final class Main {
                                     }
                                     if (var != 0 && flag == 1) {
                                         alreadyPlayed[count] = song;
-                                        if (song.getDuration() + playerStatus.getRemainedTime() > 0) {
+                                        if (song.getDuration()
+                                                + playerStatus.getRemainedTime() > 0) {
                                             right = song.getDuration();
                                             playerStatus.setCurrentTrack(song.getName());
                                             break;
@@ -245,15 +251,19 @@ public final class Main {
                                 }
                                 if (right != 0) {
                                     for (int i = 0; i < count; i++) {
-                                        playerStatus.setRemainedTime(playerStatus.getRemainedTime()+alreadyPlayed[i].getDuration());
+                                        playerStatus.setRemainedTime(playerStatus.getRemainedTime()
+                                                + alreadyPlayed[i].getDuration());
                                     }
-                                    playerStatus.setRemainedTime(right - (-playerStatus.getRemainedTime()));
+                                    playerStatus.setRemainedTime(right
+                                            - (-playerStatus.getRemainedTime()));
                                 }
                             } else if (playerStatus.getRepeatMode() == 2) {
-                                SongInput song = getSongDetails(library, playerStatus.getCurrentTrack());
+                                SongInput song = getSongDetails(library,
+                                        playerStatus.getCurrentTrack());
                                 if (song != null) {
                                     while (playerStatus.getRemainedTime() < 0) {
-                                        playerStatus.setRemainedTime(playerStatus.getRemainedTime() + song.getDuration());
+                                        playerStatus.setRemainedTime(playerStatus.getRemainedTime()
+                                                + song.getDuration());
                                     }
                                 }
                             } else if (playerStatus.getRepeatMode() == 1) {
@@ -263,17 +273,20 @@ public final class Main {
                                         SongInput song = getSongDetails(library, i);
                                         if (var != 0) {
                                             assert song != null;
-                                            if (song.getDuration() + playerStatus.getRemainedTime() > 0) {
+                                            if (song.getDuration()
+                                                    + playerStatus.getRemainedTime() > 0) {
                                                 right = song.getDuration();
                                                 playerStatus.setCurrentTrack(song.getName());
                                                 break;
                                             }
-                                            playerStatus.setRemainedTime(playerStatus.getRemainedTime() + song.getDuration());
+                                            playerStatus.setRemainedTime(playerStatus
+                                                    .getRemainedTime() + song.getDuration());
                                         }
                                         var = 1;
                                     }
                                 }
-                                playerStatus.setRemainedTime(right - (-playerStatus.getRemainedTime()));
+                                playerStatus.setRemainedTime(right
+                                        - (-playerStatus.getRemainedTime()));
                             }
                         }
                     }
@@ -283,14 +296,16 @@ public final class Main {
                         SongInput song = getSongDetails(library, playerStatus.getCurrentTrack());
                         if (playerStatus.getRepeatMode() == 1) {
                             assert song != null;
-                            playerStatus.setRemainedTime(playerStatus.getRemainedTime() + song.getDuration());
+                            playerStatus.setRemainedTime(playerStatus.getRemainedTime()
+                                    + song.getDuration());
                             playerStatus.setRepeatMode(0);
                             repeat = 0;
                         }
                         if (playerStatus.getRepeatMode() == 2) {
                             while (playerStatus.getRemainedTime() <= 0) {
                                 assert song != null;
-                                playerStatus.setRemainedTime(playerStatus.getRemainedTime() + song.getDuration());
+                                playerStatus.setRemainedTime(playerStatus.getRemainedTime()
+                                        + song.getDuration());
                             }
                         }
                     }
@@ -322,7 +337,8 @@ public final class Main {
                     playerStatus.setPaused(false);
                 } else {
                     playPauseCommand.setPaused(1);
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - playPauseCommand.getTimestamp() + lastTime);
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime()
+                            - playPauseCommand.getTimestamp() + lastTime);
                     lastTime = playPauseCommand.getTimestamp();
                     playerStatus.setPaused(true);
                 }
@@ -341,12 +357,14 @@ public final class Main {
                 if (var == 0) {
                     playlists.add(playlist);
                 }
-                outputs.add(CreatePlaylistCommand.createPlaylistOutput(createPlaylistCommand, var));
+                outputs.add(CreatePlaylistCommand.createPlaylistOutput(createPlaylistCommand,
+                        var));
             }
             if (command instanceof AddRemoveCommand addRemoveCommand) {
                 int x = -2;
                 if (loaded) {
-                    x = AddRemoveCommand.performAddRemove(addRemoveCommand, playlists, selectedTrack, library);
+                    x = AddRemoveCommand.performAddRemove(addRemoveCommand,
+                            playlists, selectedTrack, library);
                 }
                 outputs.add(AddRemoveCommand.createAddRemoveOutput(addRemoveCommand, x));
             }
@@ -380,11 +398,13 @@ public final class Main {
             if (command instanceof RepeatCommand repeatCommand) {
                 if (repeat == 2 && playerStatus.getType().equals("song")) {
                     SongInput song = getSongDetails(library, playerStatus.getCurrentTrack());
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - repeatCommand.getTimestamp() + lastTime);
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime()
+                            - repeatCommand.getTimestamp() + lastTime);
                     lastTime = repeatCommand.getTimestamp();
                     while (playerStatus.getRemainedTime() <= 0) {
                         assert song != null;
-                        playerStatus.setRemainedTime(playerStatus.getRemainedTime() + song.getDuration());
+                        playerStatus.setRemainedTime(playerStatus.getRemainedTime()
+                                + song.getDuration());
                     }
                 }
                 if (loaded) {
@@ -394,11 +414,13 @@ public final class Main {
                     }
                     playerStatus.setRepeatMode(repeat);
                     if (playerStatus.getType() != null) {
-                        outputs.add(RepeatCommand.createRepeatOutput(repeatCommand, repeat, playerStatus));
+                        outputs.add(RepeatCommand.createRepeatOutput(repeatCommand,
+                                repeat, playerStatus));
                     }
                 } else {
                     repeat = 3;
-                    outputs.add(RepeatCommand.createRepeatOutput(repeatCommand, repeat, playerStatus));
+                    outputs.add(RepeatCommand.createRepeatOutput(repeatCommand,
+                            repeat, playerStatus));
                     playerStatus.setRepeatMode(0);
                 }
             }
@@ -412,7 +434,8 @@ public final class Main {
                     playerStatus.setShuffleMode(!playerStatus.isShuffleMode());
                 }
                 if (lastSong != null && lastSong.equals(playerStatus.getCurrentTrack())
-                        && (playerStatus.getRemainedTime() - shuffleCommand.getTimestamp() + lastTime) < 0) {
+                        && (playerStatus.getRemainedTime()
+                        - shuffleCommand.getTimestamp() + lastTime) < 0) {
                     playerStatus.setShuffleMode(!playerStatus.isShuffleMode());
                     loaded = false;
                     playerStatus.setRemainedTime(0);
@@ -456,7 +479,8 @@ public final class Main {
                         playlist.setSongs(songs);
                     }
                 }
-                outputs.add(ShuffleCommand.createShuffleOutput(shuffleCommand, playerStatus, loaded));
+                outputs.add(ShuffleCommand.createShuffleOutput(shuffleCommand,
+                        playerStatus, loaded));
             }
             if (command instanceof NextCommand nextCommand) {
                 assert playerStatus.getType() != null;
@@ -537,7 +561,7 @@ public final class Main {
             if (command instanceof ForwardCommand forwardCommand) {
                 assert playerStatus.getType() != null;
                 if (playerStatus.getType().equals("podcast")) {
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - 90);
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - SECOND);
                 }
                 if (!loaded) {
                     playerStatus.setRemainedTime(0);
@@ -546,17 +570,20 @@ public final class Main {
                     playerStatus.setRepeatMode(0);
                     playerStatus.setShuffleMode(false);
                 }
-                outputs.add(ForwardCommand.createForwardOutput(forwardCommand, playerStatus, loaded));
+                outputs.add(ForwardCommand.createForwardOutput(forwardCommand,
+                        playerStatus, loaded));
             }
             if (command instanceof BackwardCommand backwardCommand) {
                 assert playerStatus.getType() != null;
                 if (playerStatus.getType().equals("podcast")) {
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() + 90);
+                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() + SECOND);
                 }
-                outputs.add(BackwardCommand.createBackwardOutput(backwardCommand, playerStatus, loaded));
+                outputs.add(BackwardCommand.createBackwardOutput(backwardCommand,
+                        playerStatus, loaded));
             }
             if (command instanceof SwitchVisibility switchVisibility) {
-                Playlist playlist = findPlaylist(playlists, switchVisibility.getUsername(), switchVisibility.getPlaylistId());
+                Playlist playlist = findPlaylist(playlists,
+                        switchVisibility.getUsername(), switchVisibility.getPlaylistId());
                 if (playlist.getVisibility().equals("public")) {
                     playlist.setVisibility("private");
                 } else {
@@ -585,7 +612,32 @@ public final class Main {
                         }
                     }
                 }
-                outputs.add(FollowCommand.createFollowOutput(followCommand, noSelect, playlist, flag));
+                outputs.add(FollowCommand.createFollowOutput(followCommand,
+                        noSelect, playlist, flag));
+            }
+            if (command instanceof GetTop5Songs getTop5Songs) {
+                outputs.add(GetTop5Songs.createTop5Output(getTop5Songs));
+            }
+            if (command instanceof GetTop5Playlists getTop5Playlists) {
+                String[] array = new String[playlists.size()];
+                int[] followersNumber = new int[playlists.size()];
+                for (int i = 0; i < playlists.size(); i++) {
+                    array[i] = playlists.get(i).getPlaylistName();
+                    followersNumber[i] = playlists.get(i).getFollowersNumber();
+                }
+                for (int i = 0; i < array.length - 1; i++) {
+                    for (int j = 0; j < array.length - i - 1; j++) {
+                        if (followersNumber[j] < followersNumber[j + 1]) {
+                            int aux = followersNumber[j];
+                            followersNumber[j] = followersNumber[j + 1];
+                            followersNumber[j + 1] = aux;
+                            String aux1 = array[j];
+                            array[j] = array[j + 1];
+                            array[j + 1] = aux1;
+                        }
+                    }
+                }
+                outputs.add(GetTop5Playlists.createTop5POutput(getTop5Playlists, array));
             }
         }
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
@@ -593,7 +645,11 @@ public final class Main {
 
     }
 
-    public static Playlist findPlaylist(List<Playlist> playlists, String username, int playlistId) {
+    /**
+     *
+     */
+    public static Playlist findPlaylist(final List<Playlist> playlists,
+                                        final String username, final int playlistId) {
         Playlist playlist = new Playlist();
         int count = 0;
         for (Playlist p : playlists) {
@@ -607,7 +663,11 @@ public final class Main {
         return playlist;
     }
 
-    private static SongInput getSongDetails(final LibraryInput library, final String name) {
+    /**
+     *
+     */
+    private static SongInput getSongDetails(final LibraryInput library,
+                                            final String name) {
         for (SongInput song : library.getSongs()) {
             if (song.getName().equals(name)) {
                 return song;
@@ -615,7 +675,12 @@ public final class Main {
         }
         return null;
     }
-    private static PodcastInput getPodcastDetails(final LibraryInput library, final String name) {
+
+    /**
+     *
+     */
+    private static PodcastInput getPodcastDetails(final LibraryInput library,
+                                                  final String name) {
         for (PodcastInput podcast : library.getPodcasts()) {
             if (podcast.getName().equals(name)) {
                 return podcast;
@@ -623,7 +688,12 @@ public final class Main {
         }
         return null;
     }
-    private static Playlist getPlaylistDetails(final List<Playlist> playlists, final String name) {
+
+    /**
+     *
+     */
+    private static Playlist getPlaylistDetails(final List<Playlist> playlists,
+                                               final String name) {
         for (Playlist playlist : playlists) {
             if (playlist.getPlaylistName().equals(name)) {
                 return playlist;
@@ -642,7 +712,8 @@ public final class Main {
         ObjectMapper objectMapper = new ObjectMapper();
         List<Command> commands = new ArrayList<>();
 
-        Command[] commandArray = objectMapper.readValue(new File(filePathInput), Command[].class);
+        Command[] commandArray = objectMapper.readValue(new File(filePathInput),
+                Command[].class);
 
         for (Command command : commandArray) {
             if ("search".equals(command.getCommand())) {
@@ -743,6 +814,14 @@ public final class Main {
                 followCommand.setUsername(command.getUsername());
                 followCommand.setPlaylistId(command.getPlaylistId());
                 commands.add(followCommand);
+            }  else if ("getTop5Playlists".equals(command.getCommand())) {
+                GetTop5Playlists getTop5Playlists = new GetTop5Playlists();
+                getTop5Playlists.setTimestamp(command.getTimestamp());
+                commands.add(getTop5Playlists);
+            }  else if ("getTop5Songs".equals(command.getCommand())) {
+                GetTop5Songs getTop5Songs = new GetTop5Songs();
+                getTop5Songs.setTimestamp(command.getTimestamp());
+                commands.add(getTop5Songs);
             }
         }
         return commands;
