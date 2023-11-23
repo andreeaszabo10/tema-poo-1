@@ -112,7 +112,7 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 1250,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -128,7 +128,7 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 1350,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -194,23 +194,23 @@
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 1650,
-  "message" : "Playlist followed successfully."
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 1680,
-  "message" : "Search returned 1 results",
-  "results" : [ "My second playlist" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1710,
-  "message" : "Successfully selected My second playlist."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 1750,
-  "message" : "Playlist followed successfully."
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "switchVisibility",
   "user" : "bob35",

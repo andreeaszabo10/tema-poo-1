@@ -111,7 +111,9 @@ public final class Main {
             if (command instanceof SelectCommand selectCommand) {
                 if (searchResults != null){
                     selectedTrack = SelectCommand.performSelect(searchResults, selectCommand);
-                    noSelect = true;
+                    if (!selectedTrack.equals("1")) {
+                        noSelect = true;
+                    }
                 }
                 outputs.add(SelectCommand.createSelectOutput(selectCommand, selectedTrack, searchResults));
             }
@@ -368,6 +370,7 @@ public final class Main {
                 ok = !ok;
             }
             if (command instanceof ShowPlaylistsCommand showPlaylistsCommand) {
+                noSelect = false;
                 outputs.add(ShowPlaylistsCommand.createShowPlaylistsOutput(showPlaylistsCommand,
                         playlists));
             }
@@ -562,24 +565,27 @@ public final class Main {
                 outputs.add(SwitchVisibility.createSwitchOutput(switchVisibility, playlist));
             }
             if (command instanceof FollowCommand followCommand) {
-                Playlist playlist = getPlaylistDetails(playlists, selectedTrack);
+                Playlist playlist = null;
                 int flag = 0;
-                if (playlist != null) {
-                    if (playlist.getFollowers() != null) {
-                        for (String user : playlist.getFollowers()) {
-                            if (user.equals(followCommand.getUsername())) {
-                                flag = 1;
-                                break;
+                if (noSelect) {
+                    playlist = getPlaylistDetails(playlists, selectedTrack);
+                    if (playlist != null) {
+                        if (playlist.getFollowers() != null) {
+                            for (String user : playlist.getFollowers()) {
+                                if (user.equals(followCommand.getUsername())) {
+                                    flag = 1;
+                                    break;
+                                }
                             }
                         }
-                    }
-                    if (flag == 0) {
-                        playlist.addFollower(followCommand.getUsername());
-                    } else {
-                        playlist.removeFollower(followCommand.getUsername());
+                        if (flag == 0) {
+                            playlist.addFollower(followCommand.getUsername());
+                        } else {
+                            playlist.removeFollower(followCommand.getUsername());
+                        }
                     }
                 }
-                outputs.add(FollowCommand.createFollowOutput(followCommand));
+                outputs.add(FollowCommand.createFollowOutput(followCommand, noSelect, playlist, flag));
             }
         }
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();

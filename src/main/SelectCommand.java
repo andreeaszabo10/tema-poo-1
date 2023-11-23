@@ -33,7 +33,7 @@ public class SelectCommand extends Command {
                 return "1";
             }
         }
-        return "2";
+        return "1";
     }
     /**
      *

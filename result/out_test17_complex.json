@@ -196,12 +196,12 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 380,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "alice22",
   "timestamp" : 385,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -222,7 +222,7 @@
   "command" : "load",
   "user" : "alice22",
   "timestamp" : 410,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -301,12 +301,12 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 505,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "alice22",
   "timestamp" : 510,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -553,12 +553,12 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 805,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "bob35",
   "timestamp" : 810,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -621,7 +621,7 @@
   "command" : "load",
   "user" : "bob35",
   "timestamp" : 885,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -721,12 +721,12 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 1005,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "bob35",
   "timestamp" : 1010,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -805,12 +805,12 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 1105,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "bob35",
   "timestamp" : 1110,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -831,7 +831,7 @@
   "command" : "load",
   "user" : "bob35",
   "timestamp" : 1135,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -1036,12 +1036,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1380,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1385,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1078,12 +1078,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1430,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1435,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1099,12 +1099,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1455,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1460,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1120,12 +1120,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1480,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1485,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1162,12 +1162,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1530,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1535,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1183,12 +1183,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1555,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1560,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1246,12 +1246,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1630,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1635,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1267,12 +1267,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1655,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1660,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1288,12 +1288,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1680,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 1685,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1566,7 +1566,7 @@
   "command" : "load",
   "user" : "david27",
   "timestamp" : 2010,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1608,7 +1608,7 @@
   "command" : "load",
   "user" : "david27",
   "timestamp" : 2060,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1645,12 +1645,12 @@
   "command" : "select",
   "user" : "david27",
   "timestamp" : 2105,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "david27",
   "timestamp" : 2110,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1687,12 +1687,12 @@
   "command" : "select",
   "user" : "david27",
   "timestamp" : 2155,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "david27",
   "timestamp" : 2160,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1918,12 +1918,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2430,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 2435,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1960,12 +1960,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2480,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 2485,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -2007,7 +2007,7 @@
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 2535,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -2028,7 +2028,7 @@
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 2560,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -2070,7 +2070,7 @@
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 2610,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -2170,12 +2170,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2730,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 2735,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -2485,12 +2485,12 @@
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 3105,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "frank21",
   "timestamp" : 3110,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2532,7 +2532,7 @@
   "command" : "load",
   "user" : "frank21",
   "timestamp" : 3160,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2653,12 +2653,12 @@
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 3305,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "grace25",
   "timestamp" : 3310,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2863,12 +2863,12 @@
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 3555,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "grace25",
   "timestamp" : 3560,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2884,12 +2884,12 @@
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 3580,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "grace25",
   "timestamp" : 3585,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2947,12 +2947,12 @@
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 3655,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "grace25",
   "timestamp" : 3660,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -3057,7 +3057,7 @@
   "command" : "load",
   "user" : "grace25",
   "timestamp" : 3785,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -3120,7 +3120,7 @@
   "command" : "load",
   "user" : "henry26",
   "timestamp" : 3860,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3241,12 +3241,12 @@
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 4005,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "henry26",
   "timestamp" : 4010,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3304,12 +3304,12 @@
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 4080,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "henry26",
   "timestamp" : 4085,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3325,12 +3325,12 @@
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 4105,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "henry26",
   "timestamp" : 4110,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3451,12 +3451,12 @@
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 4255,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "henry26",
   "timestamp" : 4260,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3535,12 +3535,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 4355,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "irene33",
   "timestamp" : 4360,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3556,12 +3556,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 4380,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "irene33",
   "timestamp" : 4385,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3661,12 +3661,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 4505,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "irene33",
   "timestamp" : 4510,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3871,12 +3871,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 4755,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "irene33",
   "timestamp" : 4760,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3892,12 +3892,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 4780,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "irene33",
   "timestamp" : 4785,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3955,12 +3955,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 4855,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "jack29",
   "timestamp" : 4860,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3997,12 +3997,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 4905,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "jack29",
   "timestamp" : 4910,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -4018,12 +4018,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 4930,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "jack29",
   "timestamp" : 4935,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -4186,12 +4186,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 5130,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "jack29",
   "timestamp" : 5135,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -4312,12 +4312,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 5280,
-  "message" : "Successfully selected 2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "jack29",
   "timestamp" : 5285,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -7352,8 +7352,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7000,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -7368,8 +7368,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7010,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -7379,7 +7379,7 @@
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 7010,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -7395,13 +7395,13 @@
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 7020,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7030,
-  "message" : "Search returned 2 results",
-  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -7411,7 +7411,7 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 7030,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -7491,7 +7491,7 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 7080,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7544,8 +7544,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7120,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -7560,18 +7560,18 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7130,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7130,
-  "message" : "Successfully selected Groovy Rhythms Dream #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 7130,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -7587,29 +7587,29 @@
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 7140,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7150,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7150,
-  "message" : "Successfully selected Groovy Rhythms Dream #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 7150,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7160,
-  "message" : "Search returned 2 results",
-  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -7619,7 +7619,7 @@
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 7160,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7640,8 +7640,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7180,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -7651,7 +7651,7 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 7180,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7672,8 +7672,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7200,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -7683,7 +7683,7 @@
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 7200,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7704,8 +7704,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7220,
-  "message" : "Search returned 2 results",
-  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -7715,29 +7715,29 @@
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 7220,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7230,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7230,
-  "message" : "Successfully selected Electric Melodies Escape #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 7230,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7240,
-  "message" : "Search returned 2 results",
-  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -7747,45 +7747,45 @@
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 7240,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7250,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7250,
-  "message" : "Successfully selected Electric Melodies Escape #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 7250,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7260,
-  "message" : "Search returned 2 results",
-  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7260,
-  "message" : "Successfully selected Classic Sounds Expedition #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 7260,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7270,
-  "message" : "Search returned 2 results",
-  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -7795,7 +7795,7 @@
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 7270,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -7811,7 +7811,7 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 7280,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7832,34 +7832,34 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7300,
-  "message" : "Search returned 2 results",
-  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7300,
-  "message" : "Successfully selected Groovy Grooves Expedition #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 7300,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7310,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7310,
-  "message" : "Successfully selected Chill Sounds Adventure #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 7310,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -7875,7 +7875,7 @@
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 7320,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7907,13 +7907,13 @@
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 7340,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7350,
-  "message" : "Search returned 2 results",
-  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -7923,13 +7923,13 @@
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 7350,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7360,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -7944,8 +7944,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7370,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -7955,7 +7955,7 @@
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 7370,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -7987,7 +7987,7 @@
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 7390,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8019,7 +8019,7 @@
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 7410,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8051,13 +8051,13 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 7430,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7440,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -8104,8 +8104,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7470,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -8163,7 +8163,7 @@
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 7500,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8200,8 +8200,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7530,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -8211,18 +8211,18 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 7530,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7540,
-  "message" : "Search returned 2 results",
-  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7540,
-  "message" : "Successfully selected Classic Harmonies Dream #1."
+  "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -8232,24 +8232,24 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7550,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7550,
-  "message" : "Successfully selected Electric Melodies Escape #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 7550,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7560,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -8291,39 +8291,39 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 7580,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7590,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7590,
-  "message" : "Successfully selected Groovy Rhythms Dream #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 7590,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7600,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7600,
-  "message" : "Successfully selected Chill Sounds Adventure #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 7600,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8339,7 +8339,7 @@
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 7610,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8355,13 +8355,13 @@
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 7620,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7630,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -8371,7 +8371,7 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 7630,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8392,18 +8392,18 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7650,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7650,
-  "message" : "Successfully selected Electric Melodies Escape #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 7650,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8435,7 +8435,7 @@
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 7670,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8456,18 +8456,18 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7690,
-  "message" : "Search returned 2 results",
-  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7690,
-  "message" : "Successfully selected Groovy Grooves Expedition #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 7690,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8499,7 +8499,7 @@
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 7710,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8547,7 +8547,7 @@
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 7740,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8595,7 +8595,7 @@
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 7770,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8611,23 +8611,23 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 7780,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7790,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7790,
-  "message" : "Successfully selected Chill Sounds Adventure #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 7790,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8643,7 +8643,7 @@
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 7800,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8659,93 +8659,93 @@
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 7810,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7820,
-  "message" : "Search returned 2 results",
-  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7820,
-  "message" : "Successfully selected Groovy Grooves Expedition #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 7820,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7830,
-  "message" : "Search returned 2 results",
-  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7830,
-  "message" : "Successfully selected Groovy Grooves Expedition #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 7830,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7840,
-  "message" : "Search returned 2 results",
-  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7840,
-  "message" : "Successfully selected Groovy Grooves Expedition #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 7840,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7850,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7850,
-  "message" : "Successfully selected Electric Melodies Escape #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 7850,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7860,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7860,
-  "message" : "Successfully selected Groovy Rhythms Dream #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 7860,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7870,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -8755,13 +8755,13 @@
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 7870,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7880,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -8771,13 +8771,13 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 7880,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7890,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -8792,8 +8792,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7900,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -8851,13 +8851,13 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 7930,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7940,
-  "message" : "Search returned 2 results",
-  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -8867,7 +8867,7 @@
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 7940,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8883,7 +8883,7 @@
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 7950,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8931,7 +8931,7 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 7980,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -8995,7 +8995,7 @@
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 8020,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -9011,7 +9011,7 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 8030,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -9043,7 +9043,7 @@
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 8050,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -9059,7 +9059,7 @@
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 8060,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -9075,7 +9075,7 @@
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 8070,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -9091,7 +9091,7 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 8080,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -9107,7 +9107,7 @@
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 8090,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -9176,18 +9176,18 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 8140,
-  "message" : "Search returned 2 results",
-  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 8140,
-  "message" : "Successfully selected Classic Harmonies Dream #1."
+  "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 8140,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -9203,23 +9203,23 @@
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 8150,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8160,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 8160,
-  "message" : "Successfully selected Chill Sounds Adventure #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 8160,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -9267,7 +9267,7 @@
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 8190,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -9288,8 +9288,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8210,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -9299,7 +9299,7 @@
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 8210,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -9315,7 +9315,7 @@
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 8220,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -9336,8 +9336,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 8240,
-  "message" : "Search returned 2 results",
-  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -9347,7 +9347,7 @@
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 8240,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -9368,8 +9368,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8260,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -9379,7 +9379,7 @@
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 8260,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -9400,8 +9400,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 8280,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -9416,8 +9416,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8290,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -9427,13 +9427,13 @@
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 8290,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 8300,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -9459,7 +9459,7 @@
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 8310,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -9475,7 +9475,7 @@
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 8320,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -9491,7 +9491,7 @@
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 8330,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -9523,7 +9523,7 @@
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 8350,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -9539,7 +9539,7 @@
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 8360,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -9555,7 +9555,7 @@
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 8370,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -9571,23 +9571,23 @@
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 8380,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8390,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 8390,
-  "message" : "Successfully selected Groovy Rhythms Dream #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 8390,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -9603,7 +9603,7 @@
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 8400,
-  "message" : "Playlist followed successfully."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -9624,8 +9624,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8420,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Journey #1" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -9667,23 +9667,23 @@
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 8440,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 8450,
-  "message" : "Search returned 2 results",
-  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibey Bangers Safari #1" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 8450,
-  "message" : "Successfully selected Groovy Rhythms Dream #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 8450,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -9699,7 +9699,7 @@
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 8460,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -9720,18 +9720,18 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 8480,
-  "message" : "Search returned 2 results",
-  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Chill Sounds Voyage #1" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 8480,
-  "message" : "Successfully selected Electric Melodies Escape #2."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 8480,
-  "message" : "Playlist followed successfully."
+  "message" : "The selected source is not a playlist."
 }, {
   "command" : "showPlaylists",
   "user" : "alice22",
@@ -9745,7 +9745,7 @@
     "name" : "Classic Sounds Expedition #2",
     "songs" : [ "Angie", "Shape of You", "Sad But True", "Love Story", "Bohemian Rhapsody", "The Man", "Money Trees", "Thinking Out Loud" ],
     "visibility" : "public",
-    "followers" : 1
+    "followers" : 0
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -9785,7 +9785,7 @@
     "name" : "Groovy Grooves Expedition #2",
     "songs" : [ "Love Story", "Don't", "Money Trees", "Maps" ],
     "visibility" : "public",
-    "followers" : 5
+    "followers" : 0
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -9825,7 +9825,7 @@
     "name" : "Chill Sounds Adventure #2",
     "songs" : [ "Start Me Up", "Bohemian Rhapsody", "Blank Space" ],
     "visibility" : "private",
-    "followers" : 4
+    "followers" : 0
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -9905,7 +9905,7 @@
     "name" : "Electric Melodies Escape #2",
     "songs" : [ "Dream On", "Don't", "Thinking Out Loud", "Black Dog" ],
     "visibility" : "private",
-    "followers" : 3
+    "followers" : 1
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -9925,7 +9925,7 @@
     "name" : "Groovy Rhythms Dream #2",
     "songs" : [ "Begin Again", "Blank Space", "Start Me Up", "Money Trees", "Sad But True", "Shape of You", "Delicate" ],
     "visibility" : "private",
-    "followers" : 2
+    "followers" : 0
   } ]
 }, {
   "command" : "showPreferredSongs",

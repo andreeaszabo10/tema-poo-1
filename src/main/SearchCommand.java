@@ -134,14 +134,20 @@ public class SearchCommand extends Command {
             if (ownerFilterNode != null) {
                 for (Playlist playlist : playlists) {
                     if (playlist.getOwner().equals(ownerFilterNode.asText())) {
-                        searchResults.add(playlist.getPlaylistName());
+                        if (playlist.getVisibility().equals("public")
+                                || playlist.getOwner().equals(searchCommand.getUsername())) {
+                            searchResults.add(playlist.getPlaylistName());
+                        }
                     }
                 }
             }
             if (nameFilterNode != null) {
                 for (Playlist playlist : playlists) {
                     if (playlist.getPlaylistName().equals(nameFilterNode.asText())) {
-                        searchResults.add(playlist.getPlaylistName());
+                        if (playlist.getVisibility().equals("public")
+                                || playlist.getOwner().equals(searchCommand.getUsername())) {
+                            searchResults.add(playlist.getPlaylistName());
+                        }
                     }
                 }
             }
