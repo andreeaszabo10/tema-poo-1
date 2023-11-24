@@ -103,11 +103,22 @@ public class Playlist {
     /**
      *
      */
-    public static Playlist performCreatePlaylist(final CreatePlaylistCommand createPlaylist) {
-        Playlist newPlaylist = new Playlist();
-        newPlaylist.setPlaylistName(createPlaylist.getPlaylistName());
-        newPlaylist.setUsername(createPlaylist.getUsername());
-        newPlaylist.setOwner(createPlaylist.getUsername());
-        return newPlaylist;
+    public static int createPlaylist(final CreatePlaylistCommand createPlaylist,
+                                     final List<Playlist> playlists) {
+        Playlist playlist = new Playlist();
+        playlist.setPlaylistName(createPlaylist.getPlaylistName());
+        playlist.setUsername(createPlaylist.getUsername());
+        playlist.setOwner(createPlaylist.getUsername());
+        int var = 0;
+        for (Playlist play : playlists) {
+            if (play.getPlaylistName().equals(playlist.getPlaylistName())) {
+                var = 1;
+                break;
+            }
+        }
+        if (var == 0) {
+            playlists.add(playlist);
+        }
+        return var;
     }
 }

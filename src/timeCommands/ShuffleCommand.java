@@ -1,8 +1,12 @@
-package main;
+package timeCommands;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.Getter;
+import main.Command;
+import main.Main;
+import main.PlayerStatus;
+import main.Playlist;
 
 import java.util.Collections;
 import java.util.List;

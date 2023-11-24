@@ -1,13 +1,14 @@
-package main;
+package timeCommands;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import fileio.input.EpisodeInput;
 import fileio.input.LibraryInput;
-import fileio.input.PodcastInput;
 import fileio.input.SongInput;
+import main.Command;
+import main.Main;
+import main.PlayerStatus;
+import main.Playlist;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PrevCommand extends Command {

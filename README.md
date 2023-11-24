@@ -6,8 +6,7 @@ In cadrul acestui proiect am implementat un AudioPlayer care reda playlist-uri
 diferite operatii pe aceste colecții de fișiere audio. Mai întâi citesc ce
 operatii trebuie sa fac și apoi iterez prin ele și le execut.
 Aceste operatii sunt:
-1. Search - in functie de filtrele date am cautat în lista de fișiere audio
-care se potrivesc și apoi am păstrat doar primele 5 variante corecte.
+1. Search - in functie de filtrele date am cautat în lista de fișiere audio care se potrivesc și apoi am păstrat doar primele 5 variante corecte.
 Am verificat catoate filtrele sa fie puse în același timp.
 2. Select - iau din lista de rezultate de la search melodia sau podcastul
 sau playlist-ul de la indicele cerut și apoi retin ce am selectat pentru

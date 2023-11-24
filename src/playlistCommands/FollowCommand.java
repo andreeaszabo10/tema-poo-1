@@ -1,7 +1,10 @@
-package main;
+package playlistCommands;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import main.Command;
+import main.Main;
+import main.Playlist;
 
 import java.util.List;
 

@@ -1,10 +1,37 @@
-package main;
+package playlistCommands;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import main.Command;
+import main.Main;
+import main.Playlist;
+
+import java.util.List;
 
 public class SwitchVisibility extends Command {
     public SwitchVisibility() {
+    }
+
+    public static Playlist switchVisibility(final List<Playlist> playlists,
+                                            final SwitchVisibility swap) {
+        Playlist playlist;
+        int count = 0;
+        for (Playlist p : playlists) {
+            if (p.getOwner().equals(swap.getUsername())) {
+                count++;
+            }
+        }
+        if (swap.getPlaylistId() <= count) {
+            playlist = Main.findPlaylist(playlists, swap.getUsername(), swap.getPlaylistId());
+            if (playlist.getVisibility().equals("public")) {
+                playlist.setVisibility("private");
+            } else {
+                playlist.setVisibility("public");
+            }
+        } else {
+            playlist = null;
+        }
+        return playlist;
     }
 
     /**

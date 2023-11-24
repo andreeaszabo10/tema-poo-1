@@ -1,4 +1,4 @@
-package main;
+package statusCommands;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
@@ -6,6 +6,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.LibraryInput;
 import fileio.input.SongInput;
 import fileio.input.UserInput;
+import main.Command;
+import main.LikeCommand;
 
 import java.util.List;
 import java.util.Map;

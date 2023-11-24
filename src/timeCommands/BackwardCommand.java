@@ -1,10 +1,21 @@
-package main;
+package timeCommands;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import main.Command;
+import main.PlayerStatus;
 
 public class BackwardCommand extends Command {
     public BackwardCommand() {
+    }
+
+    private static final int SECOND = 90;
+
+    public static void backward(final PlayerStatus playerStatus) {
+        assert playerStatus.getType() != null;
+        if (playerStatus.getType().equals("podcast")) {
+            playerStatus.setRemainedTime(playerStatus.getRemainedTime() + SECOND);
+        }
     }
 
     /**

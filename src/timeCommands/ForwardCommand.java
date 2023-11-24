@@ -1,10 +1,27 @@
-package main;
+package timeCommands;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import main.Command;
+import main.PlayerStatus;
 
 public class ForwardCommand extends Command {
     public ForwardCommand() {
+    }
+
+    private static final int SECOND = 90;
+    public static void forward(final PlayerStatus playerStatus, final boolean loaded) {
+        assert playerStatus.getType() != null;
+        if (playerStatus.getType().equals("podcast")) {
+            playerStatus.setRemainedTime(playerStatus.getRemainedTime() - SECOND);
+        }
+        if (!loaded) {
+            playerStatus.setRemainedTime(0);
+            playerStatus.setCurrentTrack("");
+            playerStatus.setPaused(true);
+            playerStatus.setRepeatMode(0);
+            playerStatus.setShuffleMode(false);
+        }
     }
 
     /**

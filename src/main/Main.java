@@ -6,6 +6,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import fileio.input.*;
+import BasicCommands.*;
+import timeCommands.*;
+import statusCommands.*;
+import playlistCommands.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -73,31 +77,25 @@ public final class Main {
                               final String filePathOutput) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         LibraryInput library = objectMapper.readValue(new File(LIBRARY_PATH), LibraryInput.class);
-
         ArrayNode outputs = objectMapper.createArrayNode();
-
         String filepath = CheckerConstants.TESTS_PATH + filePathInput;
 
         List<Command> commands = readCommandsFromFile(filepath);
         List<String> searchResults = new ArrayList<>();
         String selectedTrack = null;
-        PlayerStatus playerStatus = new PlayerStatus();
+        PlayerStatus playerStatus = new PlayerStatus(), back = new PlayerStatus();
         playerStatus.setLastTime(0);
         List<Playlist> playlists = new ArrayList<>();
-        boolean loaded = false;
-        PlayerStatus back = new PlayerStatus();
-        int alreadyLoaded;
+        int alreadyLoaded = -1, repeat = 0;
         List<PodcastInput> loadedPodcasts = new ArrayList<>();
-        boolean noSelect = false;
-        int repeat = 0;
-        String[] songsNoShuffle = null;
-        String[] songsShuffled = null;
+        boolean noSelect = false, loaded = false;
+        String[] songsNoShuffle = null, songsShuffled = null;
         Map<String, List<String>> likedSongs = new HashMap<>();
 
         for (Command command : commands) {
             if (command instanceof SearchCommand searchCommand) {
                 loaded = false;
-                searchResults = SearchCommand.performSearch(library, searchCommand, playlists);
+                searchResults = SearchCommand.search(library, searchCommand, playlists);
                 if (!playerStatus.isPaused() && playerStatus.getType() != null) {
                     playerStatus.setRemainedTime(playerStatus.getRemainedTime()
                             - searchCommand.getTimestamp() + playerStatus.getLastTime());
@@ -109,7 +107,7 @@ public final class Main {
             }
             if (command instanceof SelectCommand selectCommand) {
                 if (searchResults != null) {
-                    selectedTrack = SelectCommand.performSelect(searchResults, selectCommand);
+                    selectedTrack = SelectCommand.select(searchResults, selectCommand);
                     if (!selectedTrack.equals("1")) {
                         noSelect = true;
                     }
@@ -118,74 +116,18 @@ public final class Main {
                         selectedTrack, searchResults));
             }
             if (command instanceof LoadCommand loadCommand) {
-                String message = LoadCommand.performLoad(selectedTrack);
+                String message = LoadCommand.load(selectedTrack);
                 if (noSelect) {
                     playerStatus.setLastTime(loadCommand.getTimestamp());
                 }
-                SongInput song;
-                PodcastInput podcast;
-                Playlist playlist;
                 repeat = 0;
                 loaded = true;
                 if (selectedTrack != null && noSelect) {
                     searchResults = null;
-                    song = getSongDetails(library, selectedTrack);
-                    podcast = getPodcastDetails(library, selectedTrack);
-                    playlist = getPlaylistDetails(playlists, selectedTrack);
-                    if (song != null) {
-                        playerStatus.setRemainedTime(song.getDuration());
-                        playerStatus.setCurrentTrack(song.getName());
-                        playerStatus.setPaused(false);
-                        playerStatus.setRepeatMode(0);
-                        playerStatus.setShuffleMode(false);
-                        playerStatus.setType("song");
-                        playerStatus.setIndex(0);
-                    }
-                    if (podcast != null) {
-                        ArrayList<EpisodeInput> list = podcast.getEpisodes();
-                        EpisodeInput first = list.get(0);
-                        alreadyLoaded = 0;
-                        for (PodcastInput pod : loadedPodcasts) {
-                            if (pod.getName().equals(podcast.getName())) {
-                                alreadyLoaded = 1;
-                                break;
-                            }
-                        }
-                        if (alreadyLoaded == 1) {
-                            playerStatus.setRemainedTime(back.getRemainedTime());
-                            playerStatus.setCurrentTrack(first.getName());
-                            playerStatus.setPaused(false);
-                            playerStatus.setRepeatMode(0);
-                            playerStatus.setShuffleMode(false);
-                            playerStatus.setType("podcast");
-                            playerStatus.setIndex(0);
-                            back = playerStatus;
-                        } else {
-                            playerStatus.setRemainedTime(first.getDuration());
-                            playerStatus.setCurrentTrack(first.getName());
-                            playerStatus.setPaused(false);
-                            playerStatus.setRepeatMode(0);
-                            playerStatus.setShuffleMode(false);
-                            playerStatus.setType("podcast");
-                            playerStatus.setIndex(0);
-                            back.setRemainedTime(first.getDuration());
-                            loadedPodcasts.add(podcast);
-                        }
-                    }
-                    if (playlist != null) {
-                        playerStatus.setType("playlist");
-                        String[] songs = playlist.getSongs();
-                        if (songs.length != 0) {
-                            song = getSongDetails(library, songs[0]);
-                            assert song != null;
-                            playerStatus.setRemainedTime(song.getDuration());
-                            playerStatus.setCurrentTrack(song.getName());
-                            playerStatus.setPaused(false);
-                            playerStatus.setRepeatMode(0);
-                            playerStatus.setShuffleMode(false);
-                            playerStatus.setIndex(0);
-                        }
-                    }
+                    loadCommand.setAlreadyLoaded(alreadyLoaded);
+                    LoadCommand.loader(playerStatus, library, back, selectedTrack,
+                            playlists, loadedPodcasts, loadCommand);
+                    alreadyLoaded = loadCommand.getAlreadyLoaded();
                 }
                 outputs.add(LoadCommand.createLoadOutput(loadCommand, message, noSelect));
                 noSelect = false;
@@ -197,100 +139,49 @@ public final class Main {
                 outputs.add(StatusCommand.createStatus(statusCommand, playerStatus));
             }
             if (command instanceof PlayPauseCommand playPauseCommand) {
-                if (playerStatus.isPaused()) {
-                    playPauseCommand.setPaused(0);
-                    playerStatus.setLastTime(playPauseCommand.getTimestamp());
-                    playerStatus.setPaused(false);
-                } else {
-                    playPauseCommand.setPaused(1);
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime()
-                            - playPauseCommand.getTimestamp() + playerStatus.getLastTime());
-                    playerStatus.setLastTime(playPauseCommand.getTimestamp());
-                    playerStatus.setPaused(true);
-                }
-                PlayPauseCommand.performPlayPause(playPauseCommand);
+                PlayPauseCommand.playPause(playPauseCommand, playerStatus);
                 outputs.add(PlayPauseCommand.createPlayPauseOutput(playPauseCommand));
             }
-            if (command instanceof CreatePlaylistCommand createPlaylistCommand) {
-                Playlist playlist = Playlist.performCreatePlaylist(createPlaylistCommand);
-                int var = 0;
-                for (Playlist play : playlists) {
-                    if (play.getPlaylistName().equals(playlist.getPlaylistName())) {
-                        var = 1;
-                        break;
-                    }
-                }
-                if (var == 0) {
-                    playlists.add(playlist);
-                }
-                outputs.add(CreatePlaylistCommand.createPlaylistOutput(createPlaylistCommand,
-                        var));
+            if (command instanceof CreatePlaylistCommand createPlaylist) {
+                int var = Playlist.createPlaylist(createPlaylist, playlists);
+                outputs.add(CreatePlaylistCommand.createPlaylistOutput(createPlaylist, var));
             }
-            if (command instanceof AddRemoveCommand addRemoveCommand) {
+            if (command instanceof AddRemoveCommand addRemove) {
                 int x = -2;
                 if (loaded) {
-                    x = AddRemoveCommand.performAddRemove(addRemoveCommand,
-                            playlists, selectedTrack, library);
+                    x = AddRemoveCommand.addRemove(addRemove, playlists, selectedTrack, library);
                 }
-                outputs.add(AddRemoveCommand.createAddRemoveOutput(addRemoveCommand, x));
+                outputs.add(AddRemoveCommand.createAddRemoveOutput(addRemove, x));
             }
             if (command instanceof LikeCommand likeCommand) {
                 int flag = 0;
-                assert playerStatus.getType() != null;
                 if (loaded) {
                     flag = LikeCommand.like(playerStatus, likeCommand, selectedTrack, likedSongs);
                 }
                 outputs.add(LikeCommand.createLikeOutput(likeCommand, flag, loaded));
             }
-            if (command instanceof ShowPlaylistsCommand showPlaylistsCommand) {
+            if (command instanceof ShowPlaylistsCommand showPlay) {
                 noSelect = false;
-                outputs.add(ShowPlaylistsCommand.createShowPlaylistsOutput(showPlaylistsCommand,
-                        playlists));
+                outputs.add(ShowPlaylistsCommand.createShowPlaylistsOutput(showPlay, playlists));
             }
-            if (command instanceof ShowSongsCommand showSongsCommand) {
-                List<String> liked = LikeCommand
-                        .getLikedSongs(showSongsCommand.getUsername(), likedSongs);
-                outputs.add(ShowSongsCommand.createOutput(showSongsCommand, liked));
+            if (command instanceof ShowSongsCommand show) {
+                List<String> liked = LikeCommand.getLikedSongs(show.getUsername(), likedSongs);
+                outputs.add(ShowSongsCommand.createOutput(show, liked));
             }
             if (command instanceof RepeatCommand repeatCommand) {
-                if (repeat == 2 && playerStatus.getType().equals("song")) {
-                    SongInput song = getSongDetails(library, playerStatus.getCurrentTrack());
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime()
-                            - repeatCommand.getTimestamp() + playerStatus.getLastTime());
-                    playerStatus.setLastTime(repeatCommand.getTimestamp());
-                    while (playerStatus.getRemainedTime() <= 0) {
-                        assert song != null;
-                        playerStatus.setRemainedTime(playerStatus.getRemainedTime()
-                                + song.getDuration());
-                    }
-                }
-                if (loaded) {
-                    repeat++;
-                    if (repeat > 2) {
-                        repeat = 0;
-                    }
-                    playerStatus.setRepeatMode(repeat);
-                    if (playerStatus.getType() != null) {
-                        outputs.add(RepeatCommand.createRepeatOutput(repeatCommand,
-                                repeat, playerStatus));
-                    }
-                } else {
-                    repeat = 3;
-                    outputs.add(RepeatCommand.createRepeatOutput(repeatCommand,
-                            repeat, playerStatus));
-                    playerStatus.setRepeatMode(0);
-                }
+                repeatCommand.setRepeat(repeat);
+                RepeatCommand.repeat(outputs, playerStatus, library, repeatCommand, loaded);
+                repeat = repeatCommand.getRepeat();
             }
-            if (command instanceof ShuffleCommand shuffleCommand) {
-                shuffleCommand.setLoaded(loaded);
-                shuffleCommand.setSongsNoShuffle(songsNoShuffle);
-                shuffleCommand.setSongsShuffled(songsShuffled);
-                ShuffleCommand.shuffle(shuffleCommand, playerStatus, selectedTrack, playlists);
-                songsShuffled = shuffleCommand.getSongsShuffled();
-                songsNoShuffle = shuffleCommand.getSongsNoShuffle();
-                loaded = shuffleCommand.isLoaded();
-                outputs.add(ShuffleCommand.createShuffleOutput(shuffleCommand,
-                        playerStatus, loaded));
+            if (command instanceof ShuffleCommand shuffle) {
+                shuffle.setLoaded(loaded);
+                shuffle.setSongsNoShuffle(songsNoShuffle);
+                shuffle.setSongsShuffled(songsShuffled);
+                ShuffleCommand.shuffle(shuffle, playerStatus, selectedTrack, playlists);
+                songsShuffled = shuffle.getSongsShuffled();
+                songsNoShuffle = shuffle.getSongsNoShuffle();
+                loaded = shuffle.isLoaded();
+                outputs.add(ShuffleCommand.createShuffleOutput(shuffle, playerStatus, loaded));
             }
             if (command instanceof NextCommand nextCommand) {
                 NextCommand.next(playerStatus, library, playlists, selectedTrack, nextCommand);
@@ -300,56 +191,22 @@ public final class Main {
                 PrevCommand.prev(playerStatus, library, playlists, selectedTrack, prevCommand);
                 outputs.add(PrevCommand.createPrevOutput(prevCommand, playerStatus, loaded));
             }
-            if (command instanceof ForwardCommand forwardCommand) {
-                assert playerStatus.getType() != null;
-                if (playerStatus.getType().equals("podcast")) {
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() - SECOND);
-                }
-                if (!loaded) {
-                    playerStatus.setRemainedTime(0);
-                    playerStatus.setCurrentTrack("");
-                    playerStatus.setPaused(true);
-                    playerStatus.setRepeatMode(0);
-                    playerStatus.setShuffleMode(false);
-                }
-                outputs.add(ForwardCommand.createForwardOutput(forwardCommand,
-                        playerStatus, loaded));
+            if (command instanceof ForwardCommand forward) {
+                ForwardCommand.forward(playerStatus, loaded);
+                outputs.add(ForwardCommand.createForwardOutput(forward, playerStatus, loaded));
             }
-            if (command instanceof BackwardCommand backwardCommand) {
-                assert playerStatus.getType() != null;
-                if (playerStatus.getType().equals("podcast")) {
-                    playerStatus.setRemainedTime(playerStatus.getRemainedTime() + SECOND);
-                }
-                outputs.add(BackwardCommand.createBackwardOutput(backwardCommand,
-                        playerStatus, loaded));
+            if (command instanceof BackwardCommand backward) {
+                BackwardCommand.backward(playerStatus);
+                outputs.add(BackwardCommand.createBackwardOutput(backward, playerStatus, loaded));
             }
-            if (command instanceof SwitchVisibility switchVisibility) {
-                Playlist playlist;
-                int count = 0;
-                for (Playlist p : playlists) {
-                    if (p.getOwner().equals(switchVisibility.getUsername())) {
-                        count++;
-                    }
-                }
-                if (switchVisibility.getPlaylistId() <= count) {
-                    playlist = findPlaylist(playlists,
-                            switchVisibility.getUsername(), switchVisibility.getPlaylistId());
-                    if (playlist.getVisibility().equals("public")) {
-                        playlist.setVisibility("private");
-                    } else {
-                        playlist.setVisibility("public");
-                    }
-                } else {
-                    playlist = null;
-                }
-                assert playlist != null;
-                outputs.add(SwitchVisibility.createSwitchOutput(switchVisibility, playlist));
+            if (command instanceof SwitchVisibility swap) {
+                Playlist playlist = SwitchVisibility.switchVisibility(playlists, swap);
+                outputs.add(SwitchVisibility.createSwitchOutput(swap, playlist));
             }
-            if (command instanceof FollowCommand followCommand) {
-                int flag = FollowCommand.follow(noSelect, playlists, selectedTrack, followCommand);
-                Playlist playlist = followCommand.getPlaylist();
-                outputs.add(FollowCommand.createFollowOutput(followCommand,
-                        noSelect, playlist, flag));
+            if (command instanceof FollowCommand follow) {
+                int flag = FollowCommand.follow(noSelect, playlists, selectedTrack, follow);
+                Playlist playlist = follow.getPlaylist();
+                outputs.add(FollowCommand.createFollowOutput(follow, noSelect, playlist, flag));
             }
             if (command instanceof GetTop5Songs getTop5Songs) {
                 SongInput[] songs = GetTop5Songs.top5Songs(library, likedSongs);
@@ -362,11 +219,10 @@ public final class Main {
         }
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePathOutput), outputs);
-
     }
 
     /**
-     *
+     * finds the playlist with the wanted id from a user
      */
     public static Playlist findPlaylist(final List<Playlist> playlists,
                                         final String username, final int playlistId) {
@@ -384,7 +240,7 @@ public final class Main {
     }
 
     /**
-     *
+     * function that searches for a song by name
      */
     public static SongInput getSongDetails(final LibraryInput library,
                                             final String name) {
@@ -397,7 +253,7 @@ public final class Main {
     }
 
     /**
-     *
+     * function that searches for a podcast by name
      */
     public static PodcastInput getPodcastDetails(final LibraryInput library,
                                                   final String name) {
@@ -410,7 +266,7 @@ public final class Main {
     }
 
     /**
-     *
+     * function that searches for a playlist by name
      */
     public static Playlist getPlaylistDetails(final List<Playlist> playlists,
                                                final String name) {
