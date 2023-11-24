@@ -1,4 +1,4 @@
-package statusCommands;
+package status;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -20,14 +20,20 @@ public class StatusCommand extends Command {
 
     private int repeat;
 
-    public int getRepeat() {
+    public final int getRepeat() {
         return repeat;
     }
 
-    public void setRepeat(int repeat) {
+    public final void setRepeat(final int repeat) {
         this.repeat = repeat;
     }
 
+    private static final int VAR = 3;
+    /**
+     * compute the remaining time by keeping track of the repeat and shuffle, see how the player
+     * is working by keeping track of the played songs and the time that has passed
+     * verify the type and then print the characteristics of the player at the current time
+     */
     public static void status(final PlayerStatus playerStatus, final StatusCommand statusCommand,
                               final LibraryInput library, final String selectedTrack,
                               final PlayerStatus back, final List<Playlist> playlists) {
@@ -149,7 +155,8 @@ public class StatusCommand extends Command {
         playerStatus.setLastTime(statusCommand.getTimestamp());
         if (playerStatus.getType().equals("podcast")
                 || playerStatus.getRemainedTime() < 0) {
-            if (statusCommand.getTimestamp() > playerStatus.getLastTime() + playerStatus.getRemainedTime()) {
+            if (statusCommand.getTimestamp() > playerStatus.getLastTime()
+                    + playerStatus.getRemainedTime()) {
                 playerStatus.setRemainedTime(0);
                 playerStatus.setCurrentTrack("");
                 playerStatus.setPaused(true);
@@ -157,7 +164,7 @@ public class StatusCommand extends Command {
                 playerStatus.setShuffleMode(false);
             }
         }
-        if (statusCommand.getRepeat() == 3) {
+        if (statusCommand.getRepeat() == VAR) {
             playerStatus.setRemainedTime(0);
             playerStatus.setCurrentTrack("");
             playerStatus.setPaused(true);

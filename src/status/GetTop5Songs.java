@@ -1,4 +1,4 @@
-package statusCommands;
+package status;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
@@ -18,6 +18,10 @@ public class GetTop5Songs extends Command {
 
     private static final int MAX = 4;
 
+    /**
+     * compute the number of likes for every song in the library by iterating through
+     * the liked list and then sort the songs and keep the first 5
+     */
     public static SongInput[] top5Songs(final LibraryInput library,
                                         final Map<String, List<String>> likedSongs) {
         int index = -1;
@@ -53,8 +57,9 @@ public class GetTop5Songs extends Command {
         return songs;
     }
 
+
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createTop5Output(final GetTop5Songs getTop5Songs,
                                               final SongInput[] songs) {

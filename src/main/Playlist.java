@@ -53,7 +53,7 @@ public class Playlist {
     }
 
     /**
-     *
+     * add song in the playlist
      */
     public final void addSong(final String song) {
         String[] newSongs = new String[songs.length + 1];
@@ -63,7 +63,7 @@ public class Playlist {
     }
 
     /**
-     *
+     * remove song from playlist
      */
     public final void removeSong(final String song) {
         String[] newSongs = new String[songs.length - 1];
@@ -77,21 +77,21 @@ public class Playlist {
     }
 
     /**
-     *
+     * add a folower
      */
     public final void addFollower(final String follower) {
         followers.add(follower);
     }
 
     /**
-     *
+     * remove a follower
      */
     public final void removeFollower(final String follower) {
         followers.remove(follower);
     }
 
     /**
-     *
+     * get number of followers for playlist
      */
     public final int getFollowersNumber() {
         if (followers == null) {
@@ -101,7 +101,7 @@ public class Playlist {
     }
 
     /**
-     *
+     * create new playlist if it is not already created
      */
     public static int createPlaylist(final CreatePlaylistCommand createPlaylist,
                                      final List<Playlist> playlists) {

@@ -1,4 +1,4 @@
-package timeCommands;
+package time;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
@@ -8,7 +8,6 @@ import fileio.input.SongInput;
 import main.Command;
 import main.Main;
 import main.PlayerStatus;
-import main.Playlist;
 
 public class RepeatCommand extends Command {
     public RepeatCommand() {
@@ -23,7 +22,14 @@ public class RepeatCommand extends Command {
         this.repeat = repeat;
     }
 
-    public static void repeat(ArrayNode outputs, final PlayerStatus playerStatus,
+    private static final int VAR = 3;
+    /**
+     * if it is a song and repeat is 1, add the song duration once, if it is 2
+     * add it until the remaining time is positive
+     * if it is a playlist and repeat is one start again after the last song
+     * if repeat is 2, make an infinite loop
+     */
+    public static void repeat(final ArrayNode outputs, final PlayerStatus playerStatus,
                                     final LibraryInput library,
                                     final RepeatCommand repeatCommand,
                                     final boolean loaded) {
@@ -50,7 +56,7 @@ public class RepeatCommand extends Command {
                         repeat, playerStatus));
             }
         } else {
-            repeat = 3;
+            repeat = VAR;
             outputs.add(RepeatCommand.createRepeatOutput(repeatCommand,
                     repeat, playerStatus));
             playerStatus.setRepeatMode(0);
@@ -58,8 +64,9 @@ public class RepeatCommand extends Command {
         repeatCommand.setRepeat(repeat);
     }
 
+
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createRepeatOutput(final RepeatCommand repeatCommand,
                                                 final int repeat, final PlayerStatus player) {
@@ -84,7 +91,7 @@ public class RepeatCommand extends Command {
                 || player.getType().equals("playlist"))) {
             repeatOutput.put("message", "Repeat mode changed to repeat current song.");
         }
-        if (repeat == 3) {
+        if (repeat == VAR) {
             repeatOutput.put("message", "Please load a source before setting the repeat status.");
         }
         return repeatOutput;

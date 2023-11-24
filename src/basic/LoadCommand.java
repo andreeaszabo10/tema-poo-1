@@ -1,4 +1,4 @@
-package BasicCommands;
+package basic;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -49,12 +49,11 @@ public class LoadCommand extends Command {
     }
 
     /**
-     *
-     *
-     *
+     * verify the type that needs to be loaded and then compute the remaining time
+     * the podcast needs to continue from the last load
      */
     public static void loader(final PlayerStatus playerStatus, final LibraryInput library,
-                              PlayerStatus back, final String selectedTrack,
+                              final PlayerStatus back, final String selectedTrack,
                               final List<Playlist> playlists, final List<PodcastInput>
                                       loadedPodcasts, final LoadCommand loadCommand) {
         SongInput song = Main.getSongDetails(library, selectedTrack);
@@ -87,7 +86,6 @@ public class LoadCommand extends Command {
                 playerStatus.setShuffleMode(false);
                 playerStatus.setType("podcast");
                 playerStatus.setIndex(0);
-                //back = playerStatus;
             } else {
                 playerStatus.setRemainedTime(first.getDuration());
                 playerStatus.setCurrentTrack(first.getName());

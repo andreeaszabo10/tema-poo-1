@@ -1,4 +1,4 @@
-package timeCommands;
+package time;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -15,6 +15,9 @@ public class PrevCommand extends Command {
     public PrevCommand() {
     }
 
+    /**
+     * find the current song, keep track of the previous one then put it in the player
+     */
     public static void prev(final PlayerStatus playerStatus, final LibraryInput library,
                             final List<Playlist> playlists, final String selectedTrack,
                             final PrevCommand prevCommand) {
@@ -50,8 +53,9 @@ public class PrevCommand extends Command {
         }
     }
 
+
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createPrevOutput(final PrevCommand prevCommand,
                                               final PlayerStatus player, final boolean loaded) {

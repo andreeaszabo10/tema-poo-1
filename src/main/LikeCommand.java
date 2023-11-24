@@ -12,6 +12,10 @@ public class LikeCommand extends Command {
     }
 
 
+    /**
+     * see if it is a song or a playlist, get the info about the song that is playing,
+     * verify if it is in the liked list then like or dislike by adding or removing
+     */
     public static int like(final PlayerStatus playerStatus, final LikeCommand likeCommand,
                             final String selectedTrack,
                             final Map<String, List<String>> likedSongs) {
@@ -34,21 +38,26 @@ public class LikeCommand extends Command {
         if (playerStatus.getType().equals("playlist")) {
             List<String> songs = getLikedSongs(likeCommand.getUsername(), likedSongs);
             for (String song : songs) {
-                if (playerStatus.getCurrentTrack().equals(song)) ;
-                {
+                if (playerStatus.getCurrentTrack().equals(song)) {
                     flag = 1;
                     break;
                 }
             }
             if (flag == 0) {
-                addLikedSong(likeCommand.getUsername(), playerStatus.getCurrentTrack(), likedSongs);
+                addLikedSong(likeCommand.getUsername(), playerStatus.getCurrentTrack(),
+                        likedSongs);
             } else {
-                removeLikedSong(likeCommand.getUsername(), playerStatus.getCurrentTrack(), likedSongs);
+                removeLikedSong(likeCommand.getUsername(), playerStatus.getCurrentTrack(),
+                        likedSongs);
             }
         }
         return flag;
     }
 
+
+    /**
+     * add a song to the liked list of the user
+     */
     public static void addLikedSong(final String username,
                                     final String songName,
                                     final Map<String, List<String>> likedSongs) {
@@ -57,11 +66,19 @@ public class LikeCommand extends Command {
         likedSongs.put(username, liked);
     }
 
+
+    /**
+     * see what is in the user's liked list
+     */
     public static List<String> getLikedSongs(final String username,
                                              final Map<String, List<String>> likedSongs) {
         return likedSongs.getOrDefault(username, new ArrayList<>());
     }
 
+
+    /**
+     * remove a song from the liked list
+     */
     public static void removeLikedSong(final String username,
                                        final String songName,
                                        final Map<String, List<String>> likedSongs) {

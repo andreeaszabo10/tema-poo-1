@@ -1,4 +1,4 @@
-package statusCommands;
+package status;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;

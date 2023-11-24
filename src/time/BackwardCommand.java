@@ -1,4 +1,4 @@
-package timeCommands;
+package time;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -11,6 +11,9 @@ public class BackwardCommand extends Command {
 
     private static final int SECOND = 90;
 
+    /**
+     * go back 90 seconds
+     */
     public static void backward(final PlayerStatus playerStatus) {
         assert playerStatus.getType() != null;
         if (playerStatus.getType().equals("podcast")) {
@@ -18,8 +21,9 @@ public class BackwardCommand extends Command {
         }
     }
 
+
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createBackwardOutput(final BackwardCommand backwardCommand,
                                                         final PlayerStatus player,

@@ -1,4 +1,4 @@
-package timeCommands;
+package time;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -18,6 +18,10 @@ public class NextCommand extends Command {
     public NextCommand() {
     }
 
+    /**
+     *see if it is a playlist or podcast, find the current song/episode and
+     * then put the next one in the player
+     */
     public static void next(final PlayerStatus playerStatus, final LibraryInput library,
                             final List<Playlist> playlists, final String selectedTrack,
                             final NextCommand nextCommand) {
@@ -64,7 +68,7 @@ public class NextCommand extends Command {
     }
 
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createNextOutput(final NextCommand nextCommand,
                                               final PlayerStatus player,

@@ -1,4 +1,4 @@
-package playlistCommands;
+package playlist;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -12,6 +12,9 @@ public class SwitchVisibility extends Command {
     public SwitchVisibility() {
     }
 
+    /**
+     * switch to public if it is private and to private if it is public
+     */
     public static Playlist switchVisibility(final List<Playlist> playlists,
                                             final SwitchVisibility swap) {
         Playlist playlist;
@@ -34,8 +37,9 @@ public class SwitchVisibility extends Command {
         return playlist;
     }
 
+
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createSwitchOutput(final SwitchVisibility switchVisibility,
                                                 final Playlist playlist) {

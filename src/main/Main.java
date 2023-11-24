@@ -6,10 +6,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import fileio.input.*;
-import BasicCommands.*;
-import timeCommands.*;
-import statusCommands.*;
-import playlistCommands.*;
+import basic.*;
+import time.*;
+import status.*;
+import playlist.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -134,7 +134,8 @@ public final class Main {
             }
             if (command instanceof StatusCommand statusCommand) {
                 statusCommand.setRepeat(repeat);
-                StatusCommand.status(playerStatus, statusCommand, library, selectedTrack, back, playlists);
+                StatusCommand.status(playerStatus, statusCommand,
+                        library, selectedTrack, back, playlists);
                 repeat = statusCommand.getRepeat();
                 outputs.add(StatusCommand.createStatus(statusCommand, playerStatus));
             }

@@ -1,4 +1,4 @@
-package timeCommands;
+package time;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -11,9 +11,8 @@ public class PlayPauseCommand extends Command {
     private int paused;
 
     /**
-     *
-     * @param playPauseCommand is the command
-     *
+     * if it is paused, the remaining time is not going down, otherwise
+     * it flows normally
      */
     public static void playPause(final PlayPauseCommand playPauseCommand,
                                  final PlayerStatus playerStatus) {
@@ -42,10 +41,9 @@ public class PlayPauseCommand extends Command {
         this.paused = paused;
     }
 
+
     /**
-     *
-     * @param playPauseCommand is the command
-     *
+     * create the output for the command
      */
     public static ObjectNode createPlayPauseOutput(final PlayPauseCommand playPauseCommand) {
         ObjectNode playPauseOutput = JsonNodeFactory.instance.objectNode();

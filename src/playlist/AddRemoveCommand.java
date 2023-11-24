@@ -1,4 +1,4 @@
-package playlistCommands;
+package playlist;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -26,8 +26,9 @@ public class AddRemoveCommand extends Command {
         this.playlistId = playlistId;
     }
 
+
     /**
-     *
+     * see if the song is already in the playlist, remove if it is, add if it is not
      */
     public static int addRemove(final AddRemoveCommand addRemoveCommand,
                                         final List<Playlist> playlists,

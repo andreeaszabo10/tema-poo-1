@@ -1,4 +1,4 @@
-package timeCommands;
+package time;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -25,7 +25,7 @@ public class ShuffleCommand extends Command {
     @Getter
     private boolean loaded;
 
-    public void setLoaded(boolean loaded) {
+    public final void setLoaded(boolean loaded) {
         this.loaded = loaded;
     }
 
@@ -47,12 +47,19 @@ public class ShuffleCommand extends Command {
         this.seed = seed;
     }
 
+    /**
+     * shuffle the indexes and then put the songs in the order of the indexes
+     * keep the new order in an array and switch to the original array when
+     * shuffle stops
+     */
     public static void shuffle(final ShuffleCommand shuffleCommand, final PlayerStatus playerStatus,
                                final String selectedTrack, final List<Playlist> playlists) {
         int seed = shuffleCommand.getSeed();
         String lastSong = null;
-        if (shuffleCommand.getSongsShuffled() != null && shuffleCommand.getSongsShuffled().length != 0) {
-            lastSong = shuffleCommand.getSongsShuffled()[shuffleCommand.getSongsShuffled().length - 1];
+        if (shuffleCommand.getSongsShuffled() != null
+                && shuffleCommand.getSongsShuffled().length != 0) {
+            lastSong = shuffleCommand
+                    .getSongsShuffled()[shuffleCommand.getSongsShuffled().length - 1];
         }
         if (shuffleCommand.isLoaded() && playerStatus.getType().equals("playlist")) {
             playerStatus.setShuffleMode(!playerStatus.isShuffleMode());
@@ -105,8 +112,9 @@ public class ShuffleCommand extends Command {
         }
     }
 
+
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createShuffleOutput(final ShuffleCommand shuffleCommand,
                                                  final PlayerStatus player, final boolean loaded) {

@@ -1,4 +1,4 @@
-package statusCommands;
+package status;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
@@ -14,6 +14,10 @@ public class GetTop5Playlists extends Command {
 
     private static final int MAX = 4;
 
+    /**
+     *
+     * sort the songs by the number of followers and then keep only 5
+     */
     public static String[] top5Playlists(final List<Playlist> playlists) {
         String[] array = new String[playlists.size()];
         int[] followersNumber = new int[playlists.size()];
@@ -35,8 +39,9 @@ public class GetTop5Playlists extends Command {
         }
         return array;
     }
+
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createTop5POutput(final GetTop5Playlists getTop5Playlists,
                                                final String[] playlists) {

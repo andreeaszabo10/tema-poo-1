@@ -1,4 +1,4 @@
-package playlistCommands;
+package playlist;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -21,6 +21,10 @@ public class FollowCommand extends Command {
         this.playlist = playlist;
     }
 
+
+    /**
+     * follow the playlist if the user is not in the followers list, otherwise unfollow
+     */
     public static int follow(final boolean noSelect, final List<Playlist> playlists,
                              final String selectedTrack, final FollowCommand followCommand) {
         int flag = 0;
@@ -45,8 +49,9 @@ public class FollowCommand extends Command {
         return flag;
     }
 
+
     /**
-     *
+     * create the output for the command
      */
     public static ObjectNode createFollowOutput(final FollowCommand followCommand,
                                                 final boolean select,
