@@ -3,8 +3,43 @@ package main;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import java.util.List;
+
 public class FollowCommand extends Command {
     public FollowCommand() {
+    }
+    private Playlist playlist;
+
+    public final Playlist getPlaylist() {
+        return playlist;
+    }
+
+    public final void setPlaylist(final Playlist playlist) {
+        this.playlist = playlist;
+    }
+
+    public static int follow(final boolean noSelect, final List<Playlist> playlists,
+                             final String selectedTrack, final FollowCommand followCommand) {
+        int flag = 0;
+        if (noSelect) {
+            followCommand.setPlaylist(Main.getPlaylistDetails(playlists, selectedTrack));
+            if (followCommand.getPlaylist() != null) {
+                if (followCommand.getPlaylist().getFollowers() != null) {
+                    for (String user : followCommand.getPlaylist().getFollowers()) {
+                        if (user.equals(followCommand.getUsername())) {
+                            flag = 1;
+                            break;
+                        }
+                    }
+                }
+                if (flag == 0) {
+                    followCommand.getPlaylist().addFollower(followCommand.getUsername());
+                } else {
+                    followCommand.getPlaylist().removeFollower(followCommand.getUsername());
+                }
+            }
+        }
+        return flag;
     }
 
     /**

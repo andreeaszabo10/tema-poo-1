@@ -15,6 +15,12 @@ public class PlayerStatus {
     private int index;
     @Getter
     private Playlist playlist;
+    @Getter
+    private int lastTime;
+
+    public final void setLastTime(final int lastTime) {
+        this.lastTime = lastTime;
+    }
 
     public final void setPlaylist(final Playlist playlist) {
         this.playlist = playlist;

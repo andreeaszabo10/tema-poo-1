@@ -16,7 +16,9 @@ public class SwitchVisibility extends Command {
         output.put("command", "switchVisibility");
         output.put("user", switchVisibility.getUsername());
         output.put("timestamp", switchVisibility.getTimestamp());
-        if (playlist.getVisibility().equals("private")) {
+        if (playlist == null) {
+            output.put("message", "The specified playlist ID is too high.");
+        } else if (playlist.getVisibility().equals("private")) {
             output.put("message", "Visibility status updated successfully to private.");
         } else {
             output.put("message", "Visibility status updated successfully to public.");

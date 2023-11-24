@@ -2,7 +2,7 @@
   "command" : "switchVisibility",
   "user" : "alice22",
   "timestamp" : 100,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "createPlaylist",
   "user" : "alice22",
@@ -42,7 +42,7 @@
   "command" : "switchVisibility",
   "user" : "henry26",
   "timestamp" : 170,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "createPlaylist",
   "user" : "henry26",
@@ -92,7 +92,7 @@
   "command" : "switchVisibility",
   "user" : "grace25",
   "timestamp" : 260,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "createPlaylist",
   "user" : "grace25",
@@ -102,7 +102,7 @@
   "command" : "switchVisibility",
   "user" : "henry26",
   "timestamp" : 270,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "createPlaylist",
   "user" : "henry26",
@@ -112,7 +112,7 @@
   "command" : "switchVisibility",
   "user" : "irene33",
   "timestamp" : 280,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "createPlaylist",
   "user" : "irene33",
@@ -4707,7 +4707,7 @@
   "command" : "switchVisibility",
   "user" : "emily30",
   "timestamp" : 5540,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -4879,7 +4879,7 @@
   "command" : "switchVisibility",
   "user" : "david27",
   "timestamp" : 5630,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "prev",
   "user" : "david27",
@@ -4980,7 +4980,7 @@
   "command" : "switchVisibility",
   "user" : "jack29",
   "timestamp" : 5690,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -5263,7 +5263,7 @@
   "command" : "switchVisibility",
   "user" : "emily30",
   "timestamp" : 5840,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -5977,7 +5977,7 @@
   "command" : "switchVisibility",
   "user" : "emily30",
   "timestamp" : 6240,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "prev",
   "user" : "emily30",
@@ -6093,7 +6093,7 @@
   "command" : "switchVisibility",
   "user" : "alice22",
   "timestamp" : 6300,
-  "message" : "Visibility status updated successfully to private."
+  "message" : "The specified playlist ID is too high."
 }, {
   "command" : "repeat",
   "user" : "alice22",
