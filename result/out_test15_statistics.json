@@ -122,12 +122,12 @@
   "command" : "like",
   "user" : "carol19",
   "timestamp" : 805,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "showPreferredSongs",
   "user" : "carol19",
   "timestamp" : 1000,
-  "result" : [ ]
+  "result" : [ "Bohemian Rhapsody" ]
 }, {
   "command" : "createPlaylist",
   "user" : "david27",
@@ -184,7 +184,7 @@
   "command" : "showPreferredSongs",
   "user" : "emily30",
   "timestamp" : 2300,
-  "result" : [ "Angie" ]
+  "result" : [ ]
 }, {
   "command" : "like",
   "user" : "emily30",
@@ -199,7 +199,7 @@
   "command" : "showPreferredSongs",
   "user" : "emily30",
   "timestamp" : 2400,
-  "result" : [ "Angie", "Bohemian Rhapsody" ]
+  "result" : [ "Bohemian Rhapsody" ]
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -260,14 +260,14 @@
   "command" : "showPreferredSongs",
   "user" : "bob35",
   "timestamp" : 3100,
-  "result" : [ "Angie", "Bohemian Rhapsody" ]
+  "result" : [ "Bohemian Rhapsody" ]
 }, {
   "command" : "showPreferredSongs",
   "user" : "carol19",
   "timestamp" : 3200,
-  "result" : [ "Angie", "Bohemian Rhapsody" ]
+  "result" : [ "Bohemian Rhapsody" ]
 }, {
   "command" : "getTop5Songs",
   "timestamp" : 3300,
-  "result" : "null"
+  "result" : [ "Bohemian Rhapsody", "Angie", "Shape of You", "Don't", "Stairway to Heaven" ]
 } ]

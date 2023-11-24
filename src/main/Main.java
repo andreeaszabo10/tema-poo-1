@@ -85,7 +85,6 @@ public final class Main {
         int lastTime = 0;
         List<Playlist> playlists = new ArrayList<>();
         boolean ok = false;
-        List<String> liked = new ArrayList<>();
         boolean loaded = false;
         PlayerStatus back = new PlayerStatus();
         int alreadyLoaded;
@@ -95,6 +94,7 @@ public final class Main {
         int seed;
         String[] songsNoShuffle = null;
         String[] songsShuffled = null;
+        Map<String, List<String>> likedSongs = new HashMap<>();
 
 
         for (Command command : commands) {
@@ -369,23 +369,41 @@ public final class Main {
                 outputs.add(AddRemoveCommand.createAddRemoveOutput(addRemoveCommand, x));
             }
             if (command instanceof LikeCommand likeCommand) {
-                String a = LikeCommand.performLike(ok, selectedTrack);
-                int var = 0;
-                if (a != null) {
-                    for (String x : liked) {
-                        if (a.equals(x)) {
-                            var = 1;
-                            break;
+                int flag = 0;
+                assert playerStatus.getType() != null;
+                if (loaded) {
+                    if (playerStatus.getType().equals("song")) {
+                        List<String> songs = getLikedSongs(likeCommand.getUsername(), likedSongs);
+                        for (String song : songs) {
+                            assert selectedTrack != null;
+                            if (song.equals(selectedTrack)) {
+                                flag = 1;
+                                break;
+                            }
+                        }
+                        if (flag == 0) {
+                            addLikedSong(likeCommand.getUsername(), selectedTrack, likedSongs);
+                        } else {
+                            removeLikedSong(likeCommand.getUsername(), selectedTrack, likedSongs);
                         }
                     }
-                    if (var == 0) {
-                        liked.add(a);
-                    } else {
-                        liked.remove(a);
+                    if (playerStatus.getType().equals("playlist")) {
+                        List<String> songs = getLikedSongs(likeCommand.getUsername(), likedSongs);
+                        for (String song : songs) {
+                            if (playerStatus.getCurrentTrack().equals(song)) ;
+                            {
+                                flag = 1;
+                                break;
+                            }
+                        }
+                        if (flag == 0) {
+                            addLikedSong(likeCommand.getUsername(), playerStatus.getCurrentTrack(), likedSongs);
+                        } else {
+                            removeLikedSong(likeCommand.getUsername(), playerStatus.getCurrentTrack(), likedSongs);
+                        }
                     }
                 }
-                outputs.add(LikeCommand.createLikeOutput(likeCommand, ok, loaded));
-                ok = !ok;
+                outputs.add(LikeCommand.createLikeOutput(likeCommand, flag, loaded));
             }
             if (command instanceof ShowPlaylistsCommand showPlaylistsCommand) {
                 noSelect = false;
@@ -393,6 +411,7 @@ public final class Main {
                         playlists));
             }
             if (command instanceof ShowSongsCommand showSongsCommand) {
+                List<String> liked = getLikedSongs(showSongsCommand.getUsername(), likedSongs);
                 outputs.add(ShowSongsCommand.createOutput(showSongsCommand, liked));
             }
             if (command instanceof RepeatCommand repeatCommand) {
@@ -616,7 +635,36 @@ public final class Main {
                         noSelect, playlist, flag));
             }
             if (command instanceof GetTop5Songs getTop5Songs) {
-                outputs.add(GetTop5Songs.createTop5Output(getTop5Songs));
+                int index = -1;
+                SongInput[] songs = new SongInput[library.getSongs().size()];
+                int[] likes = new int[library.getSongs().size()];
+                for (SongInput song : library.getSongs()) {
+                    index++;
+                    songs[index] = song;
+                    int count = 0;
+                    for (UserInput user : library.getUsers()) {
+                        List<String> liked = getLikedSongs(user.getUsername(), likedSongs);
+                        for (String is : liked) {
+                            if (is.equals(song.getName())) {
+                                count++;
+                            }
+                        }
+                    }
+                    likes[index] = count;
+                }
+                for (int i = 0; i < songs.length - 1; i++) {
+                    for (int j = 0; j < songs.length - i - 1; j++) {
+                        if (likes[j] < likes[j + 1]) {
+                            int aux = likes[j];
+                            likes[j] = likes[j + 1];
+                            likes[j + 1] = aux;
+                            SongInput aux1 = songs[j];
+                            songs[j] = songs[j + 1];
+                            songs[j + 1] = aux1;
+                        }
+                    }
+                }
+                outputs.add(GetTop5Songs.createTop5Output(getTop5Songs, songs));
             }
             if (command instanceof GetTop5Playlists getTop5Playlists) {
                 String[] array = new String[playlists.size()];
@@ -643,6 +691,27 @@ public final class Main {
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePathOutput), outputs);
 
+    }
+
+    public static void addLikedSong(final String username,
+                                    final String songName,
+                                    final Map<String, List<String>> likedSongs) {
+        List<String> liked = likedSongs.getOrDefault(username, new ArrayList<>());
+        liked.add(songName);
+        likedSongs.put(username, liked);
+    }
+
+    public static List<String> getLikedSongs(final String username,
+                                             final Map<String, List<String>> likedSongs) {
+        return likedSongs.getOrDefault(username, new ArrayList<>());
+    }
+
+    public static void removeLikedSong(final String username,
+                                final String songName,
+                                final Map<String, List<String>> likedSongs) {
+        List<String> liked = getLikedSongs(username, likedSongs);
+        liked.remove(songName);
+        likedSongs.put(username, liked);
     }
 
     /**

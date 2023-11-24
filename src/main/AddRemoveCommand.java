@@ -59,6 +59,7 @@ public class AddRemoveCommand extends Command {
             return 1;
         }
         playlist.removeSong(song);
+
         return 0;
     }
 

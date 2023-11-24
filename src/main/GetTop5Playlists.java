@@ -8,7 +8,7 @@ public class GetTop5Playlists extends Command {
     public GetTop5Playlists() {
     }
 
-    private static final int MAX = 6;
+    private static final int MAX = 4;
     /**
      *
      */

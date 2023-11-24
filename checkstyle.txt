@@ -12,12 +12,20 @@ Starting audit...
 [ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\CreatePlaylistCommand.java:12:5: Class 'CreatePlaylistCommand' looks like designed for extension (can be subclassed), but the method 'getPlaylistName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CreatePlaylistCommand' final or making the method 'getPlaylistName' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:8:20: Using the '.*' form of import should be avoided - fileio.input.*. [AvoidStarImport]
 [ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:15:17: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:72:5: Method length is 574 lines (max allowed is 150). [MethodLength]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:72:5: Method length is 622 lines (max allowed is 150). [MethodLength]
 [ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:324:31: '3' is a magic number. [MagicNumber]
 [ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:364:25: '-2' is a magic number. [MagicNumber]
-[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:421:30: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:393:29: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:393:78: Empty statement. [EmptyStatement]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:394:29: Avoid nested blocks. [AvoidNestedBlocks]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:400: Line is longer than 100 characters (found 112). [LineLength]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:402: Line is longer than 100 characters (found 115). [LineLength]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:440:30: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:696:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:704:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Main.java:709:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\Playlist.java:43:48: 'owner' hides a field. [HiddenField]
 [ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\PlayPauseCommand.java:27:5: Class 'PlayPauseCommand' looks like designed for extension (can be subclassed), but the method 'setPaused' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlayPauseCommand' final or making the method 'setPaused' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\Andreea\TEME\tema1poo\tema-poo-1\.\src\main\RepeatCommand.java:36:23: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 28 errors.

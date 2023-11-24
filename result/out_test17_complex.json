@@ -4863,7 +4863,7 @@
   "command" : "like",
   "user" : "carol19",
   "timestamp" : 5620,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -5209,7 +5209,7 @@
   "command" : "like",
   "user" : "bob35",
   "timestamp" : 5810,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -5337,7 +5337,7 @@
   "command" : "like",
   "user" : "irene33",
   "timestamp" : 5880,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -5502,7 +5502,7 @@
   "command" : "like",
   "user" : "grace25",
   "timestamp" : 5960,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5849,7 +5849,7 @@
   "command" : "like",
   "user" : "grace25",
   "timestamp" : 6160,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5961,7 +5961,7 @@
   "command" : "like",
   "user" : "david27",
   "timestamp" : 6230,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -6243,7 +6243,7 @@
   "command" : "like",
   "user" : "irene33",
   "timestamp" : 6380,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -6461,7 +6461,7 @@
   "command" : "like",
   "user" : "bob35",
   "timestamp" : 6510,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -6616,7 +6616,7 @@
   "command" : "like",
   "user" : "alice22",
   "timestamp" : 6600,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -6632,7 +6632,7 @@
   "command" : "like",
   "user" : "bob35",
   "timestamp" : 6610,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -7288,7 +7288,7 @@
   "command" : "like",
   "user" : "henry26",
   "timestamp" : 6970,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -9751,7 +9751,7 @@
   "command" : "showPreferredSongs",
   "user" : "alice22",
   "timestamp" : 8490,
-  "result" : [ ]
+  "result" : [ "Start Me Up" ]
 }, {
   "command" : "showPlaylists",
   "user" : "bob35",
@@ -9791,7 +9791,7 @@
   "command" : "showPreferredSongs",
   "user" : "carol19",
   "timestamp" : 8510,
-  "result" : [ ]
+  "result" : [ "Shape of You" ]
 }, {
   "command" : "showPlaylists",
   "user" : "david27",
@@ -9811,7 +9811,7 @@
   "command" : "showPreferredSongs",
   "user" : "david27",
   "timestamp" : 8520,
-  "result" : [ ]
+  "result" : [ "Begin Again" ]
 }, {
   "command" : "showPlaylists",
   "user" : "emily30",
@@ -9831,7 +9831,7 @@
   "command" : "showPreferredSongs",
   "user" : "emily30",
   "timestamp" : 8530,
-  "result" : [ ]
+  "result" : [ "Money Trees" ]
 }, {
   "command" : "showPlaylists",
   "user" : "frank21",
@@ -9871,7 +9871,7 @@
   "command" : "showPreferredSongs",
   "user" : "grace25",
   "timestamp" : 8550,
-  "result" : [ ]
+  "result" : [ "Shape of You" ]
 }, {
   "command" : "showPlaylists",
   "user" : "henry26",
@@ -9891,7 +9891,7 @@
   "command" : "showPreferredSongs",
   "user" : "henry26",
   "timestamp" : 8560,
-  "result" : [ ]
+  "result" : [ "Begin Again" ]
 }, {
   "command" : "showPlaylists",
   "user" : "irene33",
@@ -9911,7 +9911,7 @@
   "command" : "showPreferredSongs",
   "user" : "irene33",
   "timestamp" : 8570,
-  "result" : [ ]
+  "result" : [ "Money Trees" ]
 }, {
   "command" : "showPlaylists",
   "user" : "jack29",
@@ -9935,9 +9935,9 @@
 }, {
   "command" : "getTop5Playlists",
   "timestamp" : 8580,
-  "result" : [ "Chill Melodies Voyage #1", "Dynamic Tracks Adventure #2", "Groovy Vibes Odyssey #1", "Stellar Tunes Quest #2", "Breezy Rhythms Trek #1", "Breezy Bangers Quest #1", "Chill Sounds Journey #1" ]
+  "result" : [ "Chill Melodies Voyage #1", "Dynamic Tracks Adventure #2", "Groovy Vibes Odyssey #1", "Stellar Tunes Quest #2", "Breezy Rhythms Trek #1" ]
 }, {
   "command" : "getTop5Songs",
   "timestamp" : 8580,
-  "result" : "null"
+  "result" : [ "Shape of You", "Money Trees", "Begin Again", "Start Me Up", "Don't" ]
 } ]
